@@ -52,6 +52,12 @@ def site_url():
     return ""
 
 
+def initial_seen(o, now):
+    if o.get("publie") and o["publie"] <= now.date().isoformat():
+        return o["publie"] + "T00:00:00Z"
+    return iso(now - timedelta(days=2))
+
+
 def enrich(raw, src):
     text = raw.get("desc") or ""
     req = requirements(raw["titre"], text)
@@ -152,10 +158,13 @@ def run():
                         for k in ("langues", "comps", "niv", "exp", "extrait"):
                             o[k] = p.get(k)
                         o["duree"] = o["duree"] or p.get("duree")
-                else:
+                elif seeded:
                     o["first_seen"] = iso(now)
-                    if seeded and o["id"] not in known_ever:
+                    if o["id"] not in known_ever:
                         new_ids.append(o["id"])
+                else:
+                    # Premier passage de la source : les offres déjà en ligne ne sont pas « nouvelles »
+                    o["first_seen"] = initial_seen(o, now)
                 o["last_seen"] = iso(now)
                 current[o["id"]] = o
             if not complete:
@@ -170,8 +179,11 @@ def run():
         st["count"] = sum(1 for o in current.values() if o.get("skey") == key)
         if info.get("fields"):
             st["fields"] = info["fields"]
-        if info.get("detail_error"):
-            st["note"] = "Fiches détaillées indisponibles : " + info["detail_error"]
+        if info.get("filtre"):
+            st["filtre"] = info["filtre"]
+        derr = info.get("detail_error") or (ctx.get("detail_errors") or [None])[0]
+        if derr:
+            st["note"] = "Fiches détaillées indisponibles : " + derr
         statuses.append(st)
         print(f"[{key}] ok={st['ok']} offres={st['count']} nouvelles={sum(1 for i in new_ids if current.get(i, {}).get('skey') == key)} {st['secs']}s {err or ''}", flush=True)
 

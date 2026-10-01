@@ -293,8 +293,8 @@ def avature(src, http, ctx):
     for o in _detail_targets(out, ctx):
         try:
             o["desc"] = _page_text(http.get_text(o["url"]))
-        except Exception:
-            pass
+        except Exception as e:
+            ctx.setdefault("detail_errors", []).append(f"{type(e).__name__}: {str(e)[:150]}")
     return out, complete, {}
 
 
@@ -325,8 +325,8 @@ def safran(src, http, ctx):
     for o in _detail_targets(out, ctx):
         try:
             o["desc"] = _page_text(http.get_text(o["url"]))
-        except Exception:
-            pass
+        except Exception as e:
+            ctx.setdefault("detail_errors", []).append(f"{type(e).__name__}: {str(e)[:150]}")
     return out, complete and ctx.get("full", False), {}
 
 
@@ -356,8 +356,8 @@ def bnp(src, http, ctx):
     for o in _detail_targets(out, ctx):
         try:
             o["desc"] = _page_text(http.get_text(o["url"]))
-        except Exception:
-            pass
+        except Exception as e:
+            ctx.setdefault("detail_errors", []).append(f"{type(e).__name__}: {str(e)[:150]}")
     return out, complete, {}
 
 
@@ -381,8 +381,8 @@ def talentsoft_rss(src, http, ctx):
     for o in [x for x in out if x["id"] not in ctx.get("known", set())][: ctx.get("detail_budget", 25)]:
         try:
             o["desc"] = _page_text(http.get_text(o["url"]))
-        except Exception:
-            pass
+        except Exception as e:
+            ctx.setdefault("detail_errors", []).append(f"{type(e).__name__}: {str(e)[:150]}")
     return out, False, {}
 
 
