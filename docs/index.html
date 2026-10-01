@@ -80,7 +80,8 @@ h1,h2,h3{font-family:var(--display);font-stretch:118%;text-wrap:balance;margin:0
 .btn.ghost:hover{color:var(--ink);border-color:var(--line)}
 
 /* Filtres */
-.filters{display:grid;grid-template-columns:minmax(0,2fr) repeat(4,minmax(0,1fr));gap:8px;margin-bottom:10px}
+.filters{display:grid;grid-template-columns:minmax(0,2fr) repeat(5,minmax(0,1fr));gap:8px;margin-bottom:10px}
+@media (max-width:1100px){.filters{grid-template-columns:repeat(3,minmax(0,1fr))}.filters .field:first-child{grid-column:1/-1}}
 .field{display:grid;gap:4px;min-width:0}
 .field>span{font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600}
 input[type="text"],input[type="search"],input[type="email"],input[type="number"],select,textarea{width:100%;padding:9px 11px;border-radius:9px;border:1px solid var(--line);background:var(--surface);min-width:0}
@@ -286,6 +287,9 @@ function rel(isoStr){
 }
 const yrs = y => y ? `${String(y).replace(".",",")} an${y>=2?"s":""}` : "";
 const isNew = o => o.first_seen && Date.now()-Date.parse(o.first_seen) < DAY;
+const pubDate = o => o.publie || (o.first_seen||"").slice(0,10);
+const pubAge = o => { const d=pubDate(o); return d?daysSince(d):9999; };
+function pubLabel(o){ const n=pubAge(o); if(n>=9999) return ""; return o.publie?`publiée ${ago(n)}`:`ajoutée ${rel(o.first_seen)}`; }
 const reEsc = s => s.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
 const wordRe = a => new RegExp("(^|[^a-z0-9à-ÿ])"+reEsc(a)+"(?=$|[^a-z0-9à-ÿ])","i");
 function toast(msg){const t=$("#toast"); t.textContent=msg; t.hidden=false; clearTimeout(toast._t); toast._t=setTimeout(()=>t.hidden=true,2800);}
@@ -397,7 +401,7 @@ let S = load();
 if(!S||!S.profile) S = {profile:{age:null,niv:0,exp:0,langues:[{l:"Anglais",n:"B2"},{l:"Français",n:"C2"}],comps:[],doms:[],pays:[]},profileSet:false,cv:"",apps:[],seen:[],min:70};
 S.profile.pays = S.profile.pays||[];
 let DATA=null, OFFERS=[], LOAD_ERR=null;
-const UI = {view:"offres",q:"",pays:"",dom:"",src:"",tri:"score",nouvelles:false,open:null,limit:60};
+const UI = {view:"offres",q:"",pays:"",dom:"",src:"",pub:"",tri:"score",nouvelles:false,open:null,limit:60};
 const VIEWS = [["offres","Offres"],["profil","Mon profil"],["candidatures","Candidatures"],["alertes","Alertes & sources"]];
 const STATUSES = [["cible","À postuler"],["postule","Postulé"],["contact","Premier contact"],["entretien","Entretien"],["offre","Offre reçue"],["refus","Refus"]];
 const stLabel = k => (STATUSES.find(s=>s[0]===k)||[,""])[1];
@@ -462,6 +466,7 @@ function renderOffres(){
     <label class="field"><span>Pays</span><select id="f-pays"><option value="">Tous</option>${pays.map(([i,n])=>`<option value="${i}" ${UI.pays===i?"selected":""}>${esc(n)}</option>`).join("")}</select></label>
     <label class="field"><span>Domaine</span><select id="f-dom"><option value="">Tous</option>${Object.entries(DOM).map(([k,v])=>`<option value="${k}" ${UI.dom===k?"selected":""}>${v}</option>`).join("")}</select></label>
     <label class="field"><span>Source</span><select id="f-src"><option value="">Toutes</option><option value="bf" ${UI.src==="bf"?"selected":""}>Business France</option><option value="carriere" ${UI.src==="carriere"?"selected":""}>Sites carrière</option></select></label>
+    <label class="field"><span>Publiée</span><select id="f-pub"><option value="">Toutes dates</option>${[["1","Depuis hier"],["3","Moins de 3 j"],["7","Moins de 7 j"],["30","Moins de 30 j"]].map(([v,l])=>`<option value="${v}" ${UI.pub===v?"selected":""}>${l}</option>`).join("")}</select></label>
     <label class="field"><span>Trier par</span><select id="f-tri"><option value="score" ${UI.tri==="score"?"selected":""}>Score</option><option value="new" ${UI.tri==="new"?"selected":""}>Plus récentes</option><option value="clo" ${UI.tri==="clo"?"selected":""}>Clôture proche</option><option value="ind" ${UI.tri==="ind"?"selected":""}>Indemnité</option></select></label>
   </div>
   <div class="listhead" id="listhead"></div>
@@ -483,9 +488,10 @@ function filtered(){
   if(UI.dom) rows=rows.filter(({o})=>o.dom===UI.dom);
   if(UI.src) rows=rows.filter(({o})=>o.src===UI.src);
   if(UI.nouvelles) rows=rows.filter(({o})=>isNew(o));
+  if(UI.pub) rows=rows.filter(({o})=>pubAge(o)<=+UI.pub);
   const sv = r => r.sc.s==null?-1:r.sc.s;
   const fs = r => Date.parse(r.o.first_seen)||0;
-  const cmp = {score:(a,b)=>sv(b)-sv(a)||fs(b)-fs(a), new:(a,b)=>fs(b)-fs(a), clo:(a,b)=>(a.o.cloture||"9999").localeCompare(b.o.cloture||"9999"), ind:(a,b)=>(b.o.ind||0)-(a.o.ind||0)}[UI.tri];
+  const cmp = {score:(a,b)=>sv(b)-sv(a)||fs(b)-fs(a), new:(a,b)=>pubDate(b.o).localeCompare(pubDate(a.o))||fs(b)-fs(a), clo:(a,b)=>(a.o.cloture||"9999").localeCompare(b.o.cloture||"9999"), ind:(a,b)=>(b.o.ind||0)-(a.o.ind||0)}[UI.tri];
   return rows.sort(cmp);
 }
 function renderList(){
@@ -494,10 +500,10 @@ function renderList(){
   const nNew=OFFERS.filter(isNew).length;
   $("#listhead").innerHTML = `<span><span class="n">${rows.length}</span> offre${rows.length>1?"s":""}</span>
     <button class="toggle" data-act="toggle-new" aria-pressed="${UI.nouvelles}">Nouvelles en 24 h <span class="mono">${nNew}</span></button>
-    ${(UI.q||UI.pays||UI.dom||UI.src||UI.nouvelles)?'<button class="btn ghost small" data-act="reset-filters">Effacer les filtres</button>':""}`;
+    ${(UI.q||UI.pays||UI.dom||UI.src||UI.pub||UI.nouvelles)?'<button class="btn ghost small" data-act="reset-filters">Effacer les filtres</button>':""}`;
   $("#list").innerHTML = rows.length ? rows.slice(0,UI.limit).map(({o,sc})=>{
     const a=appOf(o.id);
-    const meta=[o.ind?`${eur(o.ind)}/mois`:"", o.duree?`${o.duree} mois`:"", o.cloture?`<span class="${daysUntil(o.cloture)<=7?"urgent":""}">Clôture J-${Math.max(0,daysUntil(o.cloture))}</span>`:"", `ajoutée ${rel(o.first_seen)}`].filter(Boolean);
+    const meta=[o.ind?`${eur(o.ind)}/mois`:"", o.duree?`${o.duree} mois`:"", o.cloture?`<span class="${daysUntil(o.cloture)<=7?"urgent":""}">Clôture J-${Math.max(0,daysUntil(o.cloture))}</span>`:"", pubLabel(o)].filter(Boolean);
     return `<button class="offer" data-act="open" data-id="${esc(o.id)}">
       <span>${dial(sc)}</span>
       <span class="o-main">
@@ -544,7 +550,7 @@ function renderDrawer(){
       ${fact("Indemnité",o.ind?eur(o.ind):"Non précisée")}
       ${fact("Durée",o.duree?o.duree+" mois":"Non précisée")}
       ${o.cloture?fact("Clôture",`${fmtDate(parseLocal(o.cloture))} · J-${Math.max(0,daysUntil(o.cloture))}`,daysUntil(o.cloture)<=7?"urgent":""):fact("Début",o.debut?fmtDate(parseLocal(o.debut)):"Non précisé")}
-      ${fact("Ajoutée",rel(o.first_seen))}
+      ${fact("Publiée",o.publie?fmtDate(parseLocal(o.publie)):rel(o.first_seen))}
     </dl>
     <section class="scorebox" aria-label="Score de compatibilité">
       <div class="score-head">${dial(sc,64)}<div><strong>${sc.v.t}</strong><span class="muted">${sc.v.sub}</span></div></div>
@@ -741,9 +747,9 @@ document.addEventListener("click",ev=>{
   const act=b.dataset.act, id=b.dataset.id, p=S.profile;
   switch(act){
     case "view": go(b.dataset.view); break;
-    case "bell": UI.nouvelles=true; UI.q="";UI.pays="";UI.dom="";UI.src=""; UI.tri="score"; go("offres"); break;
+    case "bell": UI.nouvelles=true; UI.q="";UI.pays="";UI.dom="";UI.src="";UI.pub=""; UI.tri="score"; go("offres"); break;
     case "toggle-new": UI.nouvelles=!UI.nouvelles; UI.limit=60; renderList(); break;
-    case "reset-filters": UI.q="";UI.pays="";UI.dom="";UI.src="";UI.nouvelles=false; UI.limit=60; renderOffres(); break;
+    case "reset-filters": UI.q="";UI.pays="";UI.dom="";UI.src="";UI.pub="";UI.nouvelles=false; UI.limit=60; renderOffres(); break;
     case "more": UI.limit+=60; renderList(); break;
     case "open": openOffer(id); break;
     case "close": closeDrawer(); break;
@@ -782,6 +788,7 @@ document.addEventListener("change",ev=>{
   if(t.id==="f-pays"){UI.pays=t.value; UI.limit=60; renderList();}
   if(t.id==="f-dom"){UI.dom=t.value; UI.limit=60; renderList();}
   if(t.id==="f-src"){UI.src=t.value; UI.limit=60; renderList();}
+  if(t.id==="f-pub"){UI.pub=t.value; UI.limit=60; renderList();}
   if(t.id==="f-tri"){UI.tri=t.value; renderList();}
   if(t.id==="p-age"){p.age=t.value===""?null:+t.value; save(); render();}
   if(t.id==="p-niv"){p.niv=+t.value; touchProfile();}
