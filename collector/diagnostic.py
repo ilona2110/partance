@@ -33,6 +33,7 @@ try:
     for src in scripts:
         url = src if src.startswith("http") else site + src.lstrip("/")
         js = s.get(url, timeout=60).text
+        (OUT / ("js_" + src.rstrip("/").split("/")[-1])).write_text(js)
         for pat in [r"civiweb[^\"'`]{0,120}", r"api/Offers[^\"'`]{0,80}", r"[Oo]cp-[Aa]pim[^\"'`]{0,80}", r"apiUrl[^,;]{0,160}", r"environment[^;]{0,300}?api[^;]{0,200}", r"Authorization[^;]{0,160}", r"[Tt]oken[\"']?\s*[:=][^;]{0,120}", r"setHeaders[^;]{0,200}", r"headers\s*:\s*\{[^}]{0,200}"]:
             for m in re.finditer(pat, js):
                 a = max(0, m.start() - 150)
@@ -55,7 +56,7 @@ for name, host, tenant, site_ in [("airbus", "ag.wd3.myworkdayjobs.com", "ag", "
             r = s.post(f"https://{host}/wday/cxs/{tenant}/{site_}/jobs", json={"appliedFacets": {}, "limit": 20, "offset": 0, "searchText": q}, timeout=30)
             j = r.json()
             out[q] = {"status": r.status_code, "total": j.get("total"), "titles": [p.get("title") for p in j.get("jobPostings", [])],
-                      "facets": [f.get("facetParameter") for f in j.get("facets", [])]}
+                      "facets": j.get("facets", [])}
         except Exception as e:
             out[q] = repr(e)
     report[f"wd_{name}"] = out
