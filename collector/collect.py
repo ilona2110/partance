@@ -106,6 +106,17 @@ def write(doc):
     DATA.write_text(head[:-2] + ',\n "offers": [\n' + lines + "\n ]\n}\n", encoding="utf-8")
 
 
+def alert_countries(profile):
+    """Pays des alertes : alertes.json à la racine du dépôt s'il en liste, sinon ceux du profil."""
+    try:
+        cfg = json.loads((ROOT / "alertes.json").read_text(encoding="utf-8"))
+        if cfg.get("pays"):
+            return set(cfg["pays"])
+    except (FileNotFoundError, json.JSONDecodeError):
+        pass
+    return set((profile or {}).get("pays") or [])
+
+
 def run():
     now = now_utc()
     prev = load_previous()
@@ -197,11 +208,12 @@ def run():
         except json.JSONDecodeError:
             email_state["last_error"] = "PROFILE_JSON illisible : recopie-le depuis la page Alertes du site"
     email_state["profile"] = bool(profile)
+    email_state["pays"] = sorted(alert_countries(profile))
     fresh = [current[i] for i in new_ids if i in current]
     if fresh and mailer.configured():
         items = []
         mn = (profile or {}).get("min", 70)
-        pays = set((profile or {}).get("pays") or [])
+        pays = alert_countries(profile)
         for o in fresh:
             if pays and o.get("iso") not in pays:
                 continue

@@ -38,6 +38,10 @@ Sur le site, ouvre **Mon profil**, dépose ton CV, puis clique sur **Analyser le
 
 Sans ce secret, le robot t'envoie toutes les nouvelles offres. Avec lui, il n'envoie que celles qui dépassent ton score minimum, et seulement dans tes pays visés si tu en as choisi. Refais la copie quand tu changes ton profil.
 
+### 5. Choisir les pays des alertes
+
+Le fichier `alertes.json`, à la racine du dépôt, liste les pays pour lesquels tu reçois un email, en codes à deux lettres (`US`, `CA`, `ES`, `GB`, `AU`, `SG`…). Modifie-le directement sur GitHub (icône crayon). Une liste vide `[]` envoie les alertes pour tous les pays. Le site, lui, continue d'afficher les offres de tous les pays.
+
 ## Sources suivies
 
 | Source | Comment elle est lue |

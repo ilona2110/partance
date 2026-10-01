@@ -693,7 +693,7 @@ function renderAlertes(){
       ${emailNote}${profNote}
       ${E.last_error?`<div class="note bad">Dernière erreur : ${esc(E.last_error)}</div>`:""}
       <label class="field"><span>Score minimum pour recevoir un email : <b class="mono" id="a-min-v">${S.min}</b> sur 100</span><input type="range" id="a-min" min="40" max="95" step="5" value="${S.min}"></label>
-      <p class="muted" style="margin:0;font-size:13.5px">Pays visés : ${S.profile.pays.length?esc(S.profile.pays.map(paysName).join(", ")):"tous"} (à régler dans Mon profil). Les offres trop vagues pour être notées te sont envoyées si leur domaine fait partie de tes domaines visés.</p>
+      <p class="muted" style="margin:0;font-size:13.5px">Pays des alertes : <b>${E.pays&&E.pays.length?esc(E.pays.map(paysName).join(", ")):"tous"}</b> (réglés dans le fichier alertes.json du dépôt). Les offres trop vagues pour être notées te sont envoyées si leur domaine fait partie de tes domaines visés.</p>
       <div class="field"><span>Profil à donner au robot</span><pre class="codebox" id="profilejson">${esc(profileExport())}</pre></div>
       <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" data-act="copy-profile">Copier le profil</button>${links?`<a class="btn" href="${links.secrets}" target="_blank" rel="noopener">Ouvrir les secrets GitHub ↗</a>`:""}</div>
       <p class="muted" style="margin:0;font-size:13.5px">Colle-le dans le secret <span class="mono">PROFILE_JSON</span> (Settings → Secrets and variables → Actions). Refais-le quand tu modifies ton profil ou ton seuil.</p>

@@ -1,0 +1,4 @@
+{
+  "_aide": "Pays pour lesquels tu reçois un email (codes ISO à 2 lettres). Laisse la liste vide pour tous les pays.",
+  "pays": ["US", "CA", "ES", "GB", "AU", "SG"]
+}
