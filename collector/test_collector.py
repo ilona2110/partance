@@ -99,8 +99,21 @@ DETAIL_HTML = "<html><body><header>Menu Excel</header><main><h1>Poste</h1><p>Pro
 
 def workday_route(url, kw):
     if url.endswith("/jobs"):
-        off = kw["json"]["offset"]
-        if off == 0:
+        body = kw["json"]
+        if body["limit"] == 1:
+            facets = [{"facetParameter": "jobFamilyGroup", "values": [{"descriptor": "Finance", "id": "f1"}]}]
+            if "ag.wd3" in url:
+                facets.append({"facetParameter": "workerSubType", "values": [{"descriptor": "CDI", "id": "x"}, {"descriptor": "VIE", "id": "vie-id"}]})
+            return {"total": 500, "jobPostings": [], "facets": facets}
+        if body["appliedFacets"]:
+            assert body["appliedFacets"] == {"workerSubType": ["vie-id"]}
+            if body["offset"] == 0:
+                return {"total": 2, "jobPostings": [
+                    {"title": "Ingénieur qualité (H/F)", "externalPath": "/job/Hamburg/Ingenieur-qualite_JR100", "locationsText": "Hamburg", "postedOn": "Posted Today"},
+                    {"title": "Supply Chain Analyst", "externalPath": "/job/Singapore/SC_JR102", "locationsText": "2 Locations", "postedOn": "Posted 30+ Days Ago"},
+                ]}
+            return {"total": 0, "jobPostings": []}
+        if body["offset"] == 0:
             return {"total": 3, "jobPostings": [
                 {"title": "VIE - Ingénieur qualité (H/F)", "externalPath": "/job/Hamburg/VIE-Ingenieur-qualite_JR100", "locationsText": "Hamburg", "postedOn": "Posted Today"},
                 {"title": "Vienna Office Manager", "externalPath": "/job/Vienna/Office_JR101", "locationsText": "Vienna", "postedOn": "Posted 3 Days Ago"},
@@ -110,11 +123,22 @@ def workday_route(url, kw):
     return {"jobPostingInfo": {"jobDescription": "<p>Allemand B2, anglais courant. Lean.</p>", "location": "Hamburg", "country": {"descriptor": "Germany"}}}
 
 
+BF_HOME = '<html><script>window.__NUXT__=(function(a){return {config:{OFFRE_API_ENDPOINT:"https:\\u002F\\u002Fciviweb-api-prd.azurewebsites.net\\u002Fapi\\u002FOffers",API_KEY:"cle\\u002Fpublique+1="}}}(1))</script></html>'
+
+
+def bf_search(url, kw):
+    assert kw["headers"].get("X-API-KEY") == "cle/publique+1=", kw["headers"]
+    return {"result": BF_ITEMS, "count": len(BF_ITEMS)}
+
+
 def routes():
     return {
-        ("POST", "https://civiweb-api-prd.azurewebsites.net/api/Offers/search"): {"result": BF_ITEMS, "count": 2},
+        ("GET", "https://mon-vie-via.businessfrance.fr/"): BF_HOME,
+        ("POST", "https://civiweb-api-prd.azurewebsites.net/api/Offers/search"): bf_search,
         ("POST", "https://ag.wd3.myworkdayjobs.com/wday/cxs/ag/Airbus/jobs"): workday_route,
         ("GET", "https://ag.wd3.myworkdayjobs.com/wday/cxs/ag/Airbus/job/"): workday_route,
+        ("POST", "https://thales.wd3.myworkdayjobs.com/wday/cxs/thales/Careers/jobs"): workday_route,
+        ("GET", "https://thales.wd3.myworkdayjobs.com/wday/cxs/thales/Careers/job/"): workday_route,
         ("GET", "https://jobs.totalenergies.com/fr_FR/careers/SearchJobs/VIE?jobRecordsPerPage=50&jobOffset=0"): AVATURE_HTML,
         ("GET", "https://jobs.totalenergies.com/fr_FR/careers/SearchJobs/VIE?"): "<html><body>Aucun résultat</body></html>",
         ("GET", "https://jobs.totalenergies.com/fr_FR/careers/JobDetail/"): DETAIL_HTML,
@@ -176,12 +200,25 @@ class TestSources(unittest.TestCase):
         self.assertIn("anglais courant", out[0]["desc"])
         self.assertIn("missionTitle", info["fields"])
 
-    def test_workday(self):
-        out, complete, _ = self.run_src({"type": "workday", "name": "Airbus", "host": "ag.wd3.myworkdayjobs.com", "tenant": "ag", "site": "Airbus"})
-        self.assertEqual([o["titre"] for o in out], ["VIE - Ingénieur qualité (H/F)", "V.I.E Supply Chain Analyst"])
+    def test_workday_facet(self):
+        out, complete, info = self.run_src({"type": "workday", "name": "Airbus", "host": "ag.wd3.myworkdayjobs.com", "tenant": "ag", "site": "Airbus"})
+        self.assertEqual([o["titre"] for o in out], ["Ingénieur qualité (H/F)", "Supply Chain Analyst"])
+        self.assertIn("workerSubType", info["filtre"])
         self.assertTrue(complete)
         self.assertEqual(out[0]["pays_hint"], "Germany")
         self.assertIn("Allemand B2", out[0]["desc"])
+
+    def test_workday_titles(self):
+        out, complete, info = self.run_src({"type": "workday", "name": "Thales", "host": "thales.wd3.myworkdayjobs.com", "tenant": "thales", "site": "Careers"})
+        self.assertEqual([o["titre"] for o in out], ["VIE - Ingénieur qualité (H/F)", "V.I.E Supply Chain Analyst"])
+        self.assertIn("titres", info["filtre"])
+
+    def test_robots(self):
+        r = web.Robots("User-agent: *\nAllow: /*/careers\nDisallow: /*/careers/*qtvc=\nDisallow: /\n")
+        self.assertTrue(r.allowed("PartanceBot", "/fr_FR/careers/SearchJobs/VIE?jobOffset=0"))
+        self.assertFalse(r.allowed("PartanceBot", "/fr_FR/careers/x?qtvc=1"))
+        self.assertFalse(r.allowed("PartanceBot", "/admin"))
+        self.assertTrue(web.Robots("User-agent: *\nDisallow: /refresh\n").allowed("PartanceBot", "/offres/1"))
 
     def test_avature(self):
         out, complete, _ = self.run_src({"type": "avature", "name": "TotalEnergies", "base": "https://jobs.totalenergies.com/fr_FR/careers"})

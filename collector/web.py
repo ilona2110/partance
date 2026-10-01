@@ -1,6 +1,6 @@
 """Client HTTP poli : respecte robots.txt, espace les requêtes vers un même site, réessaie une fois."""
+import re
 import time
-import urllib.robotparser
 from urllib.parse import urlsplit
 
 import requests
@@ -10,6 +10,57 @@ UA = "Mozilla/5.0 (compatible; PartanceBot/1.0; alertes VIE a usage personnel)"
 
 class Blocked(Exception):
     """Le site interdit cette adresse aux robots (robots.txt)."""
+
+
+class Robots:
+    """robots.txt selon la RFC 9309 : la règle la plus longue gagne, Allow l'emporte à égalité, jokers * et $."""
+
+    def __init__(self, text="", allow_all=False, disallow_all=False):
+        self.allow_all, self.disallow_all = allow_all, disallow_all
+        self.groups = {}
+        agents, rules_started = [], False
+        for raw in text.splitlines():
+            line = raw.split("#", 1)[0].strip()
+            if ":" not in line:
+                continue
+            key, val = (x.strip() for x in line.split(":", 1))
+            key = key.lower()
+            if key == "user-agent":
+                if rules_started:
+                    agents, rules_started = [], False
+                agents.append(val.lower())
+                for a in agents:
+                    self.groups.setdefault(a, [])
+            elif key in ("allow", "disallow") and agents:
+                rules_started = True
+                for a in agents:
+                    self.groups[a].append((key == "allow", val))
+
+    @staticmethod
+    def _match(pattern, path):
+        rx = re.escape(pattern).replace(r"\*", ".*")
+        if rx.endswith(r"\$"):
+            rx = rx[:-2] + "$"
+        return re.match(rx, path) is not None
+
+    def allowed(self, agent, path):
+        if self.allow_all:
+            return True
+        if self.disallow_all:
+            return False
+        agent = agent.lower()
+        rules = next((r for a, r in self.groups.items() if a != "*" and a in agent), None)
+        if rules is None:
+            rules = self.groups.get("*", [])
+        best = None
+        for allow, pat in rules:
+            if not pat:
+                continue
+            if self._match(pat, path):
+                cand = (len(pat), allow)
+                if best is None or cand[0] > best[0] or (cand[0] == best[0] and allow):
+                    best = cand
+        return best is None or best[1]
 
 
 class Http:
@@ -26,20 +77,21 @@ class Http:
         parts = urlsplit(url)
         host = f"{parts.scheme}://{parts.netloc}"
         if host not in self._robots:
-            rp = urllib.robotparser.RobotFileParser()
             try:
                 r = self.s.get(host + "/robots.txt", timeout=10)
                 if r.status_code >= 500:
-                    rp.disallow_all = True
+                    rp = Robots(disallow_all=True)
                 elif r.status_code >= 400:
-                    rp.allow_all = True
+                    rp = Robots(allow_all=True)
                 else:
-                    rp.parse(r.text.splitlines())
+                    rp = Robots(r.text)
             except requests.RequestException:
-                rp.allow_all = True
+                rp = Robots(allow_all=True)
             self._robots[host] = rp
-        rp = self._robots[host]
-        if not rp.can_fetch(UA, url) and not rp.can_fetch("*", url):
+        path = parts.path or "/"
+        if parts.query:
+            path += "?" + parts.query
+        if not self._robots[host].allowed("PartanceBot", path):
             raise Blocked(f"robots.txt interdit {parts.netloc}{parts.path}")
 
     def _wait(self, url):

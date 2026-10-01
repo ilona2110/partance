@@ -707,7 +707,7 @@ function renderAlertes(){
           ${!s.ok?`<span class="srcerr">${esc(s.error||"Erreur")}</span>`:""}${s.note?`<span class="srcerr warn">${esc(s.note)}</span>`:""}</span>
         <span class="mono muted">${s.count} offre${s.count>1?"s":""}</span>
       </div>`).join("")}</div>
-      ${DATA.not_yet&&DATA.not_yet.length?`<p class="muted" style="margin:0;font-size:13.5px">Pas encore branchés (leur site ne s'affiche qu'avec un navigateur) : ${esc(DATA.not_yet.join(", "))}. Leurs VIE passent en général aussi par Business France.</p>`:""}
+      ${DATA.not_yet&&DATA.not_yet.length?`<p class="muted" style="margin:0;font-size:13.5px">Non branchés (site protégé contre les robots, ou lisible seulement avec un navigateur) : ${esc(DATA.not_yet.join(", "))}. Leurs VIE passent en général aussi par Business France.</p>`:""}
     </section>
   </div>
   <h2 style="font-size:19px;margin:28px 0 12px">Nouvelles offres des dernières 24 h au-dessus de ton seuil</h2>

@@ -55,12 +55,28 @@ def _page_text(html):
 
 
 # ---------------------------------------------------------------- Business France
-BF_API = "https://civiweb-api-prd.azurewebsites.net/api/Offers"
 BF_SITE = "https://mon-vie-via.businessfrance.fr"
-BF_HEADERS = {"Origin": BF_SITE, "Referer": BF_SITE + "/"}
+
+
+def _bf_config(http):
+    """Le site officiel publie dans sa page d'accueil l'adresse de son service d'offres et la clé
+    publique qu'il envoie avec chaque requête. On les relit à chaque passage."""
+    html = http.get_text(BF_SITE + "/")
+
+    def conf(name):
+        m = re.search(name + r':"([^"]+)"', html)
+        return m.group(1).encode().decode("unicode_escape") if m else None
+
+    api = conf("OFFRE_API_ENDPOINT") or "https://civiweb-api-prd.azurewebsites.net/api/Offers"
+    key = conf("API_KEY")
+    headers = {"Origin": BF_SITE, "Referer": BF_SITE + "/"}
+    if key:
+        headers["X-API-KEY"] = key
+    return api, headers
 
 
 def businessfrance(src, http, ctx):
+    api, headers = _bf_config(http)
     out, skip, total, info = [], 0, None, {}
     while True:
         payload = {
@@ -69,12 +85,14 @@ def businessfrance(src, http, ctx):
             "companiesSizes": [], "specializationsIds": [], "entreprisesIds": [0], "missionStartDate": None,
             "query": None,
         }
-        r = http.post_json(BF_API + "/search", payload, headers=BF_HEADERS)
+        r = http.post_json(api + "/search", payload, headers=headers)
         items = r if isinstance(r, list) else (_g(r, "result", "results", "offers", "items", "data") or [])
         if total is None:
             total = (r.get("count") or r.get("total") or r.get("totalCount")) if isinstance(r, dict) else None
+            if isinstance(r, dict):
+                info["top_keys"] = sorted(r.keys())[:20]
             if items and isinstance(items[0], dict):
-                info["fields"] = sorted(items[0].keys())[:60]
+                info["fields"] = sorted(items[0].keys())[:80]
         if not items:
             break
         for it in items:
@@ -106,10 +124,12 @@ def businessfrance(src, http, ctx):
         skip += len(items)
         if (total and skip >= total) or skip >= 5000 or len(items) < 100:
             break
-    # Description manquante dans la recherche : lecture de la fiche pour les nouvelles offres
+    # Description absente de la recherche : lecture de la fiche pour les nouvelles offres
     for o in _detail_targets(out, ctx):
         try:
-            d = http.get_json(f"{BF_API}/details/{o['_raw_id']}", headers=BF_HEADERS)
+            d = http.get_json(f"{api}/details/{o['_raw_id']}", headers=headers)
+            if o is out[0] or "detail_fields" not in info:
+                info["detail_fields"] = sorted(d.keys())[:80] if isinstance(d, dict) else str(type(d))
             desc = "\n".join(str(x) for x in [_g(d, "missionDescription", "description"), _g(d, "missionProfile", "profile", "candidateProfile")] if x)
             o["desc"] = clean_text(desc)
             if o["ind"] is None:
@@ -137,18 +157,42 @@ def _posted_on(s):
     return (TODAY - timedelta(days=n)).isoformat() if n is not None else None
 
 
+_VIE_FACET = re.compile(r"(?<![A-Za-z])V\.?\s?I\.?\s?E\.?(?![A-Za-z])|volontariat international|international volunteer", re.I)
+
+
+def _find_vie_facet(facets):
+    """Cherche dans les filtres Workday une valeur « VIE » (type de contrat, type de poste…)."""
+    for f in facets or []:
+        for v in f.get("values", []) or []:
+            if "values" in v:
+                hit = _find_vie_facet([v])
+                if hit:
+                    return hit
+            elif _VIE_FACET.search(v.get("descriptor") or ""):
+                return f.get("facetParameter"), v.get("id"), v.get("descriptor")
+    return None
+
+
 def workday(src, http, ctx):
     base = f"https://{src['host']}/wday/cxs/{src['tenant']}/{src['site']}"
+    first = http.post_json(base + "/jobs", {"appliedFacets": {}, "limit": 1, "offset": 0, "searchText": ""})
+    facet = _find_vie_facet(first.get("facets"))
+    if facet:
+        body = {"appliedFacets": {facet[0]: [facet[1]]}, "searchText": ""}
+        info = {"filtre": f"{facet[0]} = {facet[2]}"}
+    else:
+        body = {"appliedFacets": {}, "searchText": src.get("search", "VIE")}
+        info = {"filtre": "recherche « VIE » dans les titres"}
     out, off, total = [], 0, None
     complete = False
     while off < 1000:
-        r = http.post_json(base + "/jobs", {"appliedFacets": {}, "limit": 20, "offset": off, "searchText": src.get("search", "VIE")})
+        r = http.post_json(base + "/jobs", {**body, "limit": 20, "offset": off})
         posts = r.get("jobPostings") or []
         if total is None:
             total = r.get("total") or 0
         for j in posts:
             title, path = j.get("title", ""), j.get("externalPath", "")
-            if not path or not is_vie(title):
+            if not path or (not facet and not is_vie(title)):
                 continue
             out.append({
                 "id": f"wd-{src['tenant']}-{path.rstrip('/').split('/')[-1]}",
@@ -165,15 +209,16 @@ def workday(src, http, ctx):
             break
     for o in _detail_targets(out, ctx):
         try:
-            info = http.get_json(base + o["_path"]).get("jobPostingInfo", {})
-            o["desc"] = clean_text(info.get("jobDescription", ""))
-            if info.get("location") and not re.match(r"\d+ (locations|sites)", o["lieu"], re.I):
-                o["lieu"] = info["location"]
-            o["pays_hint"] = (info.get("country") or {}).get("descriptor", "")
-            o["publie"] = _date(info.get("startDate")) or o["publie"]
+            jp = http.get_json(base + o["_path"]).get("jobPostingInfo", {})
+            o["desc"] = clean_text(jp.get("jobDescription", ""))
+            if jp.get("location") and not re.match(r"\d+ (locations|sites)", o["lieu"], re.I):
+                o["lieu"] = jp["location"]
+            o["pays_hint"] = (jp.get("country") or {}).get("descriptor", "")
+            o["publie"] = _date(jp.get("startDate")) or o["publie"]
         except Exception:
             pass
-    return out, complete, {"total": total}
+    info["total"] = total
+    return out, complete, info
 
 
 # ---------------------------------------------------------------- Avature (L'Oréal, TotalEnergies)
