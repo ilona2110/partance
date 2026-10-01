@@ -1,0 +1,5315 @@
+{
+ "bf_scripts": [
+  "https://kit.fontawesome.com/e589c8292d.js",
+  "/js/mbformjsapp.js",
+  "/_nuxt/f5b8e19.js",
+  "/_nuxt/4aa5217.js",
+  "/_nuxt/0d23df3.js",
+  "/_nuxt/a2dea73.js"
+ ],
+ "bf_post_plain": {
+  "status": 401,
+  "headers": {
+   "Server": "Microsoft-IIS/10.0",
+   "Set-Cookie": "ARRAffinity=771c2719075c13a1ca8a790e97721a2ef99b56bfcbb1db9a88869176a8d36925;Path=/;HttpOnly;Secure;Domain=civiweb-api-prd.azurewebsites.net, ARRAffinitySameSite=771c2719075c13a1ca8a790e97721a2ef99b56bfcbb1db9a88869176a8d36925;Path=/;HttpOnly;SameSite=None;Secure;Domain=civiweb-api-prd.azurewebsites.net",
+   "WWW-Authenticate": "Bearer"
+  },
+  "body": ""
+ },
+ "bf_post_origin": {
+  "status": 401,
+  "headers": {
+   "Server": "Microsoft-IIS/10.0",
+   "WWW-Authenticate": "Bearer"
+  },
+  "body": ""
+ },
+ "bf_robots_site": "User-agent: *\nDisallow: /refresh",
+ "wd_airbus": {
+  "VIE": {
+   "status": 200,
+   "total": 1030,
+   "titles": [
+    "Stage 2027 en Contrôle de gestion et consolidation des coûts de fonction (h/f)",
+    "STAGE 2027 - Amélioration continue de la chaîne d'approvisionnement et de la qualité (f/h)",
+    "STAGE 2027 – Ingénieur Recherche & Technologique (ALL GENDER)",
+    "STAGE 2027 - Stage en Intégration Systèmes & Optimisation CCS (h/f)",
+    "STAGE 2027 - Procurement Digitalisation (h/f)",
+    "STAGE 2027 - Bureau d'études - design et aménagment intérieur (f/h)",
+    "STAGE 2027 - Construction et gestion de services web cartographiques (F/H)",
+    "Sr Design Engineer",
+    "HO Executive Protection & Fleet Services (w, m, d)",
+    "STAGE 2027 -  Digitalisation  d'atelier et amélioration continue (ALL GENDER)",
+    "STAGE 2027 - Amélioration de la Performance Industrielle A350 (ALL GENDER)",
+    "STAGE 2027 - Ingénierie Support Client - Special Fleet (h/f)",
+    "STAGE 2027 - Gestion de Projet IA & Innovation Qualité (H/F)",
+    "Stage 2027-Achats sièges passagers cabine (F/H)",
+    "Chargé de projet – Système de Management d'Entreprise / Project Manager – Business Management System",
+    "Airbus Atlantic - Spécialiste méthodes programmation CN Assemblage et Robotique (All Gender)",
+    null,
+    "Stage 2027 - Stage en Amélioration Continue & Pilotage Opérationnel - programme A320 (ALL GENDER)",
+    "STAGE 2027 - Étude de l'informatique quantique pour la conception de structures et matériaux (F/H)",
+    "Development Responsible Optical Subsystems (d/f/m)"
+   ],
+   "facets": [
+    {
+     "facetParameter": "startDate",
+     "descriptor": "Posting Date",
+     "values": [
+      {
+       "descriptor": "1 Day",
+       "id": "29d7affdc34a10001f8fca311c1900f7",
+       "count": 120
+      },
+      {
+       "descriptor": "1 Week",
+       "id": "29d7affdc34a10001f8fca3a631900f8",
+       "count": 213
+      },
+      {
+       "descriptor": "2-4 Weeks",
+       "id": "29d7affdc34a10001f8fca432d1900f9",
+       "count": 278
+      },
+      {
+       "descriptor": "5-8 Weeks",
+       "id": "29d7affdc34a10001f8fca4bdfa900fa",
+       "count": 162
+      },
+      {
+       "descriptor": "9-12 Weeks",
+       "id": "29d7affdc34a10001f8fca54962100fb",
+       "count": 78
+      },
+      {
+       "descriptor": "12+ Weeks",
+       "id": "29d7affdc34a10001f8fca5d314100fc",
+       "count": 175
+      }
+     ]
+    },
+    {
+     "facetParameter": "jobFamilyGroup",
+     "descriptor": "Job Category",
+     "values": [
+      {
+       "descriptor": "Engineering <FU-EN>",
+       "id": "f5811cef9cb5018463377f3f550a1bf2",
+       "count": 264
+      },
+      {
+       "descriptor": "Manuf., Assembly, Integr. & Test <FU-MA>",
+       "id": "f5811cef9cb5010551c57e3f550a19f2",
+       "count": 166
+      },
+      {
+       "descriptor": "Management <FU-FA>",
+       "id": "f5811cef9cb50102a000803f550a1ff2",
+       "count": 109
+      },
+      {
+       "descriptor": "Customer Services and Support <FU-CS>",
+       "id": "f5811cef9cb501204ba8803f550a23f2",
+       "count": 72
+      },
+      {
+       "descriptor": "Corporate Governance <FU-CG>",
+       "id": "f5811cef9cb501d44e8f7d3f550a13f2",
+       "count": 62
+      },
+      {
+       "descriptor": "P&PM and Configuration Mgmt <FU-PP>",
+       "id": "f5811cef9cb501e5d34e803f550a21f2",
+       "count": 61
+      },
+      {
+       "descriptor": "Quality <FU-QU>",
+       "id": "f5811cef9cb50109de76813f550a27f2",
+       "count": 50
+      },
+      {
+       "descriptor": "Supply Management <FU-SM>",
+       "id": "f5811cef9cb501b88b02813f550a25f2",
+       "count": 49
+      },
+      {
+       "descriptor": "Digital <FU-IM>",
+       "id": "f5811cef9cb5015323ad7f3f550a1df2",
+       "count": 47
+      },
+      {
+       "descriptor": "Finance <FU-FI>",
+       "id": "f5811cef9cb5015f16047e3f550a15f2",
+       "count": 19
+      },
+      {
+       "descriptor": "Business Improvement <FU-BI>",
+       "id": "da36f3244b431000b193182f71f70000",
+       "count": 16
+      },
+      {
+       "descriptor": "Human Resources <FU-HR>",
+       "id": "f5811cef9cb50129aec07c3f550a11f2",
+       "count": 13
+      },
+      {
+       "descriptor": "Marketing, Sales & Commercial Contracts <FU-MC>",
+       "id": "f5811cef9cb5012a71527e3f550a17f2",
+       "count": 7
+      },
+      {
+       "descriptor": "Health & Safety <FU-HS>",
+       "id": "f1d680b72a631001a64812ae9b510000",
+       "count": 6
+      }
+     ]
+    },
+    {
+     "facetParameter": "jobFamily",
+     "descriptor": "Job Family",
+     "values": [
+      {
+       "descriptor": "Support to Management <JF-FA-ES>",
+       "id": "f5811cef9cb50126afe528e9540a48ed",
+       "count": 74
+      },
+      {
+       "descriptor": "Manufacturing Engineering <JF-MA-ME>",
+       "id": "f5811cef9cb5019c573925e9540a2ced",
+       "count": 56
+      },
+      {
+       "descriptor": "Programme & Project Management <JF-PP-PM>",
+       "id": "f5811cef9cb501a0e0c525e9540a30ed",
+       "count": 51
+      },
+      {
+       "descriptor": "Digital <JF-IM-DI>",
+       "id": "f5811cef9cb501602cf214e9540adaec",
+       "count": 47
+      },
+      {
+       "descriptor": "Leadership <JF-FA-EM>",
+       "id": "f5811cef9cb50147e10916e9540ae2ec",
+       "count": 34
+      },
+      {
+       "descriptor": "Customer Eng.&Technical Support&Services <JF-CS-PS>",
+       "id": "f5811cef9cb501b8d3af13e9540ad0ec",
+       "count": 31
+      },
+      {
+       "descriptor": "Qualification & Operability <JF-EN-EJ>",
+       "id": "f5811cef9cb501d1819127e9540a3eed",
+       "count": 28
+      },
+      {
+       "descriptor": "Assembly & Integration <JF-MA-AI>",
+       "id": "f5811cef9cb501208cb814e9540ad8ec",
+       "count": 28
+      },
+      {
+       "descriptor": "Software Engineering <JF-EN-EK>",
+       "id": "f5811cef9cb5018f6f641ee9540a16ed",
+       "count": 27
+      },
+      {
+       "descriptor": "Cyber Security <JF-CG-ST>",
+       "id": "f5811cef9cb5016f4d2a2ae9540a4eed",
+       "count": 27
+      },
+      {
+       "descriptor": "Testing <JF-EN-ET>",
+       "id": "f5811cef9cb50154f3b02ae9540a52ed",
+       "count": 26
+      },
+      {
+       "descriptor": "Structure Design & Integration <JF-EN-EO>",
+       "id": "f5811cef9cb501640dcd27e9540a40ed",
+       "count": 26
+      },
+      {
+       "descriptor": "Sub-system development <JF-EN-EQ>",
+       "id": "f5811cef9cb501b57dc616e9540ae8ec",
+       "count": 25
+      },
+      {
+       "descriptor": "Quality Inspection <JF-QU-QC>",
+       "id": "f5811cef9cb501d616d029e9540a4ced",
+       "count": 24
+      },
+      {
+       "descriptor": "Chief Engineering & Architecture <JF-EN-EA>",
+       "id": "f5811cef9cb50168a9a828e9540a46ed",
+       "count": 24
+      },
+      {
+       "descriptor": "Vehicle Mission & Control <JF-EN-EU>",
+       "id": "f5811cef9cb501586f6617e9540aeaec",
+       "count": 21
+      },
+      {
+       "descriptor": "Supplier Management <JF-SM-SR>",
+       "id": "f5811cef9cb501dbd22229e9540a4aed",
+       "count": 19
+      },
+      {
+       "descriptor": "Structure & Dynamic Systems Analysis <JF-EN-EN>",
+       "id": "f5811cef9cb501035f702ae9540a50ed",
+       "count": 19
+      },
+      {
+       "descriptor": "Quality Assurance <JF-QU-QA>",
+       "id": "f5811cef9cb5019a2fe613e9540ad2ec",
+       "count": 18
+      },
+      {
+       "descriptor": "Elec.Electron.&Electromag,Optics&Optron. <JF-EN-ED>",
+       "id": "f5811cef9cb50110ae0b18e9540af0ec",
+       "count": 17
+      },
+      {
+       "descriptor": "Material Support & services <JF-CS-MS>",
+       "id": "f5811cef9cb501e37bfd18e9540af8ec",
+       "count": 16
+      },
+      {
+       "descriptor": "Improvement & Performance Management <JF-BI-IP>",
+       "id": "da36f3244b431000b19f1f600a350000",
+       "count": 16
+      },
+      {
+       "descriptor": "Sourcing, Buying and Ordering <JF-SM-SP>",
+       "id": "f5811cef9cb5012bde3314e9540ad4ec",
+       "count": 15
+      },
+      {
+       "descriptor": "Logistics <JF-SM-LO>",
+       "id": "f5811cef9cb501cc52bc24e9540a28ed",
+       "count": 15
+      },
+      {
+       "descriptor": "Computing&Comm and Info& Data Processing <JF-EN-EB>",
+       "id": "f5811cef9cb501caed5212e9540ac4ec",
+       "count": 13
+      },
+      {
+       "descriptor": "Electrician <JF-MA-CT>",
+       "id": "f5811cef9cb5017b91361ce9540a0ced",
+       "count": 11
+      },
+      {
+       "descriptor": "Flight & Space Physics <JF-EN-EE>",
+       "id": "f5811cef9cb501b289ee1de9540a12ed",
+       "count": 10
+      },
+      {
+       "descriptor": "Configuration Management <JF-PP-CM>",
+       "id": "f5811cef9cb5012e6b1d20e9540a22ed",
+       "count": 10
+      },
+      {
+       "descriptor": "Systems Installation <JF-MA-SI>",
+       "id": "f5811cef9cb501180a0326e9540a32ed",
+       "count": 9
+      },
+      {
+       "descriptor": "Production means/Maintenance <JF-MA-MN>",
+       "id": "f5811cef9cb5014eca9d1ee9540a18ed",
+       "count": 9
+      },
+      {
+       "descriptor": "Materials & Processes <JF-EN-EG>",
+       "id": "f5811cef9cb501f9c82b1ee9540a14ed",
+       "count": 9
+      },
+      {
+       "descriptor": "Ethics & Compliance <JF-CG-EC>",
+       "id": "f5811cef9cb50128e29d1ae9540a04ed",
+       "count": 9
+      },
+      {
+       "descriptor": "Technical Data & Publications <JF-CS-TD>",
+       "id": "f5811cef9cb5013db07826e9540a36ed",
+       "count": 8
+      },
+      {
+       "descriptor": "Quality Management System <JF-QU-QP>",
+       "id": "f5811cef9cb501d65d7e24e9540a26ed",
+       "count": 8
+      },
+      {
+       "descriptor": "Production Planning & Scheduling <JF-MA-PP>",
+       "id": "f5811cef9cb5018375fd24e9540a2aed",
+       "count": 8
+      },
+      {
+       "descriptor": "Machine Operator <JF-MA-MO>",
+       "id": "f5811cef9cb501023a261ae9540a00ed",
+       "count": 8
+      },
+      {
+       "descriptor": "Flight line <JF-MA-FL>",
+       "id": "f5811cef9cb501c2b31927e9540a3aed",
+       "count": 8
+      },
+      {
+       "descriptor": "Customer Account  and Service Management <JF-CS-CA>",
+       "id": "f5811cef9cb5013d8b6a28e9540a44ed",
+       "count": 8
+      },
+      {
+       "descriptor": "Controlling <JF-FI-FO>",
+       "id": "f5811cef9cb5016186d71ee9540a1aed",
+       "count": 8
+      },
+      {
+       "descriptor": "Company Communication <JF-CG-KO>",
+       "id": "f5811cef9cb5010373f512e9540acaec",
+       "count": 8
+      },
+      {
+       "descriptor": "Training support & services <JF-CS-TS>",
+       "id": "f5811cef9cb50164fe3f11e9540ac0ec",
+       "count": 7
+      },
+      {
+       "descriptor": "Sales, Marketing & Commercial Contracts <JF-MC-VE>",
+       "id": "f5811cef9cb501d5fd8e18e9540af4ec",
+       "count": 7
+      },
+      {
+       "descriptor": "HR Expertise <JF-HR-CC>",
+       "id": "f5811cef9cb501e9064213e9540accec",
+       "count": 7
+      },
+      {
+       "descriptor": "Painter <JF-MA-PA>",
+       "id": "f5811cef9cb501e8c03e26e9540a34ed",
+       "count": 6
+      },
+      {
+       "descriptor": "Health & Safety <JF-HS-HS>",
+       "id": "98b258a281cf1001a6455d11934e0000",
+       "count": 6
+      },
+      {
+       "descriptor": "HR Business Partnership <JF-HR-BP>",
+       "id": "f5811cef9cb501af7cfe1be9540a0aed",
+       "count": 6
+      },
+      {
+       "descriptor": "Composite Manufacturing <JF-MA-CP>",
+       "id": "f5811cef9cb501ee577425e9540a2eed",
+       "count": 6
+      },
+      {
+       "descriptor": "Test operations <JF-MA-TO>",
+       "id": "f5811cef9cb50117d73419e9540afaec",
+       "count": 5
+      },
+      {
+       "descriptor": "Research and Technology <JF-EN-EV>",
+       "id": "916d9705499c100146d6a49e5aa80000",
+       "count": 5
+      },
+      {
+       "descriptor": "Physical Security <JF-CG-GP>",
+       "id": "94a53a941c7601018856d2cd12eb0000",
+       "count": 5
+      },
+      {
+       "descriptor": "Financial Expertise <JF-FI-FE>",
+       "id": "f5811cef9cb501a4a79719e9540afcec",
+       "count": 5
+      },
+      {
+       "descriptor": "Costing <JF-FI-FC>",
+       "id": "f5811cef9cb5015687e31fe9540a20ed",
+       "count": 5
+      },
+      {
+       "descriptor": "System Installation <JF-EN-ER>",
+       "id": "f5811cef9cb501eca20928e9540a42ed",
+       "count": 4
+      },
+      {
+       "descriptor": "Legal <JF-CG-LE>",
+       "id": "f5811cef9cb5017050641ae9540a02ed",
+       "count": 4
+      },
+      {
+       "descriptor": "Electronical manufacturing <JF-MA-ML>",
+       "id": "f5811cef9cb501906d5627e9540a3ced",
+       "count": 4
+      }
+     ]
+    },
+    {
+     "facetParameter": "hiringCompany",
+     "descriptor": "Company",
+     "values": [
+      {
+       "descriptor": "2626 Airbus Canada Limited Partnership",
+       "id": "f5811cef9cb50167b52e12134e0ac35d",
+       "count": 142
+      },
+      {
+       "descriptor": "2781 Airbus Atlantic",
+       "id": "f5811cef9cb5019f450ac8134e0af960",
+       "count": 122
+      },
+      {
+       "descriptor": "1466 Airbus Helicopters SAS",
+       "id": "f5811cef9cb5010a2adb29144e0acf62",
+       "count": 115
+      },
+      {
+       "descriptor": "922E Airbus Defence and Space GmbH",
+       "id": "f5811cef9cb501060f750c134e0aa55d",
+       "count": 109
+      },
+      {
+       "descriptor": "3507 Airbus Operations SAS",
+       "id": "f5811cef9cb5018c943ea4124e0aba5b",
+       "count": 78
+      },
+      {
+       "descriptor": "2788 Airbus Defence and Space SAS",
+       "id": "f5811cef9cb5012009b35b134e0a2d5f",
+       "count": 75
+      },
+      {
+       "descriptor": "3510 AIRBUS SAS",
+       "id": "f5811cef9cb501cc38c8ac124e0ae35b",
+       "count": 53
+      },
+      {
+       "descriptor": "5405 Airbus Operations GmbH",
+       "id": "f5811cef9cb501df5b76a0124e0aa65b",
+       "count": 41
+      },
+      {
+       "descriptor": "3349 Airbus Protect",
+       "id": "f5811cef9cb5013b35f9bb124e0a335c",
+       "count": 41
+      },
+      {
+       "descriptor": "5404 AIRBUS HELICOPTERS DEUTSCHLAND GmbH",
+       "id": "f5811cef9cb5016c7aa337144e0a1563",
+       "count": 25
+      },
+      {
+       "descriptor": "4292 Airbus Aerostructures GmbH",
+       "id": "425e3da53d7d0100b0dd7e1882e30000",
+       "count": 20
+      },
+      {
+       "descriptor": "1568 Airbus Americas, Inc.",
+       "id": "f5811cef9cb5014a8c8e19144e0a7f62",
+       "count": 20
+      },
+      {
+       "descriptor": "3362 Testia France",
+       "id": "f5811cef9cb501bb705ad5134e0a3f61",
+       "count": 18
+      },
+      {
+       "descriptor": "1543 Airbus DS Airborne Solutions GmbH",
+       "id": "f5811cef9cb5014a082c69134e0a555f",
+       "count": 17
+      },
+      {
+       "descriptor": "1258 Survey Copter SAS",
+       "id": "f5811cef9cb501e3cbd9cf134e0a2161",
+       "count": 17
+      },
+      {
+       "descriptor": "1127 Airbus India Private Limited",
+       "id": "f5811cef9cb501f6e6a91d144e0a9362",
+       "count": 15
+      },
+      {
+       "descriptor": "2780 Avions de Transport Regional (ATR) GIE",
+       "id": "f5811cef9cb501a6bae2d3124e0a975c",
+       "count": 14
+      },
+      {
+       "descriptor": "2164 Airbus Defence and Space SAU",
+       "id": "f5811cef9cb501869ae759134e0a225f",
+       "count": 12
+      },
+      {
+       "descriptor": "1263 Airbus Cybersecurity SAS",
+       "id": "f5811cef9cb5018cd198e4124e0af15c",
+       "count": 11
+      },
+      {
+       "descriptor": "5325 Airbus Portugal SA",
+       "id": "8bdfb52c6b2901ac7782a5d9ba00f310",
+       "count": 9
+      },
+      {
+       "descriptor": "2601 Airbus Secure Land Communications GmbH",
+       "id": "f5811cef9cb501eb9a6edd124e0ac95c",
+       "count": 8
+      },
+      {
+       "descriptor": "1360 Airbus Atlantique Canada Inc.",
+       "id": "f5811cef9cb501044673c0134e0ad160",
+       "count": 7
+      },
+      {
+       "descriptor": "1264 AIRBUS DS SLC SAS",
+       "id": "f5811cef9cb50159391d84134e0ac35f",
+       "count": 7
+      },
+      {
+       "descriptor": "5052 Airbus Atlantique Canada SL Inc.",
+       "id": "07cb42ff3bb2013138c997aaf3012efd",
+       "count": 6
+      },
+      {
+       "descriptor": "4305 Airbus Protect GmbH",
+       "id": "f5811cef9cb501eb3bf4e0124e0add5c",
+       "count": 6
+      },
+      {
+       "descriptor": "1457 Airbus Helicopters España, SA",
+       "id": "f5811cef9cb501a4128139144e0a1f63",
+       "count": 5
+      },
+      {
+       "descriptor": "5262 Airbus Helicopters Technik GmbH",
+       "id": "6579d5c0e4cc013eac850d53ac0033c0",
+       "count": 3
+      },
+      {
+       "descriptor": "7155 Computadoras, Redes e Ingeniería, SA",
+       "id": "f5811cef9cb501fe3f72f7124e0a375d",
+       "count": 2
+      },
+      {
+       "descriptor": "5581 Airbus Aerosystems Kinston, Inc",
+       "id": "0906b3077972100149c36fd847170000",
+       "count": 2
+      },
+      {
+       "descriptor": "5307 Airbus Vietnam LLC",
+       "id": "19f2231cdbe401279a8309a353011268",
+       "count": 2
+      },
+      {
+       "descriptor": "5057 Airbus Logistik GmbH",
+       "id": "5c039d08966601eba89f4d3004019b4a",
+       "count": 2
+      },
+      {
+       "descriptor": "4703 United Monolithics Semiconductor GmbH",
+       "id": "f5811cef9cb5011401e0da134e0a5d61",
+       "count": 2
+      },
+      {
+       "descriptor": "4379 Airbus (Beijing) Engineering Centre Company Limited",
+       "id": "f5811cef9cb501eb9e04dd134e0a6761",
+       "count": 2
+      },
+      {
+       "descriptor": "3902 Airbus Japan KK",
+       "id": "f5811cef9cb50196b5ff90124e0a565b",
+       "count": 2
+      },
+      {
+       "descriptor": "2916 Airbus Operations SL",
+       "id": "f5811cef9cb501cc3142a6124e0ac45b",
+       "count": 2
+      },
+      {
+       "descriptor": "2785 Airbus Atlantic Composites",
+       "id": "f5811cef9cb501f77261c2134e0adb60",
+       "count": 2
+      },
+      {
+       "descriptor": "1403 Satair Pte Ltd",
+       "id": "f5811cef9cb50153ada6ae134e0a9560",
+       "count": 2
+      },
+      {
+       "descriptor": "1402 Satair USA, Inc.",
+       "id": "f5811cef9cb50198f2c1b2134e0aa960",
+       "count": 2
+      },
+      {
+       "descriptor": "5515 Airbus (Chengdu) Lifecycle Services Ltd",
+       "id": "0ce95fc5c7cf1001ed77d2dd4e8b0000",
+       "count": 1
+      },
+      {
+       "descriptor": "4231 Airbus Helicopters, Inc.",
+       "id": "f5811cef9cb501b1a3448d124e0a425b",
+       "count": 1
+      },
+      {
+       "descriptor": "4185 Airbus Helicopters Malaysia SDN. BHD.",
+       "id": "f5811cef9cb501b5445441144e0a4863",
+       "count": 1
+      },
+      {
+       "descriptor": "3763 Tesat-Spacecom GmbH & Co. KG",
+       "id": "f5811cef9cb501d5c077d3134e0a3561",
+       "count": 1
+      },
+      {
+       "descriptor": "3631 Airbus Operations Limited",
+       "id": "f5811cef9cb5012a6652a2124e0ab05b",
+       "count": 1
+      },
+      {
+       "descriptor": "1761 Airbus Flight Operations Services Limited",
+       "id": "f5811cef9cb501716b5194134e0a1360",
+       "count": 1
+      },
+      {
+       "descriptor": "1591 ENSIA EXPERT, S.L.",
+       "id": "f5811cef9cb5013eff0d52134e0af95e",
+       "count": 1
+      },
+      {
+       "descriptor": "1571 Airbus Americas Customer Services, Inc.",
+       "id": "f5811cef9cb5017d19be17144e0a7562",
+       "count": 1
+      },
+      {
+       "descriptor": "1250 Airbus Aerostructures S.R.L.",
+       "id": "f5811cef9cb50117abd3b4134e0ab360",
+       "count": 1
+      },
+      {
+       "descriptor": "1201 Airbus DS Geo Inc.",
+       "id": "f5811cef9cb501eeabc170134e0a7d5f",
+       "count": 1
+      },
+      {
+       "descriptor": "1185 Motorflug Baden-Baden GmbH",
+       "id": "f5811cef9cb501b896513d134e0a8b5e",
+       "count": 1
+      },
+      {
+       "descriptor": "1147 Airbus (Tianjin) Delivery Centre Limited",
+       "id": "f5811cef9cb501e55b90e1134e0a7b61",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "facetParameter": "workerSubType",
+     "descriptor": "Job Type",
+     "values": [
+      {
+       "descriptor": "Regular",
+       "id": "f5811cef9cb501a69768a71d470a6d15",
+       "count": 734
+      },
+      {
+       "descriptor": "Trainee / Student (Fixed Term)",
+       "id": "f5811cef9cb50193723ed01d470a6e15",
+       "count": 203
+      },
+      {
+       "descriptor": "Apprentice (Fixed Term)",
+       "id": "f5811cef9cb501e1db34d41d470a6f15",
+       "count": 83
+      },
+      {
+       "descriptor": "Temporary",
+       "id": "f5811cef9cb5012aaf57ecb1470a8318",
+       "count": 8
+      },
+      {
+       "descriptor": "VIE",
+       "id": "f5811cef9cb5016cb7041bb2470a8418",
+       "count": 1
+      },
+      {
+       "descriptor": "Client to the company",
+       "id": "f5811cef9cb501fe419222b2470a8618",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "facetParameter": "FullPartTime",
+     "descriptor": "Full/Part Time",
+     "values": [
+      {
+       "descriptor": "Full time",
+       "id": "70a157281071017ad8c0ee4170448100",
+       "count": 1010
+      },
+      {
+       "descriptor": "Part time",
+       "id": "70a157281071017ed7a8ee4170448000",
+       "count": 8
+      }
+     ]
+    },
+    {
+     "facetParameter": "Reload_Classification",
+     "descriptor": "Classe Emploi (France)",
+     "values": [
+      {
+       "descriptor": "Classe G13",
+       "id": "6bb5b5d75d2b1000b1a75aeb118c0000",
+       "count": 63
+      },
+      {
+       "descriptor": "Classe F12",
+       "id": "83cc31a5c7911000b1a79917c50c0000",
+       "count": 50
+      },
+      {
+       "descriptor": "Classe G14",
+       "id": "83cc31a5c7911000b1a7a8b4e2180000",
+       "count": 40
+      },
+      {
+       "descriptor": "Classe F11",
+       "id": "6bb5b5d75d2b1000b1a74be6cc9c0000",
+       "count": 27
+      },
+      {
+       "descriptor": "Classe E10",
+       "id": "b74448189fac1000b1a6c3947b890000",
+       "count": 15
+      },
+      {
+       "descriptor": "Classe D08",
+       "id": "6bb5b5d75d2b1000b1a739e0e8820000",
+       "count": 15
+      },
+      {
+       "descriptor": "Classe E09",
+       "id": "b74448189fac1000b1a6bd8eef090000",
+       "count": 13
+      },
+      {
+       "descriptor": "Classe H15",
+       "id": "6bb5b5d75d2b1000b1a76822d3c40000",
+       "count": 11
+      },
+      {
+       "descriptor": "Classe D07",
+       "id": "6bb5b5d75d2b1000b1a7317852270000",
+       "count": 10
+      },
+      {
+       "descriptor": "Classe C05",
+       "id": "83cc31a5c7911000b1a767dd1c510000",
+       "count": 6
+      },
+      {
+       "descriptor": "Classe C06",
+       "id": "83cc31a5c7911000b1a76e7846c10000",
+       "count": 4
+      },
+      {
+       "descriptor": "Classe B04",
+       "id": "b74448189fac1000b1a694b3065c0000",
+       "count": 4
+      }
+     ]
+    },
+    {
+     "facetParameter": "locationMainGroup",
+     "values": [
+      {
+       "facetParameter": "locationCountry",
+       "descriptor": "Country",
+       "values": [
+        {
+         "descriptor": "Canada",
+         "id": "a30a87ed25634629aa6c3958aa2b91ea",
+         "count": 154
+        },
+        {
+         "descriptor": "China",
+         "id": "6cb77610a8a543aea2d6bc10457e35d4",
+         "count": 4
+        },
+        {
+         "descriptor": "France",
+         "id": "54c5b6971ffb4bf0b116fe7651ec789a",
+         "count": 522
+        },
+        {
+         "descriptor": "Germany",
+         "id": "dcc5b7608d8644b3a93716604e78e995",
+         "count": 231
+        },
+        {
+         "descriptor": "India",
+         "id": "c4f78be1a8f14da0ab49ce1162348a5e",
+         "count": 12
+        },
+        {
+         "descriptor": "Japan",
+         "id": "8b705da2becf43cfaccc091da0988ab2",
+         "count": 2
+        },
+        {
+         "descriptor": "Malaysia",
+         "id": "972dc4ba8d454bc0b893ff84b1529077",
+         "count": 1
+        },
+        {
+         "descriptor": "Portugal",
+         "id": "2e8c5034deb045d49315417c347472ca",
+         "count": 9
+        },
+        {
+         "descriptor": "Romania",
+         "id": "f2e609fe92974a55a05fc1cdc2852122",
+         "count": 1
+        },
+        {
+         "descriptor": "Singapore",
+         "id": "80938777cac5440fab50d729f9634969",
+         "count": 2
+        },
+        {
+         "descriptor": "Spain",
+         "id": "bd34c524a6a04ae6915f5d96fa086199",
+         "count": 22
+        },
+        {
+         "descriptor": "Thailand",
+         "id": "873d0f604e3b458c990cb4d83a5c0f14",
+         "count": 1
+        },
+        {
+         "descriptor": "United Kingdom",
+         "id": "29247e57dbaf46fb855b224e03170bc7",
+         "count": 2
+        },
+        {
+         "descriptor": "United States of America",
+         "id": "bc33aa3152ec42d4995f4791a106ed09",
+         "count": 27
+        },
+        {
+         "descriptor": "Vietnam",
+         "id": "db69e8c8446c11de98360015c5e6daf6",
+         "count": 2
+        }
+       ]
+      },
+      {
+       "facetParameter": "locations",
+       "descriptor": "Locations",
+       "values": [
+        {
+         "descriptor": "Albacete",
+         "id": "f5811cef9cb501878cea99694c0a5d46",
+         "count": 4
+        },
+        {
+         "descriptor": "Antibes Area",
+         "id": "f5811cef9cb5016ca1d97f694c0afe45",
+         "count": 1
+        },
+        {
+         "descriptor": "Atlanta Area, GA",
+         "id": "f5811cef9cb501ad5e9d0f694c0a9644",
+         "count": 3
+        },
+        {
+         "descriptor": "Augsburg (AH)",
+         "id": "a442aaae2e5a010538f8c1fafa00d0d3",
+         "count": 1
+        },
+        {
+         "descriptor": "Augsburg Area",
+         "id": "f5811cef9cb501d432ccf76a4c0afe4a",
+         "count": 2
+        },
+        {
+         "descriptor": "Bangalore Area",
+         "id": "f5811cef9cb501f0b948d1684c0abf43",
+         "count": 11
+        },
+        {
+         "descriptor": "Bangkok Area",
+         "id": "5917789d891501a1b901f84eae00d599",
+         "count": 1
+        },
+        {
+         "descriptor": "Bäumenheim",
+         "id": "652aa3192b9b01014a5aa382f8ee0000",
+         "count": 1
+        },
+        {
+         "descriptor": "Beijing Area",
+         "id": "f5811cef9cb501370690d2684c0ac443",
+         "count": 2
+        },
+        {
+         "descriptor": "Berlin",
+         "id": "f5811cef9cb5011808fbec6a4c0ad14a",
+         "count": 2
+        },
+        {
+         "descriptor": "Blagnac (Airbus Protect)",
+         "id": "f5811cef9cb501ab3690c9684c0aa643",
+         "count": 2
+        },
+        {
+         "descriptor": "Blagnac (ATR)",
+         "id": "f5811cef9cb501cb8cecca684c0aab43",
+         "count": 1
+        },
+        {
+         "descriptor": "Bordeaux Area",
+         "id": "f5811cef9cb5014f0556f06a4c0ae04a",
+         "count": 9
+        },
+        {
+         "descriptor": "Brasov (30 Hermann)",
+         "id": "2a06fd53de7c1000aadb356afec90000",
+         "count": 1
+        },
+        {
+         "descriptor": "Bremen Area",
+         "id": "f5811cef9cb501489129da684c0ad843",
+         "count": 43
+        },
+        {
+         "descriptor": "Buxtehude",
+         "id": "f5811cef9cb501addb9e3a694c0a1845",
+         "count": 4
+        },
+        {
+         "descriptor": "Calden",
+         "id": "f5811cef9cb501439bde3e694c0a2745",
+         "count": 1
+        },
+        {
+         "descriptor": "Calden (AH Technik)",
+         "id": "4ba17cb6a7fd01d770ef26d5a90036af",
+         "count": 3
+        },
+        {
+         "descriptor": "Chengdu",
+         "id": "0ce95fc5c7cf1001ec62cec918d60000",
+         "count": 1
+        },
+        {
+         "descriptor": "Clermont-Ferrand (AH - Mil. Site)",
+         "id": "e84e9665a6fa015013ac06758901f54d",
+         "count": 1
+        },
+        {
+         "descriptor": "Coimbra",
+         "id": "a6df755ad02c10013f2f7203a65b0000",
+         "count": 4
+        },
+        {
+         "descriptor": "Colomiers Skypark (ex-Stelia)",
+         "id": "f5811cef9cb5010f2f8c386b4c0ada4b",
+         "count": 1
+        },
+        {
+         "descriptor": "Donauwörth",
+         "id": "f5811cef9cb501bcba58c3684c0a8d43",
+         "count": 22
+        },
+        {
+         "descriptor": "Donauwörth (Airbus Protect)",
+         "id": "f786aa96657a1001e06190b71dde0000",
+         "count": 1
+        },
+        {
+         "descriptor": "Elancourt",
+         "id": "f5811cef9cb5014fd76a5c694c0a8b45",
+         "count": 4
+        },
+        {
+         "descriptor": "Faßberg",
+         "id": "f5811cef9cb501436dc961694c0a9f45",
+         "count": 1
+        },
+        {
+         "descriptor": "Filton",
+         "id": "f5811cef9cb501dd9d6d63694c0aa445",
+         "count": 2
+        },
+        {
+         "descriptor": "Getafe",
+         "id": "f5811cef9cb501e03505ad694c0aa346",
+         "count": 1
+        },
+        {
+         "descriptor": "Getafe Area",
+         "id": "f5811cef9cb50161e265ef684c0a1944",
+         "count": 12
+        },
+        {
+         "descriptor": "Grand Prairie, TX",
+         "id": "f5811cef9cb501293a88b5694c0ab246",
+         "count": 1
+        },
+        {
+         "descriptor": "Hamburg Area",
+         "id": "f5811cef9cb501dc098bf16a4c0ae54a",
+         "count": 33
+        },
+        {
+         "descriptor": "Hamburg - Finkenwerder",
+         "id": "f5811cef9cb501407081ba694c0ac646",
+         "count": 1
+        },
+        {
+         "descriptor": "Hanoi Area",
+         "id": "47a4e478007401bf87b24aed5f01db98",
+         "count": 2
+        },
+        {
+         "descriptor": "Hanover Area",
+         "id": "f5811cef9cb501911e20e26a4c0aa44a",
+         "count": 3
+        },
+        {
+         "descriptor": "Herndon Area, VA",
+         "id": "1e66d083c55f012513ed63e655571c46",
+         "count": 6
+        },
+        {
+         "descriptor": "Immenstaad am Bodensee",
+         "id": "f5811cef9cb501f87f21aa694c0a9946",
+         "count": 47
+        },
+        {
+         "descriptor": "Istres (AD - Base 125 )    ",
+         "id": "541855e97eae010192c2ef815e6d0000",
+         "count": 1
+        },
+        {
+         "descriptor": "Kassel Area",
+         "id": "f5811cef9cb50100edecf6684c0a3744",
+         "count": 2
+        },
+        {
+         "descriptor": "Kiel Area",
+         "id": "f5811cef9cb501729138f8684c0a3c44",
+         "count": 1
+        },
+        {
+         "descriptor": "Kinston, NC",
+         "id": "b59813e5e5b0100148fc50c238db0000",
+         "count": 3
+        },
+        {
+         "descriptor": "Le Billone",
+         "id": "59e045b9ac7f1000ad879513339e0000",
+         "count": 3
+        },
+        {
+         "descriptor": "Le Bourget - Dugny",
+         "id": "f5811cef9cb50114f572966a4c0aaa49",
+         "count": 1
+        },
+        {
+         "descriptor": "Lisbon (Airbus Portugal)",
+         "id": "0e364b6ccd1a01bf80f721cbb900be14",
+         "count": 9
+        },
+        {
+         "descriptor": "Madrid Area",
+         "id": "f5811cef9cb5013fbc4400694c0a5a44",
+         "count": 3
+        },
+        {
+         "descriptor": "Malville",
+         "id": "1994712e663610014ecfffa5b84d0000",
+         "count": 1
+        },
+        {
+         "descriptor": "Manching",
+         "id": "f5811cef9cb501505ee2ac6a4c0aff49",
+         "count": 23
+        },
+        {
+         "descriptor": "Marignane",
+         "id": "f5811cef9cb501de472dae6a4c0a044a",
+         "count": 2
+        },
+        {
+         "descriptor": "Marseille Area",
+         "id": "f5811cef9cb50126818a01694c0a5f44",
+         "count": 104
+        },
+        {
+         "descriptor": "Méaulte",
+         "id": "f5811cef9cb50148956eaf6a4c0a094a",
+         "count": 2
+        },
+        {
+         "descriptor": "Méaulte Area",
+         "id": "f5811cef9cb5015c8bc102694c0a6444",
+         "count": 27
+        },
+        {
+         "descriptor": "Miami Area, FL",
+         "id": "f5811cef9cb50131372d05694c0a6e44",
+         "count": 1
+        },
+        {
+         "descriptor": "Mirabel",
+         "id": "f5811cef9cb501dd287efc694c0aac47",
+         "count": 7
+        },
+        {
+         "descriptor": "Mirabel (Airbus Atlantique Canada)",
+         "id": "f5811cef9cb501a457e4b96a4c0a314a",
+         "count": 6
+        },
+        {
+         "descriptor": "Mobile Area, AL",
+         "id": "f5811cef9cb501a76f7c06694c0a7344",
+         "count": 3
+        },
+        {
+         "descriptor": "Montoir de Bretagne",
+         "id": "f5811cef9cb501e99c0e5e6a4c0afb48",
+         "count": 7
+        },
+        {
+         "descriptor": "Montreal Area",
+         "id": "f5811cef9cb501f2371308694c0a7844",
+         "count": 142
+        },
+        {
+         "descriptor": "München Area",
+         "id": "f5811cef9cb501a49eac0a694c0a8244",
+         "count": 35
+        },
+        {
+         "descriptor": "Nantes Area",
+         "id": "f5811cef9cb5019f32f40b694c0a8744",
+         "count": 22
+        },
+        {
+         "descriptor": "Nantes - Bouguenais",
+         "id": "f5811cef9cb501ad853e6b6a4c0a2d49",
+         "count": 2
+        },
+        {
+         "descriptor": "Newport Beach, CA",
+         "id": "4bafe9e34f0410018607c4b3a8cb0000",
+         "count": 4
+        },
+        {
+         "descriptor": "Nordenham",
+         "id": "f5811cef9cb5013186e7776a4c0a5549",
+         "count": 6
+        },
+        {
+         "descriptor": "Nordholz",
+         "id": "f5811cef9cb5018ab1337a6a4c0a5a49",
+         "count": 1
+        },
+        {
+         "descriptor": "Paris Area",
+         "id": "f5811cef9cb50156ca250d694c0a8c44",
+         "count": 70
+        },
+        {
+         "descriptor": "Pierrelatte",
+         "id": "f5811cef9cb501c42d86ed694c0a8947",
+         "count": 12
+        },
+        {
+         "descriptor": "Potsdam",
+         "id": "f5811cef9cb50139312bd9694c0a3947",
+         "count": 1
+        },
+        {
+         "descriptor": "Rennes",
+         "id": "f5811cef9cb501c76dfafe694c0ab647",
+         "count": 3
+        },
+        {
+         "descriptor": "Rheinmünster Area",
+         "id": "f5811cef9cb501ccb21073694c0acc45",
+         "count": 1
+        },
+        {
+         "descriptor": "Rochefort",
+         "id": "f5811cef9cb501a3a8ea986a4c0ab449",
+         "count": 28
+        },
+        {
+         "descriptor": "Saint Nazaire Area",
+         "id": "f5811cef9cb501e51e4677694c0adb45",
+         "count": 27
+        },
+        {
+         "descriptor": "Sevilla Area",
+         "id": "f5811cef9cb501fd30578a684c0ae342",
+         "count": 2
+        },
+        {
+         "descriptor": "Singapore Area",
+         "id": "f5811cef9cb501c1d06199684c0aed42",
+         "count": 2
+        },
+        {
+         "descriptor": "Stade",
+         "id": "f5811cef9cb5013dcdae026b4c0a264b",
+         "count": 6
+        },
+        {
+         "descriptor": "Stuttgart Area",
+         "id": "f5811cef9cb50118ca5ff56a4c0af44a",
+         "count": 1
+        },
+        {
+         "descriptor": "Subang",
+         "id": "f5811cef9cb5015c1619b2684c0a4c43",
+         "count": 1
+        },
+        {
+         "descriptor": "Sulzbach",
+         "id": "f5811cef9cb501e5b9910b6b4c0a494b",
+         "count": 5
+        },
+        {
+         "descriptor": "Taufkirchen / Ottobrunn",
+         "id": "f5811cef9cb50199bf69196b4c0a674b",
+         "count": 2
+        },
+        {
+         "descriptor": "Tianjin Area",
+         "id": "f5811cef9cb501bf0fe69b684c0af742",
+         "count": 1
+        },
+        {
+         "descriptor": "Tokyo",
+         "id": "f5811cef9cb501c3cd69236b4c0a8a4b",
+         "count": 2
+        },
+        {
+         "descriptor": "Toulouse Area",
+         "id": "f5811cef9cb501ede9109d684c0afc42",
+         "count": 207
+        },
+        {
+         "descriptor": "Toulouse - Palays",
+         "id": "f5811cef9cb50162c7b52c6b4c0aad4b",
+         "count": 1
+        },
+        {
+         "descriptor": "Toulouse - Saint-Martin",
+         "id": "f5811cef9cb501b257d6346b4c0acb4b",
+         "count": 1
+        },
+        {
+         "descriptor": "Trauen",
+         "id": "f5811cef9cb501f5c75fbc6a4c0a3b4a",
+         "count": 1
+        },
+        {
+         "descriptor": "Tremblay-en-France",
+         "id": "61508f9ae8a40100a7539f051c700000",
+         "count": 2
+        },
+        {
+         "descriptor": "Ulm",
+         "id": "f5811cef9cb5014ae49dbd6a4c0a404a",
+         "count": 6
+        },
+        {
+         "descriptor": "Ulm Area",
+         "id": "f5811cef9cb501b327399e684c0a0143",
+         "count": 8
+        },
+        {
+         "descriptor": "Vadodara",
+         "id": "4b4dd91da0ea1001e2db956613b60000",
+         "count": 1
+        },
+        {
+         "descriptor": "Varel",
+         "id": "20f8707b1ebe0100b038604542920000",
+         "count": 1
+        },
+        {
+         "descriptor": "Varel Area",
+         "id": "3705d9a251760100af673e3eff4d0000",
+         "count": 4
+        },
+        {
+         "descriptor": "Vitrolles (Airbus Protect)",
+         "id": "f5811cef9cb50182f5ce136a4c0a0148",
+         "count": 1
+        },
+        {
+         "descriptor": "Westendorf",
+         "id": "63e8d90102591000fec0eb50638c0000",
+         "count": 1
+        },
+        {
+         "descriptor": "Wichita, KS",
+         "id": "f5811cef9cb501c216e11f6a4c0a2e48",
+         "count": 10
+        },
+        {
+         "descriptor": "Wunstorf",
+         "id": "f5811cef9cb5015140b3016a4c0ac047",
+         "count": 5
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "V.I.E": {
+   "status": 200,
+   "total": 0,
+   "titles": [],
+   "facets": []
+  },
+  "Volontariat International": {
+   "status": 200,
+   "total": 117,
+   "titles": [
+    "Cabin & Cargo Systems Engineer",
+    "Aircraft Performance Engineer - High Speed (M/F)",
+    "ERP Plant Maintenance Product Owner (H/F)",
+    "Interface client (H/F)",
+    "FAL A350 Industrial Manager (f/m)",
+    "Developpeur logiciel (H/F)",
+    "Wind Tunnel Test Leader (F/M)",
+    "Technicien Production & Réparation Satellite (f/h)",
+    "Quality Manufacturing Business Improver",
+    "Coordinateur/trice d'Activitées Manufacturing Engineering H/F",
+    "Ingénieur Navigabilité Systèmes Avioniques/Militaires (h/f)",
+    "A350XWB composite fuselage Structure Analysis Engineer - Static Stress (M/F)",
+    "Technicien(ne) Référent(e) Maintien en Condition Opérationnelle Bancs de Tests Radiofréquence (f/h)",
+    "Inspecteurs Qualité Avion Vivant (H/F)",
+    "IVVQ Manager for the OneSat Ground Segment H/F",
+    "#ET19A EMC Test Engineer - Engineering Ground Test on Aircraft (F/M)",
+    "Inspecteur Qualité Aéronautique / QLS /  Quality Partner  (h/f)",
+    "Ingénieur de Validation Systèmes Satellites (f/h)",
+    "Aircraft Control System Architect (m/f)",
+    "Ingénieur en Simulation de la Dynamique du Vol (H/F)"
+   ],
+   "facets": [
+    {
+     "facetParameter": "startDate",
+     "descriptor": "Posting Date",
+     "values": [
+      {
+       "descriptor": "1 Day",
+       "id": "29d7affdc34a10001f8fca311c1900f7",
+       "count": 10
+      },
+      {
+       "descriptor": "1 Week",
+       "id": "29d7affdc34a10001f8fca3a631900f8",
+       "count": 25
+      },
+      {
+       "descriptor": "2-4 Weeks",
+       "id": "29d7affdc34a10001f8fca432d1900f9",
+       "count": 37
+      },
+      {
+       "descriptor": "5-8 Weeks",
+       "id": "29d7affdc34a10001f8fca4bdfa900fa",
+       "count": 17
+      },
+      {
+       "descriptor": "9-12 Weeks",
+       "id": "29d7affdc34a10001f8fca54962100fb",
+       "count": 7
+      },
+      {
+       "descriptor": "12+ Weeks",
+       "id": "29d7affdc34a10001f8fca5d314100fc",
+       "count": 20
+      }
+     ]
+    },
+    {
+     "facetParameter": "jobFamilyGroup",
+     "descriptor": "Job Category",
+     "values": [
+      {
+       "descriptor": "Engineering <FU-EN>",
+       "id": "f5811cef9cb5018463377f3f550a1bf2",
+       "count": 38
+      },
+      {
+       "descriptor": "Manuf., Assembly, Integr. & Test <FU-MA>",
+       "id": "f5811cef9cb5010551c57e3f550a19f2",
+       "count": 26
+      },
+      {
+       "descriptor": "Quality <FU-QU>",
+       "id": "f5811cef9cb50109de76813f550a27f2",
+       "count": 14
+      },
+      {
+       "descriptor": "Corporate Governance <FU-CG>",
+       "id": "f5811cef9cb501d44e8f7d3f550a13f2",
+       "count": 10
+      },
+      {
+       "descriptor": "Digital <FU-IM>",
+       "id": "f5811cef9cb5015323ad7f3f550a1df2",
+       "count": 7
+      },
+      {
+       "descriptor": "Customer Services and Support <FU-CS>",
+       "id": "f5811cef9cb501204ba8803f550a23f2",
+       "count": 6
+      },
+      {
+       "descriptor": "Supply Management <FU-SM>",
+       "id": "f5811cef9cb501b88b02813f550a25f2",
+       "count": 4
+      },
+      {
+       "descriptor": "P&PM and Configuration Mgmt <FU-PP>",
+       "id": "f5811cef9cb501e5d34e803f550a21f2",
+       "count": 4
+      },
+      {
+       "descriptor": "Management <FU-FA>",
+       "id": "f5811cef9cb50102a000803f550a1ff2",
+       "count": 4
+      },
+      {
+       "descriptor": "Business Improvement <FU-BI>",
+       "id": "da36f3244b431000b193182f71f70000",
+       "count": 3
+      },
+      {
+       "descriptor": "Marketing, Sales & Commercial Contracts <FU-MC>",
+       "id": "f5811cef9cb5012a71527e3f550a17f2",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "facetParameter": "jobFamily",
+     "descriptor": "Job Family",
+     "values": [
+      {
+       "descriptor": "Testing <JF-EN-ET>",
+       "id": "f5811cef9cb50154f3b02ae9540a52ed",
+       "count": 9
+      },
+      {
+       "descriptor": "Cyber Security <JF-CG-ST>",
+       "id": "f5811cef9cb5016f4d2a2ae9540a4eed",
+       "count": 8
+      },
+      {
+       "descriptor": "Manufacturing Engineering <JF-MA-ME>",
+       "id": "f5811cef9cb5019c573925e9540a2ced",
+       "count": 7
+      },
+      {
+       "descriptor": "Digital <JF-IM-DI>",
+       "id": "f5811cef9cb501602cf214e9540adaec",
+       "count": 7
+      },
+      {
+       "descriptor": "Quality Inspection <JF-QU-QC>",
+       "id": "f5811cef9cb501d616d029e9540a4ced",
+       "count": 6
+      },
+      {
+       "descriptor": "Chief Engineering & Architecture <JF-EN-EA>",
+       "id": "f5811cef9cb50168a9a828e9540a46ed",
+       "count": 6
+      },
+      {
+       "descriptor": "Quality Assurance <JF-QU-QA>",
+       "id": "f5811cef9cb5019a2fe613e9540ad2ec",
+       "count": 5
+      },
+      {
+       "descriptor": "Vehicle Mission & Control <JF-EN-EU>",
+       "id": "f5811cef9cb501586f6617e9540aeaec",
+       "count": 4
+      },
+      {
+       "descriptor": "Software Engineering <JF-EN-EK>",
+       "id": "f5811cef9cb5018f6f641ee9540a16ed",
+       "count": 4
+      },
+      {
+       "descriptor": "Programme & Project Management <JF-PP-PM>",
+       "id": "f5811cef9cb501a0e0c525e9540a30ed",
+       "count": 4
+      },
+      {
+       "descriptor": "Leadership <JF-FA-EM>",
+       "id": "f5811cef9cb50147e10916e9540ae2ec",
+       "count": 4
+      },
+      {
+       "descriptor": "Flight & Space Physics <JF-EN-EE>",
+       "id": "f5811cef9cb501b289ee1de9540a12ed",
+       "count": 4
+      },
+      {
+       "descriptor": "Assembly & Integration <JF-MA-AI>",
+       "id": "f5811cef9cb501208cb814e9540ad8ec",
+       "count": 4
+      },
+      {
+       "descriptor": "Quality Management System <JF-QU-QP>",
+       "id": "f5811cef9cb501d65d7e24e9540a26ed",
+       "count": 3
+      },
+      {
+       "descriptor": "Qualification & Operability <JF-EN-EJ>",
+       "id": "f5811cef9cb501d1819127e9540a3eed",
+       "count": 3
+      },
+      {
+       "descriptor": "Improvement & Performance Management <JF-BI-IP>",
+       "id": "da36f3244b431000b19f1f600a350000",
+       "count": 3
+      },
+      {
+       "descriptor": "Elec.Electron.&Electromag,Optics&Optron. <JF-EN-ED>",
+       "id": "f5811cef9cb50110ae0b18e9540af0ec",
+       "count": 3
+      },
+      {
+       "descriptor": "Customer Eng.&Technical Support&Services <JF-CS-PS>",
+       "id": "f5811cef9cb501b8d3af13e9540ad0ec",
+       "count": 3
+      },
+      {
+       "descriptor": "Test operations <JF-MA-TO>",
+       "id": "f5811cef9cb50117d73419e9540afaec",
+       "count": 3
+      },
+      {
+       "descriptor": "Training support & services <JF-CS-TS>",
+       "id": "f5811cef9cb50164fe3f11e9540ac0ec",
+       "count": 2
+      },
+      {
+       "descriptor": "Structure & Dynamic Systems Analysis <JF-EN-EN>",
+       "id": "f5811cef9cb501035f702ae9540a50ed",
+       "count": 2
+      },
+      {
+       "descriptor": "Production means/Maintenance <JF-MA-MN>",
+       "id": "f5811cef9cb5014eca9d1ee9540a18ed",
+       "count": 2
+      },
+      {
+       "descriptor": "Production Planning & Scheduling <JF-MA-PP>",
+       "id": "f5811cef9cb5018375fd24e9540a2aed",
+       "count": 2
+      },
+      {
+       "descriptor": "Machine Operator <JF-MA-MO>",
+       "id": "f5811cef9cb501023a261ae9540a00ed",
+       "count": 2
+      },
+      {
+       "descriptor": "Logistics <JF-SM-LO>",
+       "id": "f5811cef9cb501cc52bc24e9540a28ed",
+       "count": 2
+      },
+      {
+       "descriptor": "Dynamic component assembly <JF-MA-DC>",
+       "id": "f5811cef9cb50107cb7115e9540adeec",
+       "count": 2
+      },
+      {
+       "descriptor": "Systems Installation <JF-MA-SI>",
+       "id": "f5811cef9cb501180a0326e9540a32ed",
+       "count": 1
+      },
+      {
+       "descriptor": "Supplier Management <JF-SM-SR>",
+       "id": "f5811cef9cb501dbd22229e9540a4aed",
+       "count": 1
+      },
+      {
+       "descriptor": "Sourcing, Buying and Ordering <JF-SM-SP>",
+       "id": "f5811cef9cb5012bde3314e9540ad4ec",
+       "count": 1
+      },
+      {
+       "descriptor": "Sales, Marketing & Commercial Contracts <JF-MC-VE>",
+       "id": "f5811cef9cb501d5fd8e18e9540af4ec",
+       "count": 1
+      },
+      {
+       "descriptor": "Materials & Processes <JF-EN-EG>",
+       "id": "f5811cef9cb501f9c82b1ee9540a14ed",
+       "count": 1
+      },
+      {
+       "descriptor": "Material Support & services <JF-CS-MS>",
+       "id": "f5811cef9cb501e37bfd18e9540af8ec",
+       "count": 1
+      },
+      {
+       "descriptor": "Fluid & Hydromechanics, Thermal <JF-EN-EF>",
+       "id": "f5811cef9cb501eef88812e9540ac6ec",
+       "count": 1
+      },
+      {
+       "descriptor": "Flight line <JF-MA-FL>",
+       "id": "f5811cef9cb501c2b31927e9540a3aed",
+       "count": 1
+      },
+      {
+       "descriptor": "Facility Management and Real Estate <JF-CG-SM>",
+       "id": "f5811cef9cb501e1819d17e9540aecec",
+       "count": 1
+      },
+      {
+       "descriptor": "Ethics & Compliance <JF-CG-EC>",
+       "id": "f5811cef9cb50128e29d1ae9540a04ed",
+       "count": 1
+      },
+      {
+       "descriptor": "Electronical manufacturing <JF-MA-ML>",
+       "id": "f5811cef9cb501906d5627e9540a3ced",
+       "count": 1
+      },
+      {
+       "descriptor": "Computing&Comm and Info& Data Processing <JF-EN-EB>",
+       "id": "f5811cef9cb501caed5212e9540ac4ec",
+       "count": 1
+      },
+      {
+       "descriptor": "Cabin Furnishing <JF-MA-CF>",
+       "id": "f5811cef9cb501135a4016e9540ae4ec",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "facetParameter": "hiringCompany",
+     "descriptor": "Company",
+     "values": [
+      {
+       "descriptor": "3507 Airbus Operations SAS",
+       "id": "f5811cef9cb5018c943ea4124e0aba5b",
+       "count": 42
+      },
+      {
+       "descriptor": "2788 Airbus Defence and Space SAS",
+       "id": "f5811cef9cb5012009b35b134e0a2d5f",
+       "count": 29
+      },
+      {
+       "descriptor": "1466 Airbus Helicopters SAS",
+       "id": "f5811cef9cb5010a2adb29144e0acf62",
+       "count": 22
+      },
+      {
+       "descriptor": "3510 AIRBUS SAS",
+       "id": "f5811cef9cb501cc38c8ac124e0ae35b",
+       "count": 11
+      },
+      {
+       "descriptor": "1263 Airbus Cybersecurity SAS",
+       "id": "f5811cef9cb5018cd198e4124e0af15c",
+       "count": 8
+      },
+      {
+       "descriptor": "1264 AIRBUS DS SLC SAS",
+       "id": "f5811cef9cb50159391d84134e0ac35f",
+       "count": 5
+      }
+     ]
+    },
+    {
+     "facetParameter": "workerSubType",
+     "descriptor": "Job Type",
+     "values": [
+      {
+       "descriptor": "Regular",
+       "id": "f5811cef9cb501a69768a71d470a6d15",
+       "count": 116
+      },
+      {
+       "descriptor": "Client to the company",
+       "id": "f5811cef9cb501fe419222b2470a8618",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "facetParameter": "FullPartTime",
+     "descriptor": "Full/Part Time",
+     "values": [
+      {
+       "descriptor": "Full time",
+       "id": "70a157281071017ad8c0ee4170448100",
+       "count": 115
+      }
+     ]
+    },
+    {
+     "facetParameter": "Reload_Classification",
+     "descriptor": "Classe Emploi (France)",
+     "values": [
+      {
+       "descriptor": "Classe G13",
+       "id": "6bb5b5d75d2b1000b1a75aeb118c0000",
+       "count": 35
+      },
+      {
+       "descriptor": "Classe G14",
+       "id": "83cc31a5c7911000b1a7a8b4e2180000",
+       "count": 21
+      },
+      {
+       "descriptor": "Classe F12",
+       "id": "83cc31a5c7911000b1a79917c50c0000",
+       "count": 17
+      },
+      {
+       "descriptor": "Classe F11",
+       "id": "6bb5b5d75d2b1000b1a74be6cc9c0000",
+       "count": 10
+      },
+      {
+       "descriptor": "Classe D08",
+       "id": "6bb5b5d75d2b1000b1a739e0e8820000",
+       "count": 7
+      },
+      {
+       "descriptor": "Classe D07",
+       "id": "6bb5b5d75d2b1000b1a7317852270000",
+       "count": 5
+      },
+      {
+       "descriptor": "Classe E10",
+       "id": "b74448189fac1000b1a6c3947b890000",
+       "count": 3
+      },
+      {
+       "descriptor": "Classe E09",
+       "id": "b74448189fac1000b1a6bd8eef090000",
+       "count": 3
+      },
+      {
+       "descriptor": "Classe C06",
+       "id": "83cc31a5c7911000b1a76e7846c10000",
+       "count": 3
+      },
+      {
+       "descriptor": "Classe C05",
+       "id": "83cc31a5c7911000b1a767dd1c510000",
+       "count": 1
+      },
+      {
+       "descriptor": "Classe B04",
+       "id": "b74448189fac1000b1a694b3065c0000",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "facetParameter": "locationMainGroup",
+     "values": [
+      {
+       "facetParameter": "locationCountry",
+       "descriptor": "Country",
+       "values": [
+        {
+         "descriptor": "France",
+         "id": "54c5b6971ffb4bf0b116fe7651ec789a",
+         "count": 92
+        },
+        {
+         "descriptor": "Germany",
+         "id": "dcc5b7608d8644b3a93716604e78e995",
+         "count": 1
+        },
+        {
+         "descriptor": "United Kingdom",
+         "id": "29247e57dbaf46fb855b224e03170bc7",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "facetParameter": "locations",
+       "descriptor": "Locations",
+       "values": [
+        {
+         "descriptor": "Donauwörth",
+         "id": "f5811cef9cb501bcba58c3684c0a8d43",
+         "count": 1
+        },
+        {
+         "descriptor": "Elancourt",
+         "id": "f5811cef9cb5014fd76a5c694c0a8b45",
+         "count": 2
+        },
+        {
+         "descriptor": "Filton",
+         "id": "f5811cef9cb501dd9d6d63694c0aa445",
+         "count": 1
+        },
+        {
+         "descriptor": "Marseille Area",
+         "id": "f5811cef9cb50126818a01694c0a5f44",
+         "count": 18
+        },
+        {
+         "descriptor": "Paris Area",
+         "id": "f5811cef9cb50156ca250d694c0a8c44",
+         "count": 22
+        },
+        {
+         "descriptor": "Rennes",
+         "id": "f5811cef9cb501c76dfafe694c0ab647",
+         "count": 1
+        },
+        {
+         "descriptor": "Toulouse Area",
+         "id": "f5811cef9cb501ede9109d684c0afc42",
+         "count": 55
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "wd_thales": {
+  "VIE": {
+   "status": 200,
+   "total": 646,
+   "titles": [
+    "VIE - Sales - Singapour - H/F",
+    "VIE - Ingénieur Electronicien - Inde H/F",
+    "VIE - Field Marketing-China - F/H",
+    "VIE - PMO Industrial Cooperation & Offsets - Abu Dhabi",
+    "Peintre industriel / Monteur - F/H",
+    "Ingénieur produit expérimenté - centrale inertielle (F/H)",
+    "Responsable ligne de production (H/F)",
+    "CDI - Technicien optique - F/H",
+    "Ingénieur Produit (F/H)",
+    "Ingénieur moyens de test sénior (F/H)",
+    "CDI - Ingénieur Matériel Moyens de test (F/H)",
+    "Ingénieur fonctionnel (F/H)",
+    "Technicien moyens de test sénior (F/H)",
+    "Responsable Produit Série H/F",
+    "Leader Supply Chain Industrielle F/H",
+    "Customer Operation Representative  F/H",
+    "Technicien Soutien Client et Essais (F/H)",
+    "Responsable Technique Produit Optronique - F/H",
+    "Architecte Système sur les Produits Inertiels (F/H)",
+    "Technicien Réparation - Unité CFC/FM (F/H)"
+   ],
+   "facets": [
+    {
+     "facetParameter": "jobFamilyGroup",
+     "descriptor": "Job Category",
+     "values": [
+      {
+       "descriptor": "10 - INDUSTRY",
+       "id": "47200b8529d910216a6cf9c56a6634da",
+       "count": 105
+      },
+      {
+       "descriptor": "20 - SOFTWARE",
+       "id": "e8b74fb759a201019fb6f185d4260000",
+       "count": 86
+      },
+      {
+       "descriptor": "18 - SYSTEM",
+       "id": "e8b74fb759a201019fb1e18110090000",
+       "count": 78
+      },
+      {
+       "descriptor": "07 - CUSTOMER SERVICE",
+       "id": "47200b8529d910216a6ce32fc9bf34d4",
+       "count": 61
+      },
+      {
+       "descriptor": "21 - ENGINEERING AND TECHNICAL SPECIALTIES",
+       "id": "19bc77ed793701019fbc58d4561e0000",
+       "count": 59
+      },
+      {
+       "descriptor": "19 - HARDWARE",
+       "id": "e8b74fb759a201019fb47c7faea00000",
+       "count": 47
+      },
+      {
+       "descriptor": "16 - IS-IT",
+       "id": "aa19b4591d300100fdbfa95a44a10000",
+       "count": 43
+      },
+      {
+       "descriptor": "03 - BID & PROJECT MANAGEMENT",
+       "id": "47200b8529d910216a6cbd823dc434cc",
+       "count": 28
+      },
+      {
+       "descriptor": "02 - STRATEGY, MARKETING, SALES",
+       "id": "47200b8529d910216a6cb68a5aa434ca",
+       "count": 27
+      },
+      {
+       "descriptor": "11 - FINANCE",
+       "id": "47200b8529d910216a6d014295db34dc",
+       "count": 26
+      },
+      {
+       "descriptor": "17 - ENGINEERING AND TECHNICAL MANAGEMENT",
+       "id": "19bc77ed793701019fb06f10fa570000",
+       "count": 21
+      },
+      {
+       "descriptor": "15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE",
+       "id": "47200b8529d910216a6d1afa4e6334e4",
+       "count": 19
+      },
+      {
+       "descriptor": "08 - QUALITY & CUSTOMER SATISFACTION",
+       "id": "47200b8529d910216a6cea92de9634d6",
+       "count": 18
+      },
+      {
+       "descriptor": "09 - PROCUREMENT",
+       "id": "47200b8529d910216a6cf0364e0634d8",
+       "count": 11
+      },
+      {
+       "descriptor": "12 - HUMAN RESOURCES",
+       "id": "47200b8529d910216a6d082d9eed34de",
+       "count": 9
+      },
+      {
+       "descriptor": "13 - LEGAL, CONTRACTS & COMPLIANCE",
+       "id": "47200b8529d910216a6d0de4b7c634e0",
+       "count": 7
+      },
+      {
+       "descriptor": "01 - GENERAL MANAGEMENT",
+       "id": "47200b8529d910216a6cada4e92534c8",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "facetParameter": "workerSubType",
+     "descriptor": "Job Type",
+     "values": [
+      {
+       "descriptor": "Regular Employee",
+       "id": "47200b8529d910215e1335a598fa2490",
+       "count": 571
+      },
+      {
+       "descriptor": "Fixed Term Employee (Fixed Term)",
+       "id": "47200b8529d910215e1337f7cc1f2491",
+       "count": 40
+      },
+      {
+       "descriptor": "Intern/Trainee (Fixed Term) (Trainee)",
+       "id": "47200b8529d910215e133a260a722492",
+       "count": 10
+      },
+      {
+       "descriptor": "Temporary",
+       "id": "47200b8529d910215e15b56056cc24af",
+       "count": 9
+      },
+      {
+       "descriptor": "Apprentice (Fixed Term)",
+       "id": "47200b8529d910215e133f0c41d72494",
+       "count": 8
+      },
+      {
+       "descriptor": "VIE - French International Internship Programme (Fixed Term)",
+       "id": "e4397306756401fb51ba61e65f3fb56f",
+       "count": 4
+      },
+      {
+       "descriptor": "Casual (Fixed Term) (Seasonal)",
+       "id": "47200b8529d910215e1343b3aea52496",
+       "count": 1
+      },
+      {
+       "descriptor": "Student/Work Experience (Fixed Term) (Seasonal)",
+       "id": "47200b8529d910215e1341585a8c2495",
+       "count": 1
+      },
+      {
+       "descriptor": "DE - Dual Student (Fixed Term)",
+       "id": "5af4f5cd8760013b5d0277b71a2b1b3a",
+       "count": 1
+      },
+      {
+       "descriptor": "NL - Temporary worker (Uitzendkracht)",
+       "id": "22b11005c5fe010157c1545187fd0003",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "facetParameter": "locationMainGroup",
+     "values": [
+      {
+       "facetParameter": "locationCountry",
+       "descriptor": "Location Country",
+       "values": [
+        {
+         "descriptor": "Australia",
+         "id": "d903bb3fedad45039383f6de334ad4db",
+         "count": 79
+        },
+        {
+         "descriptor": "Belgium",
+         "id": "a04ea128f43a42e59b1e6a19e8f0b374",
+         "count": 1
+        },
+        {
+         "descriptor": "Canada",
+         "id": "a30a87ed25634629aa6c3958aa2b91ea",
+         "count": 20
+        },
+        {
+         "descriptor": "China",
+         "id": "6cb77610a8a543aea2d6bc10457e35d4",
+         "count": 1
+        },
+        {
+         "descriptor": "France",
+         "id": "54c5b6971ffb4bf0b116fe7651ec789a",
+         "count": 375
+        },
+        {
+         "descriptor": "Germany",
+         "id": "dcc5b7608d8644b3a93716604e78e995",
+         "count": 81
+        },
+        {
+         "descriptor": "India",
+         "id": "c4f78be1a8f14da0ab49ce1162348a5e",
+         "count": 1
+        },
+        {
+         "descriptor": "Indonesia",
+         "id": "b31234dbcdda4da9ba8fa073c5944e36",
+         "count": 2
+        },
+        {
+         "descriptor": "Israel",
+         "id": "084562884af243748dad7c84c304d89a",
+         "count": 10
+        },
+        {
+         "descriptor": "Italy",
+         "id": "8cd04a563fd94da7b06857a79faaf815",
+         "count": 17
+        },
+        {
+         "descriptor": "Netherlands",
+         "id": "9696868b09c64d52a62ee13b052383cc",
+         "count": 3
+        },
+        {
+         "descriptor": "Romania",
+         "id": "f2e609fe92974a55a05fc1cdc2852122",
+         "count": 1
+        },
+        {
+         "descriptor": "Singapore",
+         "id": "80938777cac5440fab50d729f9634969",
+         "count": 2
+        },
+        {
+         "descriptor": "Spain",
+         "id": "bd34c524a6a04ae6915f5d96fa086199",
+         "count": 11
+        },
+        {
+         "descriptor": "Switzerland",
+         "id": "187134fccb084a0ea9b4b95f23890dbe",
+         "count": 8
+        },
+        {
+         "descriptor": "United Arab Emirates",
+         "id": "7b4fa1f369bd4604ba3692682fcbe345",
+         "count": 1
+        },
+        {
+         "descriptor": "United Kingdom",
+         "id": "29247e57dbaf46fb855b224e03170bc7",
+         "count": 5
+        },
+        {
+         "descriptor": "United States of America",
+         "id": "bc33aa3152ec42d4995f4791a106ed09",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "facetParameter": "locations",
+       "descriptor": "Locations",
+       "values": [
+        {
+         "descriptor": "Abu Dhabi",
+         "id": "5af4f5cd8760013e30b7ed62372bcd06",
+         "count": 1
+        },
+        {
+         "descriptor": "Amberley",
+         "id": "5af4f5cd8760016973feff62372be106",
+         "count": 1
+        },
+        {
+         "descriptor": "Austin - Arboretum Plaza",
+         "id": "c84e3364cdba01268ea09f14990d908b",
+         "count": 1
+        },
+        {
+         "descriptor": "Bangalore",
+         "id": "5af4f5cd8760019b90c11863372bff06",
+         "count": 1
+        },
+        {
+         "descriptor": "Barcelona",
+         "id": "5af4f5cd8760013ac8d41c63372b0407",
+         "count": 2
+        },
+        {
+         "descriptor": "Beijing",
+         "id": "5af4f5cd8760011119442963372b1307",
+         "count": 1
+        },
+        {
+         "descriptor": "Belfast",
+         "id": "5af4f5cd876001733f8e2d63372b1807",
+         "count": 1
+        },
+        {
+         "descriptor": "Benalla",
+         "id": "5af4f5cd8760017f89593163372b1d07",
+         "count": 7
+        },
+        {
+         "descriptor": "Bendigo",
+         "id": "5af4f5cd8760019abcdc5663372b2207",
+         "count": 5
+        },
+        {
+         "descriptor": "Berlin",
+         "id": "5af4f5cd876001caa0652f66372b860a",
+         "count": 27
+        },
+        {
+         "descriptor": "Bordeaux",
+         "id": "5af4f5cd8760019778e45e63372b2c07",
+         "count": 15
+        },
+        {
+         "descriptor": "Brest",
+         "id": "5af4f5cd876001ebec066863372b3607",
+         "count": 15
+        },
+        {
+         "descriptor": "Brive-la-Gaillarde",
+         "id": "5af4f5cd8760019aa14d7c63372b4a07",
+         "count": 9
+        },
+        {
+         "descriptor": "Bucharest",
+         "id": "5af4f5cd876001a3a5838463372b5407",
+         "count": 1
+        },
+        {
+         "descriptor": "Bure",
+         "id": "e5e7f038af5b10019f417ef7da550000",
+         "count": 2
+        },
+        {
+         "descriptor": "Campus Cyber",
+         "id": "09a0874b729d1000fdec31d674220000",
+         "count": 2
+        },
+        {
+         "descriptor": "Campus Thales Bordeaux",
+         "id": "fcfc2376448001da620eff2f7051c27a",
+         "count": 1
+        },
+        {
+         "descriptor": "Canberra",
+         "id": "5af4f5cd8760014f734b9963372b6d07",
+         "count": 2
+        },
+        {
+         "descriptor": "CANBERRA",
+         "id": "47200b8529d91021abcc96a725175803",
+         "count": 1
+        },
+        {
+         "descriptor": "Cannes",
+         "id": "47200b8529d91021abd0224af8b15ac0",
+         "count": 3
+        },
+        {
+         "descriptor": "Carolina Court Doncaster",
+         "id": "47200b8529d91021abd5635aaad75e46",
+         "count": 1
+        },
+        {
+         "descriptor": "Carquefou",
+         "id": "6a24d9907c281000a1ac6255268a0000",
+         "count": 1
+        },
+        {
+         "descriptor": "Chatellerault",
+         "id": "5af4f5cd8760018356a2a963372b8107",
+         "count": 1
+        },
+        {
+         "descriptor": "Cheadle",
+         "id": "47200b8529d91021abd5b704985e5ea5",
+         "count": 1
+        },
+        {
+         "descriptor": "Cholet",
+         "id": "47200b8529d91021abd555c9e2315e37",
+         "count": 9
+        },
+        {
+         "descriptor": "Cholet 2",
+         "id": "7528b34d4dfe100157f1f5e7b74a0000",
+         "count": 2
+        },
+        {
+         "descriptor": "Connecticut",
+         "id": "5af4f5cd876001271c7bce63372ba907",
+         "count": 1
+        },
+        {
+         "descriptor": "CortAIx Factory Issy",
+         "id": "51c6f9ef15c91001e330e5011fba0000",
+         "count": 1
+        },
+        {
+         "descriptor": "Darwin",
+         "id": "5af4f5cd876001efbe0fd863372bb307",
+         "count": 4
+        },
+        {
+         "descriptor": "Delaware",
+         "id": "5af4f5cd8760014ab606dd63372bb807",
+         "count": 1
+        },
+        {
+         "descriptor": "District of Columbia",
+         "id": "5af4f5cd876001564359e563372bc207",
+         "count": 1
+        },
+        {
+         "descriptor": "DITZINGEN SRA OME",
+         "id": "0e25a5d001711001ae201b8a68300000",
+         "count": 5
+        },
+        {
+         "descriptor": "Eagle Farm",
+         "id": "5af4f5cd87600126c1c0f563372bd607",
+         "count": 1
+        },
+        {
+         "descriptor": "Edinburgh",
+         "id": "5af4f5cd876001047da5fd63372be007",
+         "count": 2
+        },
+        {
+         "descriptor": "Elancourt",
+         "id": "5af4f5cd876001863caa0164372be507",
+         "count": 26
+        },
+        {
+         "descriptor": "Etrelles",
+         "id": "47200b8529d91021abd2356125855bde",
+         "count": 1
+        },
+        {
+         "descriptor": "GARDEN ISLAND",
+         "id": "47200b8529d91021abcc7ca6769d57e5",
+         "count": 3
+        },
+        {
+         "descriptor": "Gémenos",
+         "id": "c84e3364cdba01d2634dffb1920d5042",
+         "count": 4
+        },
+        {
+         "descriptor": "Gennevilliers",
+         "id": "5af4f5cd8760012948062e64372b1c08",
+         "count": 16
+        },
+        {
+         "descriptor": "Grenoble",
+         "id": "5af4f5cd876001aa45e84766372ba40a",
+         "count": 1
+        },
+        {
+         "descriptor": "Helios",
+         "id": "47200b8529d91021abd61b0f151c5f18",
+         "count": 9
+        },
+        {
+         "descriptor": "Hengelo",
+         "id": "47200b8529d91021abcc5c1d59db57bd",
+         "count": 3
+        },
+        {
+         "descriptor": "Herstal",
+         "id": "47200b8529d91021abcfab17514e5a3e",
+         "count": 1
+        },
+        {
+         "descriptor": "Jakarta",
+         "id": "47200b8529d91021abd2f0710aa45cb5",
+         "count": 2
+        },
+        {
+         "descriptor": "Kiel",
+         "id": "5af4f5cd8760019364a64f66372bae0a",
+         "count": 5
+        },
+        {
+         "descriptor": "Kiel TD",
+         "id": "405ae694e0e501c6ca2916e9b11c820e",
+         "count": 1
+        },
+        {
+         "descriptor": "Koblenz",
+         "id": "5af4f5cd87600102c86d5666372bb30a",
+         "count": 2
+        },
+        {
+         "descriptor": "La Ciotat",
+         "id": "c84e3364cdba01d97434eff8940df65f",
+         "count": 3
+        },
+        {
+         "descriptor": "LA CIOTAT - LA VIGIE",
+         "id": "c84e3364cdba01b53840c415990d528c",
+         "count": 2
+        },
+        {
+         "descriptor": "La Ferté-Saint-Aubin",
+         "id": "5af4f5cd8760010171dd8264372b8508",
+         "count": 10
+        },
+        {
+         "descriptor": "La-Ferte-St-Aubin",
+         "id": "47200b8529d91021abd2398cb2ad5be3",
+         "count": 3
+        },
+        {
+         "descriptor": "Laval",
+         "id": "47200b8529d91021abd0822960025b29",
+         "count": 6
+        },
+        {
+         "descriptor": "Lille",
+         "id": "5af4f5cd876001d6e99e5a66372bb80a",
+         "count": 2
+        },
+        {
+         "descriptor": "Limours",
+         "id": "47200b8529d91021abd0309e8e1b5acf",
+         "count": 14
+        },
+        {
+         "descriptor": "Lithgow",
+         "id": "5af4f5cd876001010d669264372b9908",
+         "count": 1
+        },
+        {
+         "descriptor": "Lyon",
+         "id": "47200b8529d91021abcfcaadd42a5a61",
+         "count": 1
+        },
+        {
+         "descriptor": "Madrid",
+         "id": "5af4f5cd87600199b4ef9d64372ba808",
+         "count": 8
+        },
+        {
+         "descriptor": "Madrid-Leganes",
+         "id": "47200b8529d91021abd26c042ad25c1f",
+         "count": 1
+        },
+        {
+         "descriptor": "Maine",
+         "id": "5af4f5cd876001ae5e5ba264372bad08",
+         "count": 1
+        },
+        {
+         "descriptor": "Manor Royal Crawley",
+         "id": "47200b8529d91021abd4b6a5e53f5d83",
+         "count": 1
+        },
+        {
+         "descriptor": "Massachusetts",
+         "id": "5af4f5cd876001eb5815c164372bd008",
+         "count": 1
+        },
+        {
+         "descriptor": "Massy",
+         "id": "5af4f5cd876001fff044c564372bd508",
+         "count": 2
+        },
+        {
+         "descriptor": "Melbourne",
+         "id": "5af4f5cd8760011837f86966372bcc0a",
+         "count": 9
+        },
+        {
+         "descriptor": "Meudon",
+         "id": "c84e3364cdba016782ac1716990d8e8c",
+         "count": 5
+        },
+        {
+         "descriptor": "Meudon",
+         "id": "c84e3364cdba016b47cd7ab2920daa42",
+         "count": 1
+        },
+        {
+         "descriptor": "Moirans",
+         "id": "5af4f5cd876001657cfbdd64372bf308",
+         "count": 2
+        },
+        {
+         "descriptor": "Montreal",
+         "id": "5af4f5cd8760012c2acce164372bf808",
+         "count": 8
+        },
+        {
+         "descriptor": "Mulwala",
+         "id": "5af4f5cd876001ba226df264372b0c09",
+         "count": 9
+        },
+        {
+         "descriptor": "Nantes",
+         "id": "47200b8529d91021abcf5b44aa6259e4",
+         "count": 1
+        },
+        {
+         "descriptor": "New Hampshire",
+         "id": "5af4f5cd8760014790ce0265372b2009",
+         "count": 1
+        },
+        {
+         "descriptor": "New Jersey",
+         "id": "5af4f5cd87600168a5d00665372b2509",
+         "count": 1
+        },
+        {
+         "descriptor": "New York",
+         "id": "5af4f5cd876001af79bd0d65372b2a09",
+         "count": 1
+        },
+        {
+         "descriptor": "North Carolina",
+         "id": "5af4f5cd876001bcc40a2465372b3e09",
+         "count": 1
+        },
+        {
+         "descriptor": "NSW - Barangaroo",
+         "id": "9dfd3d9e2f6b1001e2d9076d8cda0000",
+         "count": 4
+        },
+        {
+         "descriptor": "Orchard Hills",
+         "id": "5af4f5cd8760011c17223965372b5709",
+         "count": 1
+        },
+        {
+         "descriptor": "Orléans",
+         "id": "5af4f5cd8760013ac1269e66372bfe0a",
+         "count": 3
+        },
+        {
+         "descriptor": "Oxford",
+         "id": "5af4f5cd876001e043954865372b6b09",
+         "count": 2
+        },
+        {
+         "descriptor": "Palaiseau",
+         "id": "5af4f5cd876001615f574c65372b7009",
+         "count": 2
+        },
+        {
+         "descriptor": "Paris",
+         "id": "5af4f5cd876001f8ad07a766372b080b",
+         "count": 1
+        },
+        {
+         "descriptor": "PARIS 9ème",
+         "id": "944f49a19b711000f21172daa49a0000",
+         "count": 1
+        },
+        {
+         "descriptor": "Pont-Audemer",
+         "id": "c84e3364cdba018c4765bdb2920de142",
+         "count": 1
+        },
+        {
+         "descriptor": "Quebec City",
+         "id": "47200b8529d91021abcdfadd31bd598e",
+         "count": 12
+        },
+        {
+         "descriptor": "REHOVOT",
+         "id": "b4eed08a1d9d100141bc3dd87ca00000",
+         "count": 4
+        },
+        {
+         "descriptor": "Remote Germany",
+         "id": "cca8073037501000b0288dfc18d10000",
+         "count": 2
+        },
+        {
+         "descriptor": "Rennes",
+         "id": "83d5d535fb1c01349a15451e002d2451",
+         "count": 2
+        },
+        {
+         "descriptor": "Rhode Island",
+         "id": "5af4f5cd876001d9967a6465372b8e09",
+         "count": 1
+        },
+        {
+         "descriptor": "Rockingham",
+         "id": "5af4f5cd876001d1b82a6865372b9309",
+         "count": 4
+        },
+        {
+         "descriptor": "Roma",
+         "id": "5af4f5cd876001fe429d6c65372b9809",
+         "count": 12
+        },
+        {
+         "descriptor": "Roma",
+         "id": "47200b8529d91021abd2dbc2f3145c9c",
+         "count": 1
+        },
+        {
+         "descriptor": "Roma DSP",
+         "id": "47200b8529d91021abcdb3e59046593e",
+         "count": 2
+        },
+        {
+         "descriptor": "Rouen",
+         "id": "5af4f5cd876001ce8e4fab66372b0d0b",
+         "count": 1
+        },
+        {
+         "descriptor": "Rungis",
+         "id": "47200b8529d91021abd2beeda8c45c79",
+         "count": 8
+        },
+        {
+         "descriptor": "Rydalmere",
+         "id": "5af4f5cd8760019f7c807465372ba209",
+         "count": 12
+        },
+        {
+         "descriptor": "RYDALMERE",
+         "id": "47200b8529d91021abd7ac3be1e45f9b",
+         "count": 3
+        },
+        {
+         "descriptor": "Saint-Étienne",
+         "id": "5af4f5cd876001fc44b7a665372be309",
+         "count": 2
+        },
+        {
+         "descriptor": "Singapore",
+         "id": "5af4f5cd876001dddc0f9065372bc509",
+         "count": 2
+        },
+        {
+         "descriptor": "Sophia Antipolis",
+         "id": "5af4f5cd8760017dc4d29e65372bd909",
+         "count": 6
+        },
+        {
+         "descriptor": "South Arm",
+         "id": "5af4f5cd876001fe1fc5b266372b120b",
+         "count": 1
+        },
+        {
+         "descriptor": "Stuttgart",
+         "id": "5af4f5cd876001c8da94b666372b170b",
+         "count": 24
+        },
+        {
+         "descriptor": "Sydney",
+         "id": "5af4f5cd8760013b3f5aae65372bed09",
+         "count": 2
+        },
+        {
+         "descriptor": "TEL AVIV",
+         "id": "5b1ee414cdbe100141a3e72334a70000",
+         "count": 6
+        },
+        {
+         "descriptor": "Templecombe",
+         "id": "5af4f5cd8760011487cab665372bf709",
+         "count": 1
+        },
+        {
+         "descriptor": "Thun",
+         "id": "3b756c0bb0b710019f35195b2cc40000",
+         "count": 4
+        },
+        {
+         "descriptor": "Torino",
+         "id": "47200b8529d91021abcf4ea43a0659d5",
+         "count": 2
+        },
+        {
+         "descriptor": "Toulouse",
+         "id": "5af4f5cd876001c06d05ca65372b100a",
+         "count": 17
+        },
+        {
+         "descriptor": "Toulouse Basso Cambo",
+         "id": "47200b8529d91021abcd966b0f6e5920",
+         "count": 1
+        },
+        {
+         "descriptor": "Toulouse Champollion",
+         "id": "47200b8529d91021abd2025d95a15ba2",
+         "count": 1
+        },
+        {
+         "descriptor": "Toulouse Labege",
+         "id": "fcfc2376448001b8a0bc04307051c77a",
+         "count": 1
+        },
+        {
+         "descriptor": "Ulm",
+         "id": "5af4f5cd8760014b204ac966372b300b",
+         "count": 19
+        },
+        {
+         "descriptor": "Valence",
+         "id": "47200b8529d91021abcf21a79e4f59a3",
+         "count": 5
+        },
+        {
+         "descriptor": "Vélizy",
+         "id": "47200b8529d91021abd25f6b2ba55c10",
+         "count": 12
+        },
+        {
+         "descriptor": "Vélizy-Villacoublay",
+         "id": "5af4f5cd87600108a350e265372b270a",
+         "count": 152
+        },
+        {
+         "descriptor": "Vendome",
+         "id": "5af4f5cd876001dba85ce665372b2c0a",
+         "count": 3
+        },
+        {
+         "descriptor": "VIC - 80 Collins",
+         "id": "e630dddee7b81001e2d8e2bf6a0b0000",
+         "count": 1
+        },
+        {
+         "descriptor": "Villebon-sur-Yvette",
+         "id": "5af4f5cd876001d62941ea65372b310a",
+         "count": 1
+        },
+        {
+         "descriptor": "William Street",
+         "id": "860a9b17e8cf10011cc6f8f12ab40000",
+         "count": 2
+        },
+        {
+         "descriptor": "Woolloomooloo",
+         "id": "1258e2a2bdc51000e0ee04bfce9f0000",
+         "count": 4
+        },
+        {
+         "descriptor": "WTC MELBOURNE",
+         "id": "47200b8529d91021abd3602f870b5d37",
+         "count": 3
+        },
+        {
+         "descriptor": "Zürich",
+         "id": "5af4f5cd876001e821fa2566372b7c0a",
+         "count": 2
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "facetParameter": "distance",
+     "descriptor": "Distance",
+     "values": [
+      {
+       "descriptor": "10 miles",
+       "id": "a538cdb60a631000078a2c60ed1700f3",
+       "count": 1
+      },
+      {
+       "descriptor": "25 miles",
+       "id": "a538cdb60a631000078a2c6a410300f4",
+       "count": 1
+      },
+      {
+       "descriptor": "50 miles",
+       "id": "a538cdb60a631000078a2c6eadd300f5",
+       "count": 1
+      },
+      {
+       "descriptor": "100 miles",
+       "id": "a538cdb60a631000078a2c71efcc00f6",
+       "count": 1
+      },
+      {
+       "descriptor": "Any Distance",
+       "id": "a538cdb60a631000078a2c74f73b00f7",
+       "count": 1
+      }
+     ]
+    }
+   ]
+  },
+  "V.I.E": {
+   "status": 200,
+   "total": 0,
+   "titles": [],
+   "facets": [
+    {
+     "facetParameter": "distance",
+     "descriptor": "Distance",
+     "values": [
+      {
+       "descriptor": "10 miles",
+       "id": "a538cdb60a631000078a2c60ed1700f3",
+       "count": 1
+      },
+      {
+       "descriptor": "25 miles",
+       "id": "a538cdb60a631000078a2c6a410300f4",
+       "count": 1
+      },
+      {
+       "descriptor": "50 miles",
+       "id": "a538cdb60a631000078a2c6eadd300f5",
+       "count": 1
+      },
+      {
+       "descriptor": "100 miles",
+       "id": "a538cdb60a631000078a2c71efcc00f6",
+       "count": 1
+      },
+      {
+       "descriptor": "Any Distance",
+       "id": "a538cdb60a631000078a2c74f73b00f7",
+       "count": 1
+      }
+     ]
+    }
+   ]
+  },
+  "Volontariat International": {
+   "status": 200,
+   "total": 0,
+   "titles": [],
+   "facets": [
+    {
+     "facetParameter": "distance",
+     "descriptor": "Distance",
+     "values": [
+      {
+       "descriptor": "10 miles",
+       "id": "a538cdb60a631000078a2c60ed1700f3",
+       "count": 1
+      },
+      {
+       "descriptor": "25 miles",
+       "id": "a538cdb60a631000078a2c6a410300f4",
+       "count": 1
+      },
+      {
+       "descriptor": "50 miles",
+       "id": "a538cdb60a631000078a2c6eadd300f5",
+       "count": 1
+      },
+      {
+       "descriptor": "100 miles",
+       "id": "a538cdb60a631000078a2c71efcc00f6",
+       "count": 1
+      },
+      {
+       "descriptor": "Any Distance",
+       "id": "a538cdb60a631000078a2c74f73b00f7",
+       "count": 1
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "wd_airliquide": {
+  "VIE": {
+   "status": 200,
+   "total": 380,
+   "titles": [
+    "Expression of Interest - Vietnamese speaking vacancies",
+    "Packaged Gas Business Developer",
+    "Business Developer",
+    "General Ledger Accountant",
+    "Finance Manager",
+    "Infirmier Conseil Diabète H/F",
+    "TECHNICIEN RESPIRATOIRE",
+    "TECHNICIEN A&GA",
+    "Pharmacien Référent H/F",
+    "Industrial Performance & Data Specialist",
+    "Responsable Equipe R&D H/F",
+    "Product Architect Microsoft D365 H/F",
+    "Technicien soudeur H/F",
+    "Technicien usineur F/H",
+    "VitalAire - CDD Livreur d'Oxygène - Amiens H/F",
+    "VitalAire - CDD Livreur d'Oxygène - Antibes H/F",
+    "OPERATEUR ATELIER  ENTRETIEN MAINTENANCE BOUTEILLES (F/H)",
+    "VitalAire - Alternance Qualité Sécurité Conformité H/F",
+    "Délégué Médico-Technique Respiratoire (83) H/F",
+    "VitalAire - Infirmier Conseil Diabète-Perfusion Libercourt (CDD) H/F"
+   ],
+   "facets": [
+    {
+     "facetParameter": "jobFamilyGroup",
+     "descriptor": "Job Category",
+     "values": [
+      {
+       "descriptor": "Operations",
+       "id": "93b630c7b5ff014b6ce081e510054146",
+       "count": 184
+      },
+      {
+       "descriptor": "Sales & Business Management",
+       "id": "93b630c7b5ff0198a76386e510054746",
+       "count": 82
+      },
+      {
+       "descriptor": "Management / Administration",
+       "id": "93b630c7b5ff014e1a9592e510055946",
+       "count": 34
+      },
+      {
+       "descriptor": "Research - Engineering - Technology",
+       "id": "93b630c7b5ff0105853483e510054346",
+       "count": 31
+      },
+      {
+       "descriptor": "Finance & Controlling",
+       "id": "93b630c7b5ff015f886d89e510054b46",
+       "count": 14
+      },
+      {
+       "descriptor": "HSE / Risk Mgt / IMS/ Quality / Security",
+       "id": "93b630c7b5ff019d78c984e510054546",
+       "count": 9
+      },
+      {
+       "descriptor": "Digital & IT",
+       "id": "93b630c7b5ff018c34308ce510054f46",
+       "count": 8
+      },
+      {
+       "descriptor": "Procurement",
+       "id": "93b630c7b5ff01946ca58de510055146",
+       "count": 6
+      },
+      {
+       "descriptor": "Legal & Intellectual Property",
+       "id": "93b630c7b5ff01a40ce28fe510055546",
+       "count": 5
+      },
+      {
+       "descriptor": "HR",
+       "id": "93b630c7b5ff0189e1f78ae510054d46",
+       "count": 4
+      },
+      {
+       "descriptor": "Marketing",
+       "id": "93b630c7b5ff01eeada187e510054946",
+       "count": 3
+      }
+     ]
+    },
+    {
+     "facetParameter": "workerSubType",
+     "descriptor": "Job Type",
+     "values": [
+      {
+       "descriptor": "Regular - Open ended",
+       "id": "431d4efb2c9c01cabd63a83fa900d90c",
+       "count": 312
+      },
+      {
+       "descriptor": "Regular - Fixed term (Fixed Term)",
+       "id": "431d4efb2c9c0117a2caad3fa900da0c",
+       "count": 36
+      },
+      {
+       "descriptor": "Internship (Fixed Term) (Trainee)",
+       "id": "431d4efb2c9c01b14a0f2840a900dc0c",
+       "count": 20
+      },
+      {
+       "descriptor": "Apprenticeship (Fixed Term)",
+       "id": "431d4efb2c9c01f104542d40a900dd0c",
+       "count": 7
+      },
+      {
+       "descriptor": "Temporary (Fixed Term)",
+       "id": "431d4efb2c9c01cdb0d1b23fa900db0c",
+       "count": 5
+      }
+     ]
+    },
+    {
+     "facetParameter": "timeType",
+     "descriptor": "Time Type",
+     "values": [
+      {
+       "descriptor": "Full time",
+       "id": "7e70f468269401ae626b449a791e6000",
+       "count": 374
+      },
+      {
+       "descriptor": "Part time",
+       "id": "7e70f46826940175ab50449a791e5f00",
+       "count": 6
+      }
+     ]
+    },
+    {
+     "facetParameter": "remoteType",
+     "descriptor": "Remote Type",
+     "values": [
+      {
+       "descriptor": "Hybrid",
+       "id": "95edda3f31291001df486bd98d240000",
+       "count": 6
+      },
+      {
+       "descriptor": "Fully Remote",
+       "id": "95edda3f31291001df486b3ff70a0000",
+       "count": 4
+      }
+     ]
+    },
+    {
+     "facetParameter": "locationMainGroup",
+     "values": [
+      {
+       "facetParameter": "locationCountry",
+       "descriptor": "Location Country",
+       "values": [
+        {
+         "descriptor": "Australia",
+         "id": "d903bb3fedad45039383f6de334ad4db",
+         "count": 1
+        },
+        {
+         "descriptor": "Austria",
+         "id": "d004c0d1a6c84511ab048669fcdf9fd7",
+         "count": 4
+        },
+        {
+         "descriptor": "Belgium",
+         "id": "a04ea128f43a42e59b1e6a19e8f0b374",
+         "count": 2
+        },
+        {
+         "descriptor": "Canada",
+         "id": "a30a87ed25634629aa6c3958aa2b91ea",
+         "count": 2
+        },
+        {
+         "descriptor": "China",
+         "id": "6cb77610a8a543aea2d6bc10457e35d4",
+         "count": 2
+        },
+        {
+         "descriptor": "Denmark",
+         "id": "49ab063f422741e2aef271de00efeac8",
+         "count": 1
+        },
+        {
+         "descriptor": "France",
+         "id": "54c5b6971ffb4bf0b116fe7651ec789a",
+         "count": 110
+        },
+        {
+         "descriptor": "Germany",
+         "id": "dcc5b7608d8644b3a93716604e78e995",
+         "count": 27
+        },
+        {
+         "descriptor": "India",
+         "id": "c4f78be1a8f14da0ab49ce1162348a5e",
+         "count": 2
+        },
+        {
+         "descriptor": "Indonesia",
+         "id": "b31234dbcdda4da9ba8fa073c5944e36",
+         "count": 1
+        },
+        {
+         "descriptor": "Japan",
+         "id": "8b705da2becf43cfaccc091da0988ab2",
+         "count": 2
+        },
+        {
+         "descriptor": "Malaysia",
+         "id": "972dc4ba8d454bc0b893ff84b1529077",
+         "count": 3
+        },
+        {
+         "descriptor": "Philippines",
+         "id": "e56f1daf83e04bacae794ba5c5593560",
+         "count": 1
+        },
+        {
+         "descriptor": "Poland",
+         "id": "131d5ac7e3ee4d7b962bdc96e498e412",
+         "count": 1
+        },
+        {
+         "descriptor": "Portugal",
+         "id": "2e8c5034deb045d49315417c347472ca",
+         "count": 1
+        },
+        {
+         "descriptor": "Singapore",
+         "id": "80938777cac5440fab50d729f9634969",
+         "count": 1
+        },
+        {
+         "descriptor": "Spain",
+         "id": "bd34c524a6a04ae6915f5d96fa086199",
+         "count": 1
+        },
+        {
+         "descriptor": "Sweden",
+         "id": "6a800a4736884df5826858d435650f45",
+         "count": 1
+        },
+        {
+         "descriptor": "Switzerland",
+         "id": "187134fccb084a0ea9b4b95f23890dbe",
+         "count": 4
+        },
+        {
+         "descriptor": "Taiwan",
+         "id": "a4e08b475d6a4176853c9d1cb9854e02",
+         "count": 1
+        },
+        {
+         "descriptor": "Thailand",
+         "id": "873d0f604e3b458c990cb4d83a5c0f14",
+         "count": 1
+        },
+        {
+         "descriptor": "United States of America",
+         "id": "bc33aa3152ec42d4995f4791a106ed09",
+         "count": 15
+        },
+        {
+         "descriptor": "Vietnam",
+         "id": "db69e8c8446c11de98360015c5e6daf6",
+         "count": 5
+        }
+       ]
+      },
+      {
+       "facetParameter": "locationRegionStateProvince",
+       "descriptor": "Location Region/State/Province",
+       "values": [
+        {
+         "descriptor": "Aargau",
+         "id": "05bbbb4d88964ad48dfb6ad6d45ca249",
+         "count": 2
+        },
+        {
+         "descriptor": "Ain",
+         "id": "5396e37565e04b0ea7fc7f50eaaeb3d8",
+         "count": 2
+        },
+        {
+         "descriptor": "Antwerp",
+         "id": "4d6f06f6ee3c4b7a9670eee7717e1f0a",
+         "count": 2
+        },
+        {
+         "descriptor": "Baden-Wurttemberg",
+         "id": "fc63a555e1d541379dde6e260bfad7d2",
+         "count": 8
+        },
+        {
+         "descriptor": "Bangkok",
+         "id": "9f7476048d3b4903a0af3f257bfc6d2c",
+         "count": 1
+        },
+        {
+         "descriptor": "Banten",
+         "id": "2d5fe5ad9729417686798898d5c93040",
+         "count": 1
+        },
+        {
+         "descriptor": "Bas-Rhin",
+         "id": "78957b44e3e54f00881b00c09af8b4ca",
+         "count": 2
+        },
+        {
+         "descriptor": "Bavaria",
+         "id": "bd89fff5ffa6440a9abeaf2c5c1dc37c",
+         "count": 8
+        },
+        {
+         "descriptor": "Berlin",
+         "id": "1e39a77dca884da894bb60ca4b51e643",
+         "count": 2
+        },
+        {
+         "descriptor": "Berne",
+         "id": "762469d356ba4d6c92df4cf31b2d033a",
+         "count": 1
+        },
+        {
+         "descriptor": "Bouches-du-Rhone",
+         "id": "f463cbd7e3dd46aea0424437b00d949a",
+         "count": 5
+        },
+        {
+         "descriptor": "Brandenburg",
+         "id": "ecebc64d15244ceabcd6f76f623c0cfd",
+         "count": 1
+        },
+        {
+         "descriptor": "Bremen",
+         "id": "3a8f95fe49e8482ea031be55d2436b50",
+         "count": 2
+        },
+        {
+         "descriptor": "Calvados",
+         "id": "f19ffb6cdd1844c99c40d4f3cc07cfe6",
+         "count": 1
+        },
+        {
+         "descriptor": "Central Jutland",
+         "id": "ef37ff2e171a42608e5db511ad4d3a84",
+         "count": 1
+        },
+        {
+         "descriptor": "Charente-Maritime",
+         "id": "7fa1b40001194953a929976e41e7c015",
+         "count": 1
+        },
+        {
+         "descriptor": "Correze",
+         "id": "d0ceac492ec64c4fa9e5e7b453811942",
+         "count": 1
+        },
+        {
+         "descriptor": "Cote-d'Or",
+         "id": "e68b8aa2fb7e4ca5a593f78216b06acc",
+         "count": 1
+        },
+        {
+         "descriptor": "Delaware",
+         "id": "18b4cf9ddb4e4542a39614cb55b4dde7",
+         "count": 3
+        },
+        {
+         "descriptor": "Delhi",
+         "id": "a1dd3300691e478c83f6632acd616705",
+         "count": 1
+        },
+        {
+         "descriptor": "Dordogne",
+         "id": "84255762394843f5935e1b1ef8aa3783",
+         "count": 2
+        },
+        {
+         "descriptor": "Doubs",
+         "id": "f3d2fe92bf06429e8da6211f67afc0a9",
+         "count": 1
+        },
+        {
+         "descriptor": "Drome",
+         "id": "6c5395c4b2234409adc8c1da900b1109",
+         "count": 2
+        },
+        {
+         "descriptor": "Essonne",
+         "id": "1177530ab15c4f1b9f31ca586cc81464",
+         "count": 6
+        },
+        {
+         "descriptor": "Gironde",
+         "id": "b7e02f028db64df39f3dce29fb1478b1",
+         "count": 2
+        },
+        {
+         "descriptor": "Hamburg",
+         "id": "8752d71cfdcb46cc91bf90d40cebd42d",
+         "count": 1
+        },
+        {
+         "descriptor": "Hà Nội",
+         "id": "6f392179bfd0470db1c36b55df6c238d",
+         "count": 5
+        },
+        {
+         "descriptor": "Haute-Garonne",
+         "id": "0d79b64a100445099933dc0b38d15119",
+         "count": 1
+        },
+        {
+         "descriptor": "Haute-Savoie",
+         "id": "8e2abf914dca492484b9f2cb445bb518",
+         "count": 4
+        },
+        {
+         "descriptor": "Hautes-Pyrenees",
+         "id": "9e22da579be74004821ee2872014d976",
+         "count": 1
+        },
+        {
+         "descriptor": "Hauts-de-Seine",
+         "id": "976ef07781e545349758f90170bf3166",
+         "count": 17
+        },
+        {
+         "descriptor": "Hesse",
+         "id": "6cc156ba5cce4b9587306688ce202df9",
+         "count": 6
+        },
+        {
+         "descriptor": "Hyogo",
+         "id": "55bec148b49643aab30807a40333e377",
+         "count": 1
+        },
+        {
+         "descriptor": "Île-de-France",
+         "id": "b51bcc2f38f1100ccd3af23f0eaf0000",
+         "count": 16
+        },
+        {
+         "descriptor": "Ille-et-Vilaine",
+         "id": "e69dae9961074552a13c9d9c5f11e0db",
+         "count": 1
+        },
+        {
+         "descriptor": "Indre-et-Loire",
+         "id": "4a7a08c0bc284ea882bd5ff70f238f98",
+         "count": 3
+        },
+        {
+         "descriptor": "Isere",
+         "id": "42d0ec4cc175402987c8aebe9c50f73b",
+         "count": 4
+        },
+        {
+         "descriptor": "Jonkoping County",
+         "id": "703901e0ee6b4f69ba33c6c01f8e512c",
+         "count": 1
+        },
+        {
+         "descriptor": "Landes",
+         "id": "72e7d408c93a4c338711a0f3e2e9a718",
+         "count": 2
+        },
+        {
+         "descriptor": "La Réunion",
+         "id": "7ee99ce60dd445a286b48a617483364d",
+         "count": 1
+        },
+        {
+         "descriptor": "Lesser Poland",
+         "id": "1796189bbfb44244a4a7242ec41d28cd",
+         "count": 1
+        },
+        {
+         "descriptor": "Lisbon",
+         "id": "43584f6c76274236a093563b68331b22",
+         "count": 1
+        },
+        {
+         "descriptor": "Loire",
+         "id": "e32735e9262445c7935f8af3323656cf",
+         "count": 1
+        },
+        {
+         "descriptor": "Loire-Atlantique",
+         "id": "5e2a82a05d8a46559635a97284399624",
+         "count": 2
+        },
+        {
+         "descriptor": "Loiret",
+         "id": "7a2de65f48754d44baa06b553d941c38",
+         "count": 1
+        },
+        {
+         "descriptor": "Lot-et-Garonne",
+         "id": "39cd2c905c0a45a8958ddb549d183395",
+         "count": 1
+        },
+        {
+         "descriptor": "Lower Austria",
+         "id": "0fb52ba5399f4755917d69cbfd1b3b35",
+         "count": 2
+        },
+        {
+         "descriptor": "Lower Saxony",
+         "id": "1b389072031a463c814c83efc243185b",
+         "count": 4
+        },
+        {
+         "descriptor": "Marne",
+         "id": "15f0e2fbe2a04680bf67d56db56f96b0",
+         "count": 1
+        },
+        {
+         "descriptor": "Meurthe-et-Moselle",
+         "id": "5144d4f89efd4db391353116518fcc60",
+         "count": 1
+        },
+        {
+         "descriptor": "National Capital Region",
+         "id": "aa699087f7cd4868b3e3e1d3d94fc4f6",
+         "count": 1
+        },
+        {
+         "descriptor": "New South Wales",
+         "id": "c7cff0e46d864ae49ef40b4ba71e7e5c",
+         "count": 1
+        },
+        {
+         "descriptor": "North Rhine-Westphalia",
+         "id": "6cf824b9142d401090a8e2fcb9e5771c",
+         "count": 7
+        },
+        {
+         "descriptor": "Pas-de-Calais",
+         "id": "264be81063a8406598c4978c8cbdde96",
+         "count": 12
+        },
+        {
+         "descriptor": "Pennsylvania",
+         "id": "f620a79f2dc44473828b42881312de2b",
+         "count": 1
+        },
+        {
+         "descriptor": "Puy-de-Dome",
+         "id": "0d67f762dd2842228ad546b08fcd17a0",
+         "count": 1
+        },
+        {
+         "descriptor": "Quebec",
+         "id": "ef8a53af14534128b795fd55d75ec08b",
+         "count": 2
+        },
+        {
+         "descriptor": "Rhineland-Palatinate",
+         "id": "7c4e5eaeaada445fa17b93ec3cead9ef",
+         "count": 2
+        },
+        {
+         "descriptor": "Rhone",
+         "id": "3f3bf054b78f48a3bbd3d1caf79cb83d",
+         "count": 3
+        },
+        {
+         "descriptor": "Saarland",
+         "id": "1c17eda8921343b4b8f12eb74a1df6cc",
+         "count": 1
+        },
+        {
+         "descriptor": "Salzburg",
+         "id": "8c864bddaa754daca3ee9028a54ed348",
+         "count": 1
+        },
+        {
+         "descriptor": "Saxony",
+         "id": "e3c6ad91206a450783bf22b36aed2352",
+         "count": 6
+        },
+        {
+         "descriptor": "Schleswig-Holstein",
+         "id": "d446701c65604e4ca991c918a5b3b5e8",
+         "count": 3
+        },
+        {
+         "descriptor": "Seine-Maritime",
+         "id": "673e43bc00e446918923b0d6f667fff9",
+         "count": 1
+        },
+        {
+         "descriptor": "Seine-Saint-Denis",
+         "id": "1ce5c45acae24a87a4c58d3719cb1bd8",
+         "count": 3
+        },
+        {
+         "descriptor": "Selangor",
+         "id": "1cd0701fc5b0456399ccf4865051a8e5",
+         "count": 3
+        },
+        {
+         "descriptor": "Shanghai",
+         "id": "12022932d53e4131959783deec185438",
+         "count": 1
+        },
+        {
+         "descriptor": "Somme",
+         "id": "9cb2f5c1d44444e1b9f22c448d5f6c97",
+         "count": 1
+        },
+        {
+         "descriptor": "Taipei City",
+         "id": "c5684b475b7345d0839454b2a03c5d2d",
+         "count": 1
+        },
+        {
+         "descriptor": "Tarn",
+         "id": "1a6abe41ba0549aa97415fcd038bc11a",
+         "count": 1
+        },
+        {
+         "descriptor": "Texas",
+         "id": "fc77e3a1ab36487f9646d14f7242dd77",
+         "count": 11
+        },
+        {
+         "descriptor": "Thuringia",
+         "id": "ab6ea111e7a54aaa93b6c1275608b168",
+         "count": 1
+        },
+        {
+         "descriptor": "Tokyo",
+         "id": "6534030e79d54ac897646438ed66ac9a",
+         "count": 1
+        },
+        {
+         "descriptor": "Valais",
+         "id": "20387e92e4bf4da0a866db9f893be357",
+         "count": 1
+        },
+        {
+         "descriptor": "Val-de-Marne",
+         "id": "d800182ce532473196dd33cc21990716",
+         "count": 3
+        },
+        {
+         "descriptor": "Valencia",
+         "id": "f874446b507f445482627da7e8e154a8",
+         "count": 1
+        },
+        {
+         "descriptor": "Vorarlberg",
+         "id": "a6d9cf48be154939abda279a275763c1",
+         "count": 1
+        },
+        {
+         "descriptor": "Yonne",
+         "id": "7a1f1268f4ea427098c0fe619fb20d04",
+         "count": 1
+        },
+        {
+         "descriptor": "Yvelines",
+         "id": "4b8277b8c7b64273a63b0f17e3f108a9",
+         "count": 1
+        },
+        {
+         "descriptor": "Zhejiang",
+         "id": "10ae0aa3144f4d1e9e3cf7b723439a3c",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "facetParameter": "locations",
+       "descriptor": "Locations",
+       "values": [
+        {
+         "descriptor": "AL Paris HO - Digital & IT - Enterprise Applications",
+         "id": "50ab6cc6b7df10019059194de65e0000",
+         "count": 1
+        },
+        {
+         "descriptor": "Arras O' - Carnot - Call center - CERC",
+         "id": "1763295fd5aa102353b8ed4c7fe70000",
+         "count": 5
+        },
+        {
+         "descriptor": "Australia, Mascot",
+         "id": "75b9c2a2135f1001fb4912e667980000",
+         "count": 1
+        },
+        {
+         "descriptor": "Austria, Anif",
+         "id": "6e61f484503c1000e2e05604cbf10000",
+         "count": 1
+        },
+        {
+         "descriptor": "Austria, Lustenau",
+         "id": "7fe0251eebde1000e2def7aefb320000",
+         "count": 1
+        },
+        {
+         "descriptor": "Austria, Schwechat",
+         "id": "6e61f484503c1000e2e0b69b9a630000",
+         "count": 2
+        },
+        {
+         "descriptor": "Auxerre - Respiratory therapy - O'",
+         "id": "b433e7a82bde1001c954ac5b72080000",
+         "count": 1
+        },
+        {
+         "descriptor": "Belgium, Schelle",
+         "id": "6e61f484503c1000e2e15fb9edc50000",
+         "count": 1
+        },
+        {
+         "descriptor": "Belgium, Zemst",
+         "id": "7fe0251eebde1000e2e00596c12a0000",
+         "count": 1
+        },
+        {
+         "descriptor": "Bordeaux O' - Other therapy",
+         "id": "1763295fd5aa102353b50fdbf1bd0000",
+         "count": 1
+        },
+        {
+         "descriptor": "Charenton-le-Pont - Engineering - E&C France",
+         "id": "4f2bc349e1e61000f3559d91ee870000",
+         "count": 2
+        },
+        {
+         "descriptor": "China, Hangzhou",
+         "id": "75b9c2a2135f1001fb4c8ec080910000",
+         "count": 1
+        },
+        {
+         "descriptor": "China, Shanghai",
+         "id": "75b9c2a2135f1001fb46e7db86f60000",
+         "count": 1
+        },
+        {
+         "descriptor": "Coulounieix O' - Home medical equipment",
+         "id": "fff7680053f61000f3a48082bb620000",
+         "count": 2
+        },
+        {
+         "descriptor": "Denmark, Engesvang",
+         "id": "7fe0251eebde1000e2e079587e2d0000",
+         "count": 1
+        },
+        {
+         "descriptor": "France, Aix En Provence",
+         "id": "6e61f484503c1000e2e265ad50e20000",
+         "count": 1
+        },
+        {
+         "descriptor": "France, Albi",
+         "id": "7fe0251eebde1000e2e0f632f90b0000",
+         "count": 1
+        },
+        {
+         "descriptor": "France, Annecy Le Vieux",
+         "id": "6e61f484503c1000e2e2d7b3a1f50000",
+         "count": 4
+        },
+        {
+         "descriptor": "France, Antony",
+         "id": "6e61f484503c1000e2e2e9c514780000",
+         "count": 2
+        },
+        {
+         "descriptor": "France, Atton",
+         "id": "7fe0251eebde1000e2e186f6abd30000",
+         "count": 1
+        },
+        {
+         "descriptor": "France, Bagneux",
+         "id": "6e61f484503c1000e2e357205a3a0000",
+         "count": 8
+        },
+        {
+         "descriptor": "France, BESANCON",
+         "id": "7fe0251eebde1000e2e21117c69e0000",
+         "count": 1
+        },
+        {
+         "descriptor": "France, Bobigny",
+         "id": "6e61f484503c1000e2e3d1212bd80000",
+         "count": 1
+        },
+        {
+         "descriptor": "France, Borderes sur l'Echez",
+         "id": "7fe0251eebde1000e2e9ceff316e0000",
+         "count": 1
+        },
+        {
+         "descriptor": "France, Bruz",
+         "id": "6e61f484503c1000e2e9b40384730000",
+         "count": 1
+        },
+        {
+         "descriptor": "France, CAEN",
+         "id": "6e61f484503c1000e2e44c3d325f0000",
+         "count": 1
+        },
+        {
+         "descriptor": "France, CESTAS",
+         "id": "6e61f484503c1000e2e3e9de88590000",
+         "count": 1
+        },
+        {
+         "descriptor": "France, Clamart",
+         "id": "7fe0251eebde1000e2e3481cea7a0000",
+         "count": 1
+        },
+        {
+         "descriptor": "France, Clermont-Ferrand",
+         "id": "7fe0251eebde1000e2e3509091920000",
+         "count": 1
+        },
+        {
+         "descriptor": "France, Crolles",
+         "id": "7fe0251eebde1000e2e1d5f38ab80000",
+         "count": 1
+        },
+        {
+         "descriptor": "France, GARDANNE",
+         "id": "7fe0251eebde1000e2e438bb52ac0000",
+         "count": 1
+        },
+        {
+         "descriptor": "France, GLISY",
+         "id": "6e61f484503c1000e2e2b2e3c8370000",
+         "count": 1
+        },
+        {
+         "descriptor": "France, Illkirch",
+         "id": "6e61f484503c1000e2eb407f4d290000",
+         "count": 2
+        },
+        {
+         "descriptor": "France, LA CHAPELLE SAINT AUBIN",
+         "id": "7fe0251eebde1000e2e56e68084e0000",
+         "count": 1
+        },
+        {
+         "descriptor": "France, La Talaudière",
+         "id": "7fe0251eebde1000e2e8e3ce4a880000",
+         "count": 1
+        },
+        {
+         "descriptor": "France, Le Passage",
+         "id": "7fe0251eebde1000e2e0c0836a0b0000",
+         "count": 1
+        },
+        {
+         "descriptor": "France, Le Port",
+         "id": "6e61f484503c1000e2e6ffe8a0c30000",
+         "count": 1
+        },
+        {
+         "descriptor": "France, Les Loges-en-Josas",
+         "id": "7fe0251eebde1000e2e4e1bc378e0000",
+         "count": 1
+        },
+        {
+         "descriptor": "France, LIBERCOURT",
+         "id": "7fe0251eebde1000e2e5b4f18d670000",
+         "count": 4
+        },
+        {
+         "descriptor": "France, Longvic",
+         "id": "6e61f484503c1000e2e52ff3c6d80000",
+         "count": 1
+        },
+        {
+         "descriptor": "France, Marseille",
+         "id": "7fe0251eebde1000e2e624001e1a0000",
+         "count": 3
+        },
+        {
+         "descriptor": "France, Mions",
+         "id": "7fe0251eebde1000e2e5fc3680800000",
+         "count": 1
+        },
+        {
+         "descriptor": "France, NANTERRE",
+         "id": "7fe0251eebde1000e2e6c534c8640000",
+         "count": 6
+        },
+        {
+         "descriptor": "France, OLIVET",
+         "id": "6e61f484503c1000e2e8b963ac140000",
+         "count": 1
+        },
+        {
+         "descriptor": "France, Pamiers",
+         "id": "6e61f484503c1000e2e8f2bc8a290000",
+         "count": 1
+        },
+        {
+         "descriptor": "France, Paris",
+         "id": "6e61f484503c1000e2e27728cb7d0000",
+         "count": 13
+        },
+        {
+         "descriptor": "France, Perpezac Le Noir",
+         "id": "6e61f484503c1000e2e4337f372a0000",
+         "count": 1
+        },
+        {
+         "descriptor": "France, Reims",
+         "id": "6e61f484503c1000e2e9a28271900000",
+         "count": 1
+        },
+        {
+         "descriptor": "France, REZE",
+         "id": "93efd0775db41001e52dc26bec170000",
+         "count": 2
+        },
+        {
+         "descriptor": "France, SAINTE-LUCE SUR LOIRE",
+         "id": "7fe0251eebde1000e2e6ea052d680000",
+         "count": 2
+        },
+        {
+         "descriptor": "France, Saintes",
+         "id": "6e61f484503c1000e2ea95bd13040000",
+         "count": 1
+        },
+        {
+         "descriptor": "France, Saint-Genis-Pouilly",
+         "id": "7fe0251eebde1000e2e8a98cf6f60000",
+         "count": 1
+        },
+        {
+         "descriptor": "France, SAINT MARTIN BOULOGNE",
+         "id": "6e61f484503c1000e2e40baabb340000",
+         "count": 1
+        },
+        {
+         "descriptor": "France, SAINT MARTIN D'HERES",
+         "id": "7fe0251eebde1000e2e48e62aba20000",
+         "count": 1
+        },
+        {
+         "descriptor": "France, Saint-Martin de Seignanx",
+         "id": "7fe0251eebde1000e2e1de61bece0000",
+         "count": 2
+        },
+        {
+         "descriptor": "France, Saint Martin Les Boulogne",
+         "id": "7fe0251eebde1000e2e278ff6fb80000",
+         "count": 1
+        },
+        {
+         "descriptor": "France, Saint-Pierre du Perray",
+         "id": "6e61f484503c1000e2eafcf3cb920000",
+         "count": 3
+        },
+        {
+         "descriptor": "France, Sassenage",
+         "id": "7fe0251eebde1000e2e94242a8de0000",
+         "count": 2
+        },
+        {
+         "descriptor": "France, Toulouse",
+         "id": "6e61f484503c1000e2eb87101f6d0000",
+         "count": 1
+        },
+        {
+         "descriptor": "France, Tours",
+         "id": "6e61f484503c1000e2eb8ee3ea2b0000",
+         "count": 2
+        },
+        {
+         "descriptor": "France, Valence",
+         "id": "7fe0251eebde1000e2ea460061380000",
+         "count": 2
+        },
+        {
+         "descriptor": "France, VALLAURIS",
+         "id": "7fe0251eebde1000e2e70e3e556c0000",
+         "count": 1
+        },
+        {
+         "descriptor": "France, VILLEPINTE",
+         "id": "6e61f484503c1000e2ec172820730000",
+         "count": 2
+        },
+        {
+         "descriptor": "France, VITRY SUR SEINE",
+         "id": "7fe0251eebde1000e2e3d4a4a05c0000",
+         "count": 1
+        },
+        {
+         "descriptor": "Germany, Arnstadt",
+         "id": "6e61f484503c1000e2ec4f2ce8a90000",
+         "count": 1
+        },
+        {
+         "descriptor": "Germany, Balve",
+         "id": "a1a23bab48e310018f7aa70d476f0000",
+         "count": 1
+        },
+        {
+         "descriptor": "Germany, Berlin",
+         "id": "6e61f484503c1000e2ec84eb1c3a0000",
+         "count": 2
+        },
+        {
+         "descriptor": "Germany, Bremen",
+         "id": "6e61f484503c1000e2eca6c0ac100000",
+         "count": 2
+        },
+        {
+         "descriptor": "Germany, Cham",
+         "id": "de4634e8c6ae10018f7d33290f6c0000",
+         "count": 1
+        },
+        {
+         "descriptor": "Germany, Cologne",
+         "id": "7fe0251eebde1000e2ec143c76bd0000",
+         "count": 3
+        },
+        {
+         "descriptor": "Germany, Dortmund",
+         "id": "7fe0251eebde1000e2eb3fd73acf0000",
+         "count": 1
+        },
+        {
+         "descriptor": "Germany, Dresden",
+         "id": "7fe0251eebde1000e2eb47b275b90000",
+         "count": 1
+        },
+        {
+         "descriptor": "Germany, Duisburg",
+         "id": "6e61f484503c1000e2ece16259660000",
+         "count": 1
+        },
+        {
+         "descriptor": "Germany, Düren",
+         "id": "242cacc0fbdb10018f7ccc81f36f0000",
+         "count": 2
+        },
+        {
+         "descriptor": "Germany, Düsseldorf",
+         "id": "7fe0251eebde1000e2eb4f88fb3d0000",
+         "count": 1
+        },
+        {
+         "descriptor": "Germany, Edingen-Neckarhausen",
+         "id": "7fe0251eebde1000e2eb5fcaee350000",
+         "count": 1
+        },
+        {
+         "descriptor": "Germany, Frankfurt am Main",
+         "id": "7fe0251eebde1000e2eb883ae2fe0000",
+         "count": 3
+        },
+        {
+         "descriptor": "Germany, Gladbeck",
+         "id": "a8b6e9ceef0a10013fa2df904adf0000",
+         "count": 1
+        },
+        {
+         "descriptor": "Germany, Gütersloh",
+         "id": "242cacc0fbdb10018f7ceb28359c0000",
+         "count": 2
+        },
+        {
+         "descriptor": "Germany, Hamburg",
+         "id": "7fe0251eebde1000e2ebbae5dc4a0000",
+         "count": 1
+        },
+        {
+         "descriptor": "Germany, Hemer",
+         "id": "6e61f484503c1000e2ed54c9b4930000",
+         "count": 1
+        },
+        {
+         "descriptor": "Germany, Herne",
+         "id": "242cacc0fbdb10018f7d119e210e0000",
+         "count": 1
+        },
+        {
+         "descriptor": "Germany, Ibbenbüren",
+         "id": "16dd09e531791001f3bb278448610000",
+         "count": 1
+        },
+        {
+         "descriptor": "Germany, Kassel",
+         "id": "6e61f484503c1000e2ed8ea8f2580000",
+         "count": 3
+        },
+        {
+         "descriptor": "Germany, Kirchdorf am Inn",
+         "id": "a1a23bab48e310018f7b1ad22ad50000",
+         "count": 1
+        },
+        {
+         "descriptor": "Germany, Koblenz",
+         "id": "7fe0251eebde1000e2ec0d003c1b0000",
+         "count": 1
+        },
+        {
+         "descriptor": "Germany, Kornwestheim",
+         "id": "7fe0251eebde1000e2ec1b7a6b6a0000",
+         "count": 1
+        },
+        {
+         "descriptor": "Germany, Kumhausen",
+         "id": "de4634e8c6ae10018f7db49555e40000",
+         "count": 1
+        },
+        {
+         "descriptor": "Germany, Landshut",
+         "id": "a1a23bab48e310018f7b40d083ab0000",
+         "count": 1
+        },
+        {
+         "descriptor": "Germany, Leipzig",
+         "id": "6e61f484503c1000e2edbc81b2d90000",
+         "count": 5
+        },
+        {
+         "descriptor": "Germany, Leverkusen",
+         "id": "7fe0251eebde1000e2ec3f2270fa0000",
+         "count": 1
+        },
+        {
+         "descriptor": "Germany, Ludwigsburg",
+         "id": "6e61f484503c1000e2ede0169fb00000",
+         "count": 4
+        },
+        {
+         "descriptor": "Germany, Ludwigshafen",
+         "id": "6e61f484503c1000e2ede88c3e690000",
+         "count": 1
+        },
+        {
+         "descriptor": "Germany, Lünen",
+         "id": "6e61f484503c1000e2edf109377a0000",
+         "count": 1
+        },
+        {
+         "descriptor": "Germany, Marl",
+         "id": "7fe0251eebde1000e2ec879e5c910000",
+         "count": 1
+        },
+        {
+         "descriptor": "Germany, Münster",
+         "id": "a1a23bab48e310018f7b5efdd24b0000",
+         "count": 1
+        },
+        {
+         "descriptor": "Germany, Neufahrn bei Freising",
+         "id": "6e61f484503c1000e2ee4397486f0000",
+         "count": 3
+        },
+        {
+         "descriptor": "Germany, Norderstedt",
+         "id": "6e61f484503c1000e2ee5c59e6d90000",
+         "count": 3
+        },
+        {
+         "descriptor": "Germany, Nürnberg",
+         "id": "de4634e8c6ae10018f7df0ba6e100000",
+         "count": 1
+        },
+        {
+         "descriptor": "Germany, Oberhausen",
+         "id": "6e61f484503c1000e2ee64d108180000",
+         "count": 2
+        },
+        {
+         "descriptor": "Germany, Obertshausen",
+         "id": "30a4cbc48e131001f36f1af41dd90000",
+         "count": 1
+        },
+        {
+         "descriptor": "Germany, Offenbach",
+         "id": "7fe0251eebde1000e2ece31f84fd0000",
+         "count": 1
+        },
+        {
+         "descriptor": "Germany, Osnabrück",
+         "id": "c92a46389e4710014a639ddb11af0000",
+         "count": 1
+        },
+        {
+         "descriptor": "Germany, Pocking",
+         "id": "de4634e8c6ae10018f7e03f7c54c0000",
+         "count": 1
+        },
+        {
+         "descriptor": "Germany, Radolfzell",
+         "id": "a1a23bab48e310018f7b906a1ee90000",
+         "count": 1
+        },
+        {
+         "descriptor": "Germany, Regensburg",
+         "id": "7fe0251eebde1000e2ed075534b90000",
+         "count": 2
+        },
+        {
+         "descriptor": "Germany, Reutlingen",
+         "id": "7fe0251eebde1000e2eb0d2ca1500000",
+         "count": 1
+        },
+        {
+         "descriptor": "Germany, Rheine",
+         "id": "6e61f484503c1000e2eea30898ec0000",
+         "count": 2
+        },
+        {
+         "descriptor": "Germany, Schwarzheide",
+         "id": "7fe0251eebde1000e2ed3828a2910000",
+         "count": 1
+        },
+        {
+         "descriptor": "Germany, Seeon",
+         "id": "a1a23bab48e310018f7ba4e71fe00000",
+         "count": 1
+        },
+        {
+         "descriptor": "Germany, Senden",
+         "id": "6e61f484503c1000e2eecade43460000",
+         "count": 4
+        },
+        {
+         "descriptor": "Germany, Stelle",
+         "id": "6e61f484503c1000e2eef3f3cc3b0000",
+         "count": 4
+        },
+        {
+         "descriptor": "Germany, Ulm",
+         "id": "de4634e8c6ae10018f7e2cd384da0000",
+         "count": 3
+        },
+        {
+         "descriptor": "Germany, Velbert-Langenberg",
+         "id": "6e61f484503c1000e2ef1c60afe70000",
+         "count": 1
+        },
+        {
+         "descriptor": "Germany, Villingen-Schwenningen",
+         "id": "6e61f484503c1000e2ef23a15b300000",
+         "count": 6
+        },
+        {
+         "descriptor": "Germany, Wadern",
+         "id": "7fe0251eebde1000e2eda1bdfdbb0000",
+         "count": 1
+        },
+        {
+         "descriptor": "Germany, Wesel",
+         "id": "242cacc0fbdb10018f7dc5d146590000",
+         "count": 1
+        },
+        {
+         "descriptor": "Houston, TX (HO)",
+         "id": "09d17d537b501000cdf276250d520000",
+         "count": 3
+        },
+        {
+         "descriptor": "Houston, TX (HO) - Cust. installations",
+         "id": "09d17d537b501000cdf99c80bf740000",
+         "count": 1
+        },
+        {
+         "descriptor": "Houston, TX (HO) - Engineering - E&C Houston",
+         "id": "09d17d537b501000ce08938aa4a40000",
+         "count": 1
+        },
+        {
+         "descriptor": "Houston, TX (HO) - NAM Corporate",
+         "id": "09d17d537b501000ce088338225a0000",
+         "count": 4
+        },
+        {
+         "descriptor": "Houston, TX (HO) - Procurement - Hub",
+         "id": "09d17d537b501000ce088a7855780000",
+         "count": 1
+        },
+        {
+         "descriptor": "Houston, TX (HO) - Support functions - Hub Corporate",
+         "id": "09d17d537b501000ce087f9a18410000",
+         "count": 1
+        },
+        {
+         "descriptor": "Houston, TX (HO) - Support functions - Industrial Direction",
+         "id": "09d17d537b501000ce08968f14330000",
+         "count": 1
+        },
+        {
+         "descriptor": "India, New Delhi",
+         "id": "6e61f484503c1000e2ef6304f6bb0000",
+         "count": 1
+        },
+        {
+         "descriptor": "India, Noida",
+         "id": "a2e42c3969331000eb8c43b8cbdc0000",
+         "count": 1
+        },
+        {
+         "descriptor": "Indonesia, Cilegon",
+         "id": "75b9c2a2135f1001fb4e51fa172b0000",
+         "count": 1
+        },
+        {
+         "descriptor": "Japan, Kobe",
+         "id": "75b9c2a2135f1001fb4fd431b4910000",
+         "count": 1
+        },
+        {
+         "descriptor": "Japan, Minao-ku",
+         "id": "75b9c2a2135f1001fb50430246150000",
+         "count": 1
+        },
+        {
+         "descriptor": "Malaysia, Petaling Jaya",
+         "id": "75b9c2a2135f1001fb530e65e68a0000",
+         "count": 3
+        },
+        {
+         "descriptor": "Massy - Respiratory therapy - VA",
+         "id": "1763295fd5aa102353bf29a6a1f60000",
+         "count": 2
+        },
+        {
+         "descriptor": "Meyzieu - Respiratory therapy - VA - PND",
+         "id": "9cfa2ab14f461001dd8bea781b1f0000",
+         "count": 1
+        },
+        {
+         "descriptor": "Montreal, QC - Boul. René-Lévesque O (ALC HO) - Support functions",
+         "id": "09d17d537b501000ce054353f8780000",
+         "count": 2
+        },
+        {
+         "descriptor": "Nanterre - Respiratory therapy - VA",
+         "id": "5103ffbe569b1001c95441f372e70000",
+         "count": 2
+        },
+        {
+         "descriptor": "Newark, DE (ICD) - R&D - Electronics",
+         "id": "09d17d537b501000ce08a031d04f0000",
+         "count": 3
+        },
+        {
+         "descriptor": "Philippines, Pasig",
+         "id": "75b9c2a2135f1001fb545d7af0d50000",
+         "count": 1
+        },
+        {
+         "descriptor": "Poland, Kraków",
+         "id": "6e61f484503c1000e2f4243546170000",
+         "count": 1
+        },
+        {
+         "descriptor": "Portugal, Algés",
+         "id": "6e61f484503c1000e2f4b169e08b0000",
+         "count": 1
+        },
+        {
+         "descriptor": "Radnor, PA (Airgas HO)",
+         "id": "09d17d537b501000cde688a101c00000",
+         "count": 1
+        },
+        {
+         "descriptor": "Saint Genix - TGCM - CERN ALCS",
+         "id": "1763295fd5aa102353a3318f97e60000",
+         "count": 1
+        },
+        {
+         "descriptor": "Singapore, SGP",
+         "id": "75b9c2a2135f1001fb547033382f0000",
+         "count": 1
+        },
+        {
+         "descriptor": "Spain, Paterna",
+         "id": "6e61f484503c1000e2f7444a41790000",
+         "count": 1
+        },
+        {
+         "descriptor": "Sweden, Nassjo",
+         "id": "7fe0251eebde1000e2f75da501d30000",
+         "count": 1
+        },
+        {
+         "descriptor": "Switzerland, Gümligen",
+         "id": "6e61f484503c1000e2f98d23d4290000",
+         "count": 1
+        },
+        {
+         "descriptor": "Switzerland, Rupperswil",
+         "id": "7fe0251eebde1000e2f8474e593e0000",
+         "count": 2
+        },
+        {
+         "descriptor": "Switzerland, Willer",
+         "id": "7fe0251eebde1000e2f85796e5530000",
+         "count": 1
+        },
+        {
+         "descriptor": "Taiwan, Neihu District",
+         "id": "75b9c2a2135f1001fb54eb9a79d50000",
+         "count": 1
+        },
+        {
+         "descriptor": "Thailand, Bangkok",
+         "id": "75b9c2a2135f1001fb553214910f0000",
+         "count": 1
+        },
+        {
+         "descriptor": "Tours - Other therapy - O'",
+         "id": "dacc63ce97811000f36fc7c3657a0000",
+         "count": 1
+        },
+        {
+         "descriptor": "Vaulx-en-Velin O' - Call center",
+         "id": "19b92749cf251001045bc17aa9020000",
+         "count": 1
+        },
+        {
+         "descriptor": "Vietnam, Hoankiem district",
+         "id": "75b9c2a2135f1001fb5571e826870000",
+         "count": 5
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "facetParameter": "distance",
+     "descriptor": "Distance",
+     "values": [
+      {
+       "descriptor": "10 miles",
+       "id": "a538cdb60a631000078a2c60ed1700f3",
+       "count": 1
+      },
+      {
+       "descriptor": "25 miles",
+       "id": "a538cdb60a631000078a2c6a410300f4",
+       "count": 1
+      },
+      {
+       "descriptor": "50 miles",
+       "id": "a538cdb60a631000078a2c6eadd300f5",
+       "count": 1
+      },
+      {
+       "descriptor": "100 miles",
+       "id": "a538cdb60a631000078a2c71efcc00f6",
+       "count": 1
+      },
+      {
+       "descriptor": "Any Distance",
+       "id": "a538cdb60a631000078a2c74f73b00f7",
+       "count": 1
+      }
+     ]
+    }
+   ]
+  },
+  "V.I.E": {
+   "status": 200,
+   "total": 0,
+   "titles": [],
+   "facets": [
+    {
+     "facetParameter": "distance",
+     "descriptor": "Distance",
+     "values": [
+      {
+       "descriptor": "10 miles",
+       "id": "a538cdb60a631000078a2c60ed1700f3",
+       "count": 1
+      },
+      {
+       "descriptor": "25 miles",
+       "id": "a538cdb60a631000078a2c6a410300f4",
+       "count": 1
+      },
+      {
+       "descriptor": "50 miles",
+       "id": "a538cdb60a631000078a2c6eadd300f5",
+       "count": 1
+      },
+      {
+       "descriptor": "100 miles",
+       "id": "a538cdb60a631000078a2c71efcc00f6",
+       "count": 1
+      },
+      {
+       "descriptor": "Any Distance",
+       "id": "a538cdb60a631000078a2c74f73b00f7",
+       "count": 1
+      }
+     ]
+    }
+   ]
+  },
+  "Volontariat International": {
+   "status": 200,
+   "total": 0,
+   "titles": [],
+   "facets": [
+    {
+     "facetParameter": "distance",
+     "descriptor": "Distance",
+     "values": [
+      {
+       "descriptor": "10 miles",
+       "id": "a538cdb60a631000078a2c60ed1700f3",
+       "count": 1
+      },
+      {
+       "descriptor": "25 miles",
+       "id": "a538cdb60a631000078a2c6a410300f4",
+       "count": 1
+      },
+      {
+       "descriptor": "50 miles",
+       "id": "a538cdb60a631000078a2c6eadd300f5",
+       "count": 1
+      },
+      {
+       "descriptor": "100 miles",
+       "id": "a538cdb60a631000078a2c71efcc00f6",
+       "count": 1
+      },
+      {
+       "descriptor": "Any Distance",
+       "id": "a538cdb60a631000078a2c74f73b00f7",
+       "count": 1
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "wd_michelin": {
+  "VIE": {
+   "status": 200,
+   "total": 184,
+   "titles": [
+    "Regional APAC – Vietnam Commercial Services Internship",
+    "Regional APAC – Vietnam Marketing Intelligence Internship",
+    "Usineur - Tourneur - Fraiseur F/H",
+    "Ingénieur Expérimenté R&D en Génie des Procédés / Génie Chimique (F/H)",
+    "Fiscaliste Corporate France  (F/H)",
+    "Technicien·ne d'essais sur pilote R&D (F/H)",
+    "B2C Account Manager – Hanoi (TEMPORARY)",
+    "Assistant(e)  Directrice des Affaires Publiques F/H",
+    "Concepteur Système Connecté (F/H)",
+    "Supply Planner",
+    "Michelin Supply Chain APAC - Join our Talent Pool!",
+    "Michelin Sales APAC  - Join our Talent Pool!",
+    "Michelin Logistics APAC - Join our Talent Pool",
+    "Werkstudent*in (alle) im Einkauf mit Microsoft Power Apps Kenntnissen",
+    "Area Sales Manager*in (alle) für Pkw-Reifen im Gebiet Bodensee · Schwäbische Alb · Allgäu",
+    "Werkstudent*in im B2B Digital Marketing (alle)",
+    "Werkstudent*in (alle) im Bereich Arbeitsrecht und Datenschutz",
+    "Automotive Brand Manager*in DACH (alle)",
+    "Elektroniker*in (alle) für Betriebstechnik",
+    "Bauprojektleitung (alle) für die Michelin-Werke in Deutschland"
+   ],
+   "facets": [
+    {
+     "facetParameter": "Location_Country",
+     "descriptor": "Location Country",
+     "values": [
+      {
+       "descriptor": "Germany",
+       "id": "dcc5b7608d8644b3a93716604e78e995",
+       "count": 155
+      },
+      {
+       "descriptor": "Thailand",
+       "id": "873d0f604e3b458c990cb4d83a5c0f14",
+       "count": 8
+      },
+      {
+       "descriptor": "France",
+       "id": "54c5b6971ffb4bf0b116fe7651ec789a",
+       "count": 7
+      },
+      {
+       "descriptor": "Vietnam",
+       "id": "db69e8c8446c11de98360015c5e6daf6",
+       "count": 6
+      },
+      {
+       "descriptor": "Indonesia",
+       "id": "b31234dbcdda4da9ba8fa073c5944e36",
+       "count": 3
+      },
+      {
+       "descriptor": "Singapore",
+       "id": "80938777cac5440fab50d729f9634969",
+       "count": 3
+      },
+      {
+       "descriptor": "Philippines",
+       "id": "e56f1daf83e04bacae794ba5c5593560",
+       "count": 3
+      },
+      {
+       "descriptor": "Malaysia",
+       "id": "972dc4ba8d454bc0b893ff84b1529077",
+       "count": 3
+      },
+      {
+       "descriptor": "Korea, Republic of",
+       "id": "7a5a2aadf9d34086a2bfbfd408bc28da",
+       "count": 3
+      },
+      {
+       "descriptor": "Japan",
+       "id": "8b705da2becf43cfaccc091da0988ab2",
+       "count": 3
+      },
+      {
+       "descriptor": "Italy",
+       "id": "8cd04a563fd94da7b06857a79faaf815",
+       "count": 3
+      },
+      {
+       "descriptor": "Canada",
+       "id": "a30a87ed25634629aa6c3958aa2b91ea",
+       "count": 2
+      },
+      {
+       "descriptor": "Cambodia",
+       "id": "db69bf9c446c11de98360015c5e6daf6",
+       "count": 2
+      },
+      {
+       "descriptor": "Austria",
+       "id": "d004c0d1a6c84511ab048669fcdf9fd7",
+       "count": 1
+      },
+      {
+       "descriptor": "Brazil",
+       "id": "1a29bb1357b240ab99a2fa755cc87c0e",
+       "count": 1
+      },
+      {
+       "descriptor": "Spain",
+       "id": "bd34c524a6a04ae6915f5d96fa086199",
+       "count": 1
+      },
+      {
+       "descriptor": "India",
+       "id": "c4f78be1a8f14da0ab49ce1162348a5e",
+       "count": 1
+      },
+      {
+       "descriptor": "Mexico",
+       "id": "e2adff9272454660ac4fdb56fc70bb51",
+       "count": 1
+      },
+      {
+       "descriptor": "United States of America",
+       "id": "bc33aa3152ec42d4995f4791a106ed09",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "facetParameter": "jobPostingEmployeeContractType",
+     "descriptor": "Contract Type",
+     "values": [
+      {
+       "descriptor": "Regular",
+       "id": "cae294f2796f01131be50eaaa917b021",
+       "count": 164
+      },
+      {
+       "descriptor": "Other Temporary (Fixed Term)",
+       "id": "cae294f2796f01c0ad3f12aaa917b121",
+       "count": 9
+      },
+      {
+       "descriptor": "Fixed Term Contract (Fixed Term)",
+       "id": "cae294f2796f01baf8a607aaa917ad21",
+       "count": 5
+      },
+      {
+       "descriptor": "Intern Fix Term Trainee (Fixed Term) (Trainee)",
+       "id": "cae294f2796f01df790a1faaa917b621",
+       "count": 4
+      },
+      {
+       "descriptor": "Other: Student (Fixed Term) (Seasonal)",
+       "id": "cae294f2796f0184468021aaa917b721",
+       "count": 1
+      },
+      {
+       "descriptor": "Contractor",
+       "id": "cae294f2796f01984be226c47417a019",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "facetParameter": "jobFamilyGroup",
+     "descriptor": "Job Category",
+     "values": [
+      {
+       "descriptor": "Marketing",
+       "id": "cae294f2796f01ac1473b433f7177a67",
+       "count": 137
+      },
+      {
+       "descriptor": "Personnel",
+       "id": "cae294f2796f01be4ac15433f7173367",
+       "count": 13
+      },
+      {
+       "descriptor": "Sales",
+       "id": "cae294f2796f016f3a2bb233f7177867",
+       "count": 9
+      },
+      {
+       "descriptor": "Supply Chain",
+       "id": "cae294f2796f0193d3ddac33f7177567",
+       "count": 5
+      },
+      {
+       "descriptor": "Maintenance & Energy",
+       "id": "cae294f2796f01506e706033f7173c67",
+       "count": 5
+      },
+      {
+       "descriptor": "Production",
+       "id": "cae294f2796f01e4d9904533f7172967",
+       "count": 3
+      },
+      {
+       "descriptor": "Administrative",
+       "id": "cae294f2796f0165ca95c733f7178667",
+       "count": 2
+      },
+      {
+       "descriptor": "RDI Material",
+       "id": "cae294f2796f01ca4be27433f7174d67",
+       "count": 2
+      },
+      {
+       "descriptor": "Process Design & Development",
+       "id": "cae294f2796f01051f1d3e33f7172567",
+       "count": 2
+      },
+      {
+       "descriptor": "Services & Solutions",
+       "id": "10b170d6961d014a2dc9f3158b641833",
+       "count": 1
+      },
+      {
+       "descriptor": "RDI Tire",
+       "id": "cae294f2796f01374a3f7733f7174f67",
+       "count": 1
+      },
+      {
+       "descriptor": "Finance",
+       "id": "cae294f2796f014031636733f7174267",
+       "count": 1
+      },
+      {
+       "descriptor": "IS&Digital",
+       "id": "cae294f2796f012797e45b33f7173967",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "facetParameter": "remoteType",
+     "descriptor": "Remote Type",
+     "values": [
+      {
+       "descriptor": "On-Site",
+       "id": "600d8c60f7211000b0a74f2f9bcc0000",
+       "count": 160
+      },
+      {
+       "descriptor": "Hybrid",
+       "id": "600d8c60f7211000b0a74f2f9bcc0002",
+       "count": 14
+      },
+      {
+       "descriptor": "Remote",
+       "id": "600d8c60f7211000b0a74f2f9bcc0001",
+       "count": 3
+      }
+     ]
+    },
+    {
+     "facetParameter": "locationMainGroup",
+     "values": [
+      {
+       "facetParameter": "primaryLocation",
+       "descriptor": "Locations",
+       "values": [
+        {
+         "descriptor": "Alessandria",
+         "id": "70b38acca79b0124b1d5861908195322",
+         "count": 1
+        },
+        {
+         "descriptor": "Bad Kreuznach",
+         "id": "70b38acca79b01c0f29384180819cd20",
+         "count": 6
+        },
+        {
+         "descriptor": "Clermont-Ferrand",
+         "id": "758f4bb537a81000b449d0951a040000",
+         "count": 6
+        },
+        {
+         "descriptor": "Cuneo",
+         "id": "70b38acca79b01cf40d69b1908197122",
+         "count": 2
+        },
+        {
+         "descriptor": "Duisburg",
+         "id": "6a735022bb6b01f44b7f58accf011574",
+         "count": 1
+        },
+        {
+         "descriptor": "EMPORIA, KS",
+         "id": "6a735022bb6b0134eb591aaecf014c74",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER AUGSBURG",
+         "id": "623cb726195c102a1eea42287f7d0000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER BAD CAMBERG",
+         "id": "d5e379c82bb310037387576e7f180000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER BAD SCHWARTAU",
+         "id": "e92f00507db110037385984f6ee60000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER BAD WOERISHOFEN",
+         "id": "2eccf479d7d210037386e96d09030000",
+         "count": 2
+        },
+        {
+         "descriptor": "EUROMASTER BAIENFURT",
+         "id": "d5e379c82bb31003738791ce268a0000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER BERLIN-ALT-HOHENS.",
+         "id": "8d1653b272df100373267d8793690000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER BERLIN-NEUKOLN",
+         "id": "8d1653b272df100373269f26c7320000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER BERLIN-STEGLITZ-Z.",
+         "id": "623cb726195c102a1eeac6b2bf8a0000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER BIBERACH A. D. RISS",
+         "id": "f28c2b79ddd410037383a200a6ba0000",
+         "count": 2
+        },
+        {
+         "descriptor": "EUROMASTER BOEBLINGEN",
+         "id": "8d1653b272df10037326c756c9fb0000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER BONN-LIMPERICH",
+         "id": "e92f00507db11003738621535c770000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER BRAUNSCHWEIG",
+         "id": "8d1653b272df10037326e8f0f99f0000",
+         "count": 2
+        },
+        {
+         "descriptor": "EUROMASTER BREMEN-HEMELINGEN",
+         "id": "8d1653b272df10037326f0bef9ea0000",
+         "count": 2
+        },
+        {
+         "descriptor": "EUROMASTER BREMEN-HUCHTING",
+         "id": "623cb726195c102a1eeb181a367d0000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER BREMERHAVEN",
+         "id": "8d1653b272df1003732708bcc7100000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER BRUEHL",
+         "id": "d5e379c82bb31003738836c03aa30000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER BUEHL",
+         "id": "623cb726195c102a1eeb45ecc6e80000",
+         "count": 2
+        },
+        {
+         "descriptor": "EUROMASTER CHEMNITZ-HELBERS.",
+         "id": "d5e379c82bb3100373885e7c7c7c0000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER COTTBUS",
+         "id": "8d1653b272df100373274082ec0b0000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER DEGGENDORF",
+         "id": "e92f00507db110037386a393b70d0000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER DESSAU",
+         "id": "6d3543fff9a4100372908cb218030000",
+         "count": 2
+        },
+        {
+         "descriptor": "EUROMASTER DUISBURG-OBERM.",
+         "id": "8d1653b272df10037327af7caf010000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER DUSSELDORF-BENRATH",
+         "id": "6d3543fff9a410037290e09fc9a70000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER EISENHUTTENSTADT",
+         "id": "d5e379c82bb3100373890117c1930000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER EMMERICH",
+         "id": "2eccf479d7d2100373886d8eabfc0000",
+         "count": 2
+        },
+        {
+         "descriptor": "EUROMASTER ESSEN",
+         "id": "e92f00507db11003738744b3f8020000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER FRANKFURT AM MAIN-B",
+         "id": "db50d2519ec0100373897f3a01780000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER GAIMERSHEIM",
+         "id": "db50d2519ec010037389a782efb50000",
+         "count": 2
+        },
+        {
+         "descriptor": "EUROMASTER GELSENKIRCHEN",
+         "id": "db50d2519ec010037389b7bc199c0000",
+         "count": 2
+        },
+        {
+         "descriptor": "EUROMASTER GERA",
+         "id": "2eccf479d7d210037388e6da4ad00000",
+         "count": 2
+        },
+        {
+         "descriptor": "EUROMASTER HAMBURG-HAMM",
+         "id": "d5e379c82bb310037389d70b9b6b0000",
+         "count": 2
+        },
+        {
+         "descriptor": "EUROMASTER HAMBURG-HAMMERBROOK",
+         "id": "d5e379c82bb310037389dee262af0000",
+         "count": 3
+        },
+        {
+         "descriptor": "EUROMASTER HAMBURG-LOHBRUEGGE",
+         "id": "e92f00507db1100373880a8c55ef0000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER HAMBURG-WILHELM.",
+         "id": "f28c2b79ddd410037385c66fa70b0000",
+         "count": 3
+        },
+        {
+         "descriptor": "EUROMASTER HAMM",
+         "id": "6d3543fff9a410037291fd872cf20000",
+         "count": 2
+        },
+        {
+         "descriptor": "EUROMASTER HANNOVER",
+         "id": "f28c2b79ddd410037385d91fb9f10000",
+         "count": 2
+        },
+        {
+         "descriptor": "EUROMASTER HEIDELBERG",
+         "id": "e92f00507db11003738841f29d680000",
+         "count": 2
+        },
+        {
+         "descriptor": "EUROMASTER HILDESHEIM",
+         "id": "623cb726195c102a1eed4425bd730000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER HOLZMINDEN",
+         "id": "db50d2519ec01003738a98f0208f0000",
+         "count": 2
+        },
+        {
+         "descriptor": "EUROMASTER HUERTH",
+         "id": "d5e379c82bb31003738a6bcefade0000",
+         "count": 2
+        },
+        {
+         "descriptor": "EUROMASTER KAISERSLAUTERN",
+         "id": "db50d2519ec01003738aba0172ff0000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER KAMP-LINTFORT",
+         "id": "db50d2519ec01003738ad2aa39c00000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER KIEL",
+         "id": "6d3543fff9a410037292b8a299890000",
+         "count": 3
+        },
+        {
+         "descriptor": "EUROMASTER KIRCHHEIMBOLANDEN",
+         "id": "6d3543fff9a410037292c1085baf0000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER KOLN-EHRENFELD",
+         "id": "f28c2b79ddd410037386a3267d650000",
+         "count": 2
+        },
+        {
+         "descriptor": "EUROMASTER KOLN-WESTHOVEN",
+         "id": "db50d2519ec01003738b2d8723d80000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER KREFELD-D.LEHMHEIDE",
+         "id": "8d1653b272df10037329e33bda360000",
+         "count": 2
+        },
+        {
+         "descriptor": "EUROMASTER KUENZELSAU",
+         "id": "db50d2519ec01003738b4f2f08a80000",
+         "count": 4
+        },
+        {
+         "descriptor": "EUROMASTER LANGEN",
+         "id": "f28c2b79ddd410037387031fa5640000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER LEIPZIG-SCHONEFELD",
+         "id": "8d1653b272df1003732a38fbd1b80000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER LOERRACH",
+         "id": "db50d2519ec01003738bb5f017700000",
+         "count": 2
+        },
+        {
+         "descriptor": "EUROMASTER LUDWIGSHAFEN-SUD",
+         "id": "623cb726195c102a1eee835337c10000",
+         "count": 2
+        },
+        {
+         "descriptor": "EUROMASTER LUEBECK",
+         "id": "db50d2519ec01003738bcfcd5b0a0000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER LUTHERSTADT WITTEN.",
+         "id": "f28c2b79ddd41003738766bfc01e0000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER MAGDEBURG",
+         "id": "8d1653b272df1003732a7c1d817e0000",
+         "count": 2
+        },
+        {
+         "descriptor": "EUROMASTER MANNHEIM",
+         "id": "a885af81d1ad100a387cdbc42f430000",
+         "count": 3
+        },
+        {
+         "descriptor": "EUROMASTER MOENCHENGLADBACH",
+         "id": "623cb726195c102a1eeef66db2d50000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER MULHEIM AN DER RUHR",
+         "id": "623cb726195c102a1eef18c4c5270000",
+         "count": 2
+        },
+        {
+         "descriptor": "EUROMASTER MUNCHEN-MOOSACH",
+         "id": "623cb726195c102a1eef209756130000",
+         "count": 3
+        },
+        {
+         "descriptor": "EUROMASTER MUNCHEN-PASING-OBER",
+         "id": "d5e379c82bb31003738c301c55e70000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER MUNCHEN-SENDLING",
+         "id": "d5e379c82bb31003738c48c929180000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER NEUSS",
+         "id": "8d1653b272df1003732b3c9427490000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER NEUSTADT AN DER W.",
+         "id": "f28c2b79ddd410037388366dadf80000",
+         "count": 2
+        },
+        {
+         "descriptor": "EUROMASTER NEU-ULM",
+         "id": "2eccf479d7d21003738bdf06b2260000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER NORDENHAM",
+         "id": "2eccf479d7d21003738be644c8530000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER NORDERSTEDT",
+         "id": "d5e379c82bb31003738c89ddb3230000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER NURNBERG-WERDERAU",
+         "id": "e92f00507db11003738ab4d2c3100000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER OLDENBURG-ALEXAND.",
+         "id": "6d3543fff9a410037294a3362e120000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER ORANIENBURG",
+         "id": "db50d2519ec01003738cf7f8d8d50000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER OSNABRUECK",
+         "id": "8d1653b272df1003732b9bea5b880000",
+         "count": 3
+        },
+        {
+         "descriptor": "EUROMASTER OSTERHOLZ-SCHARM.",
+         "id": "623cb726195c102a1eefc3e9f0fe0000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER OTTERNDORF",
+         "id": "623cb726195c102a1eefcceee4680000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER OTTOBRUNN",
+         "id": "db50d2519ec01003738d19a93baf0000",
+         "count": 2
+        },
+        {
+         "descriptor": "EUROMASTER PADERBORN",
+         "id": "8d1653b272df1003732bbd7ee78d0000",
+         "count": 2
+        },
+        {
+         "descriptor": "EUROMASTER PASSAU",
+         "id": "d5e379c82bb31003738cec01c7410000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER REGENSBURG",
+         "id": "2eccf479d7d21003738c7f8d61770000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER RENDSBURG",
+         "id": "f28c2b79ddd410037388f5d1de2c0000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER ROTHENBURG",
+         "id": "f28c2b79ddd4100373892149cd980000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER RUESSELSHEIM",
+         "id": "6d3543fff9a41003729557c51a380000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER SAARBRUECKEN",
+         "id": "2eccf479d7d21003738ccb995f9e0000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER SAARLOUIS-LKW",
+         "id": "6d3543fff9a410037295718eeffb0000",
+         "count": 2
+        },
+        {
+         "descriptor": "EUROMASTER SOLINGEN",
+         "id": "db50d2519ec01003738ddefce92a0000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER SPEYER",
+         "id": "6d3543fff9a410037295a35855690000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER ST. INGBERT",
+         "id": "e92f00507db11003738bd471d8af0000",
+         "count": 2
+        },
+        {
+         "descriptor": "EUROMASTER STADTBERGEN",
+         "id": "6d3543fff9a410037295bb55c0df0000",
+         "count": 2
+        },
+        {
+         "descriptor": "EUROMASTER TRIER-ZEWEN",
+         "id": "e92f00507db11003738c09827fcb0000",
+         "count": 2
+        },
+        {
+         "descriptor": "EUROMASTER ULM",
+         "id": "db50d2519ec01003738e35aa3a340000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER WALDKIRCH",
+         "id": "e92f00507db11003738c34e337760000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER WALLDORF",
+         "id": "8d1653b272df1003732cf38baacd0000",
+         "count": 2
+        },
+        {
+         "descriptor": "EUROMASTER WARENDORF",
+         "id": "e92f00507db11003738c452c85ec0000",
+         "count": 2
+        },
+        {
+         "descriptor": "EUROMASTER WESTERSTEDE",
+         "id": "623cb726195c102a1ef14e20047f0000",
+         "count": 1
+        },
+        {
+         "descriptor": "EUROMASTER WUERZBURG-RHOTENB.",
+         "id": "d5e379c82bb31003738e770a75c30000",
+         "count": 2
+        },
+        {
+         "descriptor": "EUROMASTER WUPPERTAL-LAN-B-LKW",
+         "id": "8d1653b272df1003732d687c85f00000",
+         "count": 1
+        },
+        {
+         "descriptor": "Frankfurt / Main",
+         "id": "959db8679dac0190632200f4eb16c39c",
+         "count": 5
+        },
+        {
+         "descriptor": "Ho Chi Minh City",
+         "id": "70b38acca79b01a76226081f0819912a",
+         "count": 3
+        },
+        {
+         "descriptor": "Itatiaia",
+         "id": "70b38acca79b01a6d77c3d1608193a1d",
+         "count": 1
+        },
+        {
+         "descriptor": "Karlsruhe",
+         "id": "70b38acca79b013722e0dc1808195421",
+         "count": 3
+        },
+        {
+         "descriptor": "Korneuburg",
+         "id": "b5be2fdb1f9701cf5f9a569ccf017f7b",
+         "count": 1
+        },
+        {
+         "descriptor": "Laem Chabang",
+         "id": "70b38acca79b01bdb8007f1c0819d126",
+         "count": 1
+        },
+        {
+         "descriptor": "Madrid",
+         "id": "0050abb771d701720da25feb50668595",
+         "count": 1
+        },
+        {
+         "descriptor": "MICHELIN ROH CO LTD",
+         "id": "70b38acca79b01649066911c0819ea26",
+         "count": 1
+        },
+        {
+         "descriptor": "Nongkae STI",
+         "id": "70b38acca79b0179f30f861c0819db26",
+         "count": 1
+        },
+        {
+         "descriptor": "Paris Intramuros - Trocadero",
+         "id": "dc724aac25f1100152a34d4db72b0000",
+         "count": 1
+        },
+        {
+         "descriptor": "Prapradaeng STP",
+         "id": "70b38acca79b0147f8808d1c0819e526",
+         "count": 1
+        },
+        {
+         "descriptor": "Pune",
+         "id": "70b38acca79b01cbf746271f0819c32a",
+         "count": 1
+        },
+        {
+         "descriptor": "Querétaro",
+         "id": "70b38acca79b015e3c65661a0819b123",
+         "count": 1
+        },
+        {
+         "descriptor": "Waterville",
+         "id": "70b38acca79b01a19fdeb9160819f81d",
+         "count": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "V.I.E": {
+   "status": 200,
+   "total": 0,
+   "titles": [],
+   "facets": []
+  },
+  "Volontariat International": {
+   "status": 200,
+   "total": 0,
+   "titles": [],
+   "facets": []
+  }
+ },
+ "loreal_robots": "User-agent: *\nAllow: /$\n# Disallowed portals are included as Allowed to use noindex strategy: https://developers.google.com/search/docs/advanced/crawling/block-indexing\nAllow: /careers\nDisallow: /careers/*qtvc=\nSitemap: https://career.loreal.com/careers/sitemap_index.xml\nAllow: /PR\nDisallow: /PR/*qtvc=\nSitemap: https://career.loreal.com/PR/sitemap_index.xml\nAllow: /DE\nDisallow: /DE/*qtvc=\nSitemap: https://career.loreal.com/DE/sitemap_index.xml\nAllow: /FR\nDisallow: /FR/*qtvc=\nSitemap: https://career.loreal.com/FR/sitemap_index.xml\nAllow: /IT\nDisallow: /IT/*qtvc=\nSitemap: https://career.loreal.com/IT/sitemap_index.xml\nAllow: /ES\nDisallow: /ES/*qtvc=\nSitemap: https://career.loreal.com/ES/sitemap_index.xml\nAllow: /JA\nDisallow: /JA/*qtvc=\nSitemap: https://career.loreal.com/JA/sitemap_index.xml\nAllow: /RU\nDisallow: /RU/*qtvc=\nSitemap: https://career.loreal.com/RU/sitemap_index.xml\nAllow: /EventsRegistration\nDisallow: /EventsRegistration/*qtvc=\nSitemap: https://career.loreal.com/EventsRegistration/sitemap_index.xml\nAllow: /ZHT\nDisallow: /ZHT/*qtvc=\nSitemap: https://career.loreal.com/ZHT/sitemap_index.xml\nAllow: /jobs\nDisallow: /jobs/*qtvc=\nAllow: /*/jobs\nDisallow: /*/jobs/*qtvc=\nSitemap: https://careers.loreal.com/jobs/sitemap_index.xml\nAllow: /EventsRegistrationNew\nDisallow: /EventsRegistrationNew/*qtvc=\nSitemap: https://career.loreal.com/EventsRegistrationNew/sitemap_index.xml\nAllow: /content\nDisallow: /content/*qtvc=\nAllow: /portal/196\nAllow: /*/content\nDisallow: /*/content/*qtvc=\nSitemap: https://careers.loreal.com/content/sitemap_index.xml\nAllow: /OPERATIONSCAMPUSEVENTS\nDisallow: /OPERATIONSCAMPUSEVENTS/*qtvc=\nSitemap: https://loa.avature.net/OPERATIONSCAMPUSEVENTS/sitemap_index.xml\nAllow: /campustoursignup\nDisallow: /campustoursignup/*qtvc=\nSitemap: https://loa.avature.net/campustoursignup/sitemap_index.xml\nAllow: /lyt2026\nDisallow: /lyt2026/*qtvc=\nSitemap: https://loa.avature.net/lyt2026/sitemap_index.xml\nAllow: /loaxHEC\nDisallow: /loaxHEC/*qtvc=\nSitemap: https://lo",
+ "loreal_get": {
+  "status": 403,
+  "headers": {
+   "Content-Type": "text/html; charset=UTF-8",
+   "Server": "cloudflare",
+   "CF-RAY": "a43bcbb96c7a9adc-IAD"
+  },
+  "body": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-3KYkyZzZ48ljMjVg25jE2A&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges.cloudflare.com; connect-src &#39;self&#39; https://challenges.cloudflare.com; frame-src &#39;self&#39; https://challenges.cloudflare.com blob:; child-src &#39;self&#39; https://challenges.cloudflare."
+ },
+ "bnp_robots": "<HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;group&#46;bnpparibas&#47;robots&#46;txt\" on this server.<P>\nReference&#32;&#35;18&#46;1a643017&#46;1790861152&#46;25bfca0\n<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;1a643017&#46;1790861152&#46;25bfca0</P>\n</BODY>\n</HTML>\n",
+ "bnp_get": {
+  "status": 403,
+  "headers": {
+   "Server": "AkamaiGHost",
+   "Content-Type": "text/html"
+  },
+  "body": "<HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;group&#46;bnpparibas&#47;emploi&#45;carriere&#47;toutes&#45;offres&#45;emploi&#47;vie\" on this server.<P>\nReference&#32;&#35;18&#46;1a643017&#46;1790861152&#46;25bfcae\n<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;1a643017&#46;1790861152&#46;25bfcae</P>\n</BODY>\n</HTML>\n"
+ },
+ "total_robots": "User-agent: *\nAllow: /$\n# Disallowed portals are included as Allowed to use noindex strategy: https://developers.google.com/search/docs/advanced/crawling/block-indexing\nAllow: /careers\nDisallow: /careers/*qtvc=\nAllow: /portal/4\nAllow: /*/careers\nDisallow: /*/careers/*qtvc=\nSitemap: https://jobs.totalenergies.com/careers/sitemap_index.xml\nAllow: /totalenergiesland\nDisallow: /totalenergiesland/*qtvc=\nAllow: /*/totalenergiesland\nDisallow: /*/totalenergiesland/*qtvc=\nSitemap: https://jobs.totalenergies.com/totalenergiesland/sitemap_index.xml\nAllow: /welcomeonboard\nDisallow: /welcomeonboard/*qtvc=\nAllow: /*/welcomeonboard\nDisallow: /*/welcomeonboard/*qtvc=\nSitemap: https://jobs.totalenergies.com/welcomeonboard/sitemap_index.xml\nAllow: /docusign\nDisallow: /docusign/*qtvc=\nAllow: /*/docusign\nDisallow: /*/docusign/*qtvc=\nSitemap: https://jobs.totalenergies.com/docusign/sitemap_index.xml\nAllow: /_cms/4\nAllow: /_cms/24\nAllow: /favicon.ico\nAllow: /sitemap.xml\nSitemap: https://jobs.totalenergies.com/sitemap.xml\nDisallow: /",
+ "total_get": {
+  "status": 200,
+  "headers": {
+   "Content-Type": "text/html;charset=UTF-8",
+   "Set-Cookie": "ScustomPortal-4=5vbi90jnag57lam0uqv3b7lg3b; path=/;SameSite=None; secure; HttpOnly, portalLanguage-4=fr_FR; path=/;SameSite=None; secure"
+  },
+  "body": "\n        \n    \n    \n    \n        \n    \n        \n                \n    \n        \n    \n                \n    \n                \n            \n    <!DOCTYPE html>\n<html lang=\"fr-FR\" xml:lang=\"fr-FR\" xmlns=\"http://www.w3.org/1999/xhtml\" menu-type=\"visible\" menu-toggleSide=\"right\" menu-panelFrom=\"right\" menu-panelEffect=\"over\">\n    <head><meta name=\"csp-nonce-style\" content=\"a775b3b05c094f9cec72f091378edba4993450801e1a0ecb7e4e717ebe731908\"/><meta name=\"csp-nonce-script\" content=\"a775b3b05c094f9cec72f091378edba4993450801e1a0ecb7e4e717ebe731908\"/><meta name=\"avature.wizard.registrars\" content=\"[{&quot;wizardId&quot;:18,&quot;settings&quot;:{&quot;isInternationalizationEnabled&quot;:true,&quot;autoPartialSaveInterval&quot;:null,&quot;shouldShowFieldByField&quot;:false,&quot;isSearchWizard&quot;:true,&"
+ }
+}
