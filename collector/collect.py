@@ -225,6 +225,23 @@ def run():
                 email_state["last_error"] = f"{type(e).__name__}: {str(e)[:200]}"
                 print("Échec de l'email :", e)
 
+    if os.environ.get("TEST_EMAIL") == "1":
+        if not mailer.configured():
+            email_state["last_error"] = "Test impossible : les secrets SMTP_USER et SMTP_PASS sont absents"
+        else:
+            pool = []
+            for o in current.values():
+                sc = score(o, profile) if profile else (None, [], [])
+                pool.append((o, *sc))
+            pool.sort(key=lambda x: (-(x[1] if x[1] is not None else -1), x[0]["first_seen"]), reverse=False)
+            try:
+                subj = mailer.send(pool[:3], site_url(), prefix="[Test Partance] ")
+                email_state.update(test_sent_at=iso(now), last_error=None)
+                print("Email de test envoyé :", subj)
+            except Exception as e:
+                email_state["last_error"] = f"Test : {type(e).__name__}: {str(e)[:200]}"
+                print("Échec de l'email de test :", e)
+
     offers = sorted(current.values(), key=lambda o: (o["first_seen"], o["id"]), reverse=True)
     KNOWN.parent.mkdir(parents=True, exist_ok=True)
     KNOWN.write_text(json.dumps(sorted(known_ever | set(current))))

@@ -59,12 +59,13 @@ def build(items, site_url):
     return subject, text, body
 
 
-def send(items, site_url):
+def send(items, site_url, prefix=""):
     user, pwd = os.environ["SMTP_USER"], os.environ["SMTP_PASS"].replace(" ", "")
     to = os.environ.get("EMAIL_TO") or user
     host = os.environ.get("SMTP_HOST") or "smtp.gmail.com"
     port = int(os.environ.get("SMTP_PORT") or 465)
     subject, text, body = build(items, site_url)
+    subject = prefix + subject
     msg = EmailMessage()
     msg["Subject"] = subject
     msg["From"] = f"Partance <{user}>"

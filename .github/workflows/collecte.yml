@@ -9,6 +9,10 @@ on:
         description: "Passage complet (toutes les pages de chaque site)"
         type: boolean
         default: false
+      test_email:
+        description: "Envoyer un email de test avec les 3 meilleures offres"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -43,6 +47,7 @@ jobs:
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
           PROFILE_JSON: ${{ secrets.PROFILE_JSON }}
           FULL: ${{ inputs.full && '1' || '0' }}
+          TEST_EMAIL: ${{ inputs.test_email && '1' || '0' }}
         run: python collector/collect.py
 
       - name: Enregistrer les offres
