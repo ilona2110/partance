@@ -1,1 +1,69 @@
-# partance
+# Partance
+
+Mon site perso pour trouver un VIE. Un robot passe toutes les 15 minutes environ : il récupère les offres VIE du catalogue Business France et des sites carrière de plusieurs entreprises, met le site à jour et m'envoie un email dès qu'une nouvelle offre me correspond.
+
+- **Le site** : `docs/index.html`, publié par GitHub Pages. Chaque offre reçoit un score sur 100 calculé à partir de mon CV. Mon profil et mes candidatures restent dans mon navigateur.
+- **Le robot** : `collector/`, lancé par GitHub Actions (`.github/workflows/collecte.yml`).
+- **Les offres** : `docs/data/offers.json`, réécrit à chaque passage.
+
+## Mise en route (une seule fois)
+
+### 1. Publier le site
+
+Dans le dépôt : **Settings → Pages**. Sous « Build and deployment », choisis **Deploy from a branch**, la branche **main** et le dossier **/docs**, puis **Save**.
+
+Le site sera à l'adresse `https://<ton-nom-github>.github.io/partance/` au bout d'une minute ou deux.
+
+### 2. Lancer le robot une première fois
+
+Onglet **Actions** du dépôt. Si GitHub le demande, clique sur le bouton qui active les workflows. Ouvre ensuite **Collecte des offres**, clique sur **Run workflow**, puis à nouveau sur **Run workflow**.
+
+Ce premier passage enregistre toutes les offres déjà en ligne, sans envoyer d'email. Les emails partent ensuite pour les offres publiées après lui. Il prend quelques minutes. Les passages suivants se lancent tout seuls toutes les 15 minutes.
+
+### 3. Activer les emails (Gmail)
+
+1. Active la **validation en deux étapes** sur ton compte Google, si ce n'est pas déjà fait.
+2. Va sur <https://myaccount.google.com/apppasswords>, crée un mot de passe d'application nommé « Partance » et copie les 16 caractères.
+3. Dans le dépôt : **Settings → Secrets and variables → Actions → New repository secret**. Crée ces deux secrets :
+   - `SMTP_USER` : ton adresse Gmail
+   - `SMTP_PASS` : le mot de passe d'application
+
+   Tu peux aussi créer `EMAIL_TO` si tu veux recevoir les alertes sur une autre adresse.
+
+Ces secrets restent invisibles, même si le dépôt est public.
+
+### 4. Donner ton profil au robot
+
+Sur le site, ouvre **Mon profil**, dépose ton CV, puis clique sur **Analyser le CV** et corrige ce qui est faux. Va ensuite dans **Alertes & sources**, règle le score minimum et clique sur **Copier le profil**. Colle-le dans un nouveau secret nommé `PROFILE_JSON`.
+
+Sans ce secret, le robot t'envoie toutes les nouvelles offres. Avec lui, il n'envoie que celles qui dépassent ton score minimum, et seulement dans tes pays visés si tu en as choisi. Refais la copie quand tu changes ton profil.
+
+## Sources suivies
+
+| Source | Comment elle est lue |
+|---|---|
+| Business France | Le service qui alimente le catalogue officiel |
+| Airbus, Thales, Air Liquide, Michelin | Workday, avec une recherche « VIE » |
+| Safran, BNP Paribas | Pages de résultats de leur site carrière |
+| L'Oréal, TotalEnergies | Pages de résultats de leur site carrière (Avature) |
+| CACEIS, Amundi | Flux RSS de leur site carrière |
+
+L'état de chaque source s'affiche sur le site, dans **Alertes & sources**. Une source en panne n'empêche pas les autres de tourner, et ses offres déjà connues restent affichées.
+
+Naval Group, LVMH, Hermès, Chanel, Société Générale et Schneider Electric ne sont pas encore branchés : leur site ne s'affiche qu'avec un navigateur. Leurs VIE passent en général aussi par Business France.
+
+Le robot respecte le fichier robots.txt de chaque site et espace ses requêtes. Une entreprise qui interdit les robots, comme le Crédit Agricole, n'est pas lue.
+
+## Bon à savoir
+
+- GitHub peut lancer un passage avec 5 à 20 minutes de retard quand ses serveurs sont chargés.
+- Si GitHub t'envoie un email disant que le workflow planifié a été désactivé, réactive-le en un clic depuis l'onglet Actions.
+- Le score est calculé à partir des exigences repérées automatiquement dans chaque annonce. Vérifie toujours l'offre complète avant de postuler.
+- Tes candidatures sont enregistrées dans le navigateur où tu les as saisies : elles ne passent pas d'un appareil à l'autre.
+
+## Tester le robot sans réseau
+
+```
+pip install -r collector/requirements.txt
+python collector/test_collector.py
+```

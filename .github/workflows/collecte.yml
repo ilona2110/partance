@@ -1,0 +1,59 @@
+name: Collecte des offres
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+    inputs:
+      full:
+        description: "Passage complet (toutes les pages de chaque site)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collecte
+  cancel-in-progress: false
+
+jobs:
+  collecte:
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: collector/requirements.txt
+
+      - name: Installer les dépendances
+        run: pip install -r collector/requirements.txt
+
+      - name: Tests hors ligne
+        run: python collector/test_collector.py
+
+      - name: Récupérer les offres et envoyer les emails
+        env:
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          PROFILE_JSON: ${{ secrets.PROFILE_JSON }}
+          FULL: ${{ inputs.full && '1' || '0' }}
+        run: python collector/collect.py
+
+      - name: Enregistrer les offres
+        run: |
+          git config user.name "partance-robot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data/offers.json state/known_ids.json
+          if git diff --cached --quiet; then
+            echo "Rien de nouveau"
+          else
+            git commit -q -m "Offres mises à jour"
+            git pull -q --rebase -X theirs origin main || true
+            git push -q
+          fi
