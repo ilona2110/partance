@@ -28,6 +28,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = Path(os.environ.get("PARTANCE_DATA") or ROOT / "docs" / "data" / "offers.json")
 KNOWN = Path(os.environ.get("PARTANCE_KNOWN") or ROOT / "state" / "known_ids.json")
 KEEP_INCOMPLETE_DAYS = 45
+STALE_DAYS = 3  # une source en panne depuis plus longtemps ne garde plus ses anciennes offres
 
 
 def now_utc():
@@ -184,9 +185,11 @@ def run():
                         current[pid] = p
             st.update(ok=True, error=None, seeded=True, last_ok=iso(now))
         else:
-            for pid, p in mine.items():
-                current[pid] = p
-            st.update(ok=False, error=err, last_ok=ps.get("last_ok"))
+            last_ok = ps.get("last_ok")
+            if last_ok and now - parse_iso(last_ok) < timedelta(days=STALE_DAYS):
+                for pid, p in mine.items():
+                    current[pid] = p
+            st.update(ok=False, error=err, last_ok=last_ok)
         st["count"] = sum(1 for o in current.values() if o.get("skey") == key)
         if info.get("fields"):
             st["fields"] = info["fields"]

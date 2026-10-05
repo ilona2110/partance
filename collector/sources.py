@@ -118,7 +118,7 @@ def businessfrance(src, http, ctx):
                 "ind": round(float(ind)) if isinstance(ind, (int, float)) or (isinstance(ind, str) and re.fullmatch(r"[\d.]+", ind)) else None,
                 "duree": int(dur) if isinstance(dur, (int, float)) or (isinstance(dur, str) and dur.isdigit()) else None,
                 "debut": _date(_g(it, "missionStartDate", "startDate")),
-                "publie": _date(_g(it, "creationDate", "publicationDate", "startBroadcastDate", "createdAt")),
+                "publie": _date(_g(it, "startBroadcastDate", "publicationDate", "creationDate", "createdAt")),
                 "cloture": _date(_g(it, "endBroadcastDate", "applicationEndDate", "closingDate")),
             })
         skip += len(items)

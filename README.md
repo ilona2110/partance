@@ -48,13 +48,12 @@ Le fichier `alertes.json`, à la racine du dépôt, liste les pays pour lesquels
 |---|---|
 | Business France | Le service qui alimente le catalogue officiel, avec la clé publique que le site envoie à chaque visiteur |
 | Airbus, Thales, Air Liquide, Michelin | Workday, avec le filtre « type de contrat VIE » quand il existe, sinon une recherche « VIE » dans les titres |
-| Safran | Pages de résultats de son site carrière |
 | TotalEnergies | Pages de résultats de son site carrière (Avature) |
 | CACEIS, Amundi | Flux RSS de leur site carrière |
 
-L'état de chaque source s'affiche sur le site, dans **Alertes & sources**. Une source en panne n'empêche pas les autres de tourner, et ses offres déjà connues restent affichées.
+L'état de chaque source s'affiche sur le site, dans **Alertes & sources**. Une source en panne n'empêche pas les autres de tourner. Ses offres déjà connues restent affichées pendant 3 jours, puis disparaissent.
 
-Ne sont pas branchés : L'Oréal et BNP Paribas, dont le site bloque les robots (Cloudflare, Akamai), ainsi que LVMH, Hermès, Chanel, Société Générale, Naval Group et Schneider Electric, dont le site ne s'affiche qu'avec un navigateur. Leurs VIE passent en général aussi par Business France.
+Ne sont pas branchés : Safran, L'Oréal et BNP Paribas, dont le site bloque les robots, ainsi que LVMH, Hermès, Chanel, Société Générale, Naval Group et Schneider Electric, dont le site ne s'affiche qu'avec un navigateur. Leurs VIE passent en général aussi par Business France.
 
 Le robot respecte le fichier robots.txt de chaque site et espace ses requêtes. Une entreprise qui interdit les robots, comme le Crédit Agricole, n'est pas lue.
 
