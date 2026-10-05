@@ -287,6 +287,13 @@ function rel(isoStr){
 }
 const yrs = y => y ? `${String(y).replace(".",",")} an${y>=2?"s":""}` : "";
 const isNew = o => o.first_seen && Date.now()-Date.parse(o.first_seen) < DAY;
+// Tranches du filtre « Publiée il y a », en jours
+const PUB_RANGES = {
+  "1j":   {label:"1 jour",            min:0,  max:1},
+  "1s":   {label:"1 semaine",         min:0,  max:7},
+  "2-3s": {label:"2 à 3 semaines",    min:8,  max:21},
+  "1m":   {label:"1 mois et plus",    min:22, max:9998}
+};
 const pubDate = o => o.publie || (o.first_seen||"").slice(0,10);
 const pubAge = o => { const d=pubDate(o); return d?daysSince(d):9999; };
 function pubLabel(o){ const n=pubAge(o); if(n>=9999) return ""; return o.publie?`publiée ${ago(n)}`:`ajoutée ${rel(o.first_seen)}`; }
@@ -466,7 +473,7 @@ function renderOffres(){
     <label class="field"><span>Pays</span><select id="f-pays"><option value="">Tous</option>${pays.map(([i,n])=>`<option value="${i}" ${UI.pays===i?"selected":""}>${esc(n)}</option>`).join("")}</select></label>
     <label class="field"><span>Domaine</span><select id="f-dom"><option value="">Tous</option>${Object.entries(DOM).map(([k,v])=>`<option value="${k}" ${UI.dom===k?"selected":""}>${v}</option>`).join("")}</select></label>
     <label class="field"><span>Source</span><select id="f-src"><option value="">Toutes</option><option value="bf" ${UI.src==="bf"?"selected":""}>Business France</option><option value="carriere" ${UI.src==="carriere"?"selected":""}>Sites carrière</option></select></label>
-    <label class="field"><span>Publiée</span><select id="f-pub"><option value="">Toutes dates</option>${[["1","Depuis hier"],["3","Moins de 3 j"],["7","Moins de 7 j"],["30","Moins de 30 j"]].map(([v,l])=>`<option value="${v}" ${UI.pub===v?"selected":""}>${l}</option>`).join("")}</select></label>
+    <label class="field"><span>Publiée il y a</span><select id="f-pub"><option value="">Peu importe</option>${Object.entries(PUB_RANGES).map(([v,r])=>[v,r.label]).map(([v,l])=>`<option value="${v}" ${UI.pub===v?"selected":""}>${l}</option>`).join("")}</select></label>
     <label class="field"><span>Trier par</span><select id="f-tri"><option value="score" ${UI.tri==="score"?"selected":""}>Score</option><option value="new" ${UI.tri==="new"?"selected":""}>Plus récentes</option><option value="clo" ${UI.tri==="clo"?"selected":""}>Clôture proche</option><option value="ind" ${UI.tri==="ind"?"selected":""}>Indemnité</option></select></label>
   </div>
   <div class="listhead" id="listhead"></div>
@@ -488,7 +495,7 @@ function filtered(){
   if(UI.dom) rows=rows.filter(({o})=>o.dom===UI.dom);
   if(UI.src) rows=rows.filter(({o})=>o.src===UI.src);
   if(UI.nouvelles) rows=rows.filter(({o})=>isNew(o));
-  if(UI.pub) rows=rows.filter(({o})=>pubAge(o)<=+UI.pub);
+  if(PUB_RANGES[UI.pub]){ const r=PUB_RANGES[UI.pub]; rows=rows.filter(({o})=>{const a=pubAge(o); return a>=r.min&&a<=r.max;}); }
   const sv = r => r.sc.s==null?-1:r.sc.s;
   const fs = r => Date.parse(r.o.first_seen)||0;
   const cmp = {score:(a,b)=>sv(b)-sv(a)||fs(b)-fs(a), new:(a,b)=>pubDate(b.o).localeCompare(pubDate(a.o))||fs(b)-fs(a), clo:(a,b)=>(a.o.cloture||"9999").localeCompare(b.o.cloture||"9999"), ind:(a,b)=>(b.o.ind||0)-(a.o.ind||0)}[UI.tri];
