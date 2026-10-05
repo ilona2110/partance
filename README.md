@@ -42,6 +42,19 @@ Sans ce secret, le robot t'envoie toutes les nouvelles offres. Avec lui, il n'en
 
 Le fichier `alertes.json`, à la racine du dépôt, liste les pays pour lesquels tu reçois un email, en codes à deux lettres (`US`, `CA`, `ES`, `GB`, `AU`, `SG`…). Modifie-le directement sur GitHub (icône crayon). Une liste vide `[]` envoie les alertes pour tous les pays. Le site, lui, continue d'afficher les offres de tous les pays.
 
+### 6. Passages vraiment toutes les 15 minutes (facultatif)
+
+GitHub ne respecte pas toujours l'horaire « toutes les 15 minutes » : sur un compte gratuit, il lance souvent le robot toutes les 3 à 4 heures seulement. Pour un rythme fiable, un service gratuit comme cron-job.org peut déclencher le robot lui-même :
+
+1. Crée un jeton sur <https://github.com/settings/personal-access-tokens/new> : nom « Partance cron », « Only select repositories » → `partance`, puis dans « Permissions », **Actions : Read and write**. Copie le jeton.
+2. Crée un compte sur <https://cron-job.org>, puis **Create cronjob** :
+   - URL : `https://api.github.com/repos/ilona2110/partance/actions/workflows/collecte.yml/dispatches`
+   - Exécution : toutes les 15 minutes
+   - Onglet « Advanced » : méthode **POST**, corps `{"ref":"main"}`, et trois en-têtes :
+     `Authorization: Bearer <ton jeton>`, `Accept: application/vnd.github+json`, `Content-Type: application/json`
+
+L'horaire GitHub reste actif en secours. Le jeton ne donne accès qu'au lancement du robot de ce dépôt.
+
 ## Sources suivies
 
 | Source | Comment elle est lue |
